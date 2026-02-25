@@ -38,11 +38,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Curvature: 0.1
+    - _Curvature: 0.015
     - _EnableExternalAlpha: 0
-    - _RGBSplit: 0.002
-    - _ScanlineDensity: 1200
-    - _ScanlineIntensity: 0.7
+    - _RGBSplit: 0.001
+    - _ScanlineDensity: 800
+    - _ScanlineIntensity: 0.5
     - _VignetteIntensity: 0.3
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
