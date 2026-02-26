@@ -193,6 +193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _visionAngle: 60
   _visionDistance: 5.5
+  _coolDownChase: 5
   _detectSFX: {fileID: 0}
 --- !u!95 &160949013
 Animator:

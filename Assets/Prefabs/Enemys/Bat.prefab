@@ -125,6 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _visionAngle: 100
   _visionDistance: 7
+  _coolDownChase: 5
   _detectSFX: {fileID: 0}
 --- !u!61 &8738630133945712333
 BoxCollider2D:

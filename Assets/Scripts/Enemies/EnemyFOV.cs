@@ -9,9 +9,13 @@ public class EnemyFOV : MonoBehaviour
     #region parameters 
     [SerializeField][Range(0f, 360f)] private float _visionAngle = 45f; //El �ngulo de visi�n del enemigo.
     [SerializeField] private float _visionDistance = 10f;               //La m�xima distancia de nuestro cono de visi�n.
+
+    [SerializeField] private float _coolDownChase;
+    float _initialCoolDownChase;
     private bool _detected;                        //Booleano que determina si el enemigo ha detectado al jugador
     private bool _detectedSFX;                        //Booleano que determina si el enemigo ha detectado al jugador (SONIDO)
     private bool _attackSFX;
+    private bool _stillChase;
     #endregion
 
     #region references
@@ -69,6 +73,8 @@ public class EnemyFOV : MonoBehaviour
         _detected = false;
         _detectedSFX = true;
         _attackSFX = false;
+        _stillChase = false;
+        _initialCoolDownChase = _coolDownChase;
     }
 
     void Update()
@@ -83,30 +89,41 @@ public class EnemyFOV : MonoBehaviour
             _detectedSFX = true;
         }
 
+        if (_stillChase)
+        {
+            _coolDownChase -= Time.deltaTime;
+            if (_coolDownChase <= 0)
+            {
+                _stillChase = false;
+                _detected = false;
+                _attackSFX = false;
+                _coolDownChase = _initialCoolDownChase;
+            }
+        }
+
         _animator.SetBool("_run", _detected); //no lo encuentra. Si lo encuentra, no lo toques 
         //Debug.Log(_detected);
         if (_player != null)
         {
             // El vector que indica la distancia del jugador al enemigo.
-            Vector2 PlayerVector = _player.transform.position - transform.position;
-            // Comprueba si el jugador est� dentro del �ngulo de visi�n del enemigo
-            if (Vector3.Angle(PlayerVector.normalized, transform.right) < _visionAngle * 0.5f)
+            Vector2 playerVector = _player.transform.position - transform.position;
+
+            float angle = Vector3.Angle(playerVector.normalized, transform.right);
+            float halfAngle = _visionAngle * 0.5f;
+            float distance = playerVector.magnitude;
+
+            if (angle < halfAngle && distance < _visionDistance)
             {
-                //Comprueba si estamos a una distancia que es detectable para el enemigo.
-                if (PlayerVector.magnitude < _visionDistance)
-                {
-                    _attackSFX = true;
-                    _detected = true;
-                }
-                //Si nos salimos del cono de visi�n entonces el detecta volver� a ser falso.
-                else
-                {
-                    _detected = false;
-                }
+                _stillChase = false;
+                _detected = true;
+                _attackSFX = true;
+                _coolDownChase = _initialCoolDownChase;
             }
-            else if (Vector3.Angle(PlayerVector.normalized, transform.right) > _visionAngle)
+            else
             {
-                _attackSFX = false;
+                _stillChase = true;
+                //_detected = false;
+                //_attackSFX = false;
             }
         }
     }

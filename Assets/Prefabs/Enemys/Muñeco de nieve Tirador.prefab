@@ -307,6 +307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _visionAngle: 45
   _visionDistance: 7
+  _coolDownChase: 5
   _detectSFX: {fileID: 0}
 --- !u!114 &-454536740972119165
 MonoBehaviour:
