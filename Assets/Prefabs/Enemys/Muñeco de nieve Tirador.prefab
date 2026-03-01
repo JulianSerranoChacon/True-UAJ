@@ -292,7 +292,7 @@ MonoBehaviour:
   _coolDownShoot: 1.25
   _bulletSpawnTransform: {fileID: 676700370213554566}
   _patrolFlip: 1
-  _disparoNormal: {fileID: 8300000, guid: f9a9a125870933b45bd879f01b41987b, type: 3}
+  _disparoNormal: {fileID: 8300000, guid: cacd7be225151c94ca036cdaf7ca54c4, type: 3}
 --- !u!114 &3758571706154678328
 MonoBehaviour:
   m_ObjectHideFlags: 0
