@@ -112,6 +112,7 @@ public class ShootingComponent : MonoBehaviour
         _scene = SceneManager.GetActiveScene(); //para ver a qué armas podemos cambiar
     }
 
+    //Update nuevo que corrige el problema de las balas que atraviesan paredes al instanciarse
     private void Update()
     {
         if (!_canAttackShoot)
@@ -126,22 +127,68 @@ public class ShootingComponent : MonoBehaviour
         if (_myInputComponent._lookUP && gameObject.transform.rotation.y >= 0)
         {
             Vector2 miposicion = transform.position;
-            _bulletSpawnTransform.position= miposicion + new Vector2 (0.40f, 1.0f) ;
+            _bulletSpawnTransform.position = miposicion + new Vector2(0.40f, 1.0f);
         }
         else if (_myInputComponent._lookUP && gameObject.transform.rotation.y < 0)
         {
             Vector2 miposicion = transform.position;
             _bulletSpawnTransform.position = miposicion + new Vector2(-0.40f, 1.0f);
         }
-        else if (!_myInputComponent._lookUP && gameObject.transform.rotation.y >= 0)
-        {
-            Vector2 miposicion = transform.position;
-            _bulletSpawnTransform.position = miposicion + new Vector2(1.0f, 0.015f);
-        }
         else
         {
             Vector2 miposicion = transform.position;
-            _bulletSpawnTransform.position = miposicion + new Vector2(-1.0f, 0.015f);
+            Vector2 dir = gameObject.transform.rotation.y >= 0 ? Vector2.right : Vector2.left;
+
+            float distanciaDisparo = 1.0f;
+
+            LayerMask wallMask = (1 << 6) | (1 << 12);
+
+            RaycastHit2D hit = Physics2D.Raycast(miposicion, dir, distanciaDisparo, wallMask);
+
+            if (hit.collider != null)
+            {
+                // colocar spawn justo antes de la pared
+                _bulletSpawnTransform.position = hit.point - dir * 0.1f;
+            }
+            else
+            {
+                _bulletSpawnTransform.position = miposicion + dir * distanciaDisparo + new Vector2(0, 0.015f);
+            }
+
         }
+
     }
+
+    //private void Update()
+    //{
+    //    if (!_canAttackShoot)
+    //    {
+    //        _coolDownShoot -= Time.deltaTime;
+
+    //        if (_coolDownShoot <= 0)
+    //            _canAttackShoot = true;
+    //    }
+    //    else _coolDownShoot = _initialCoolDownShoot;
+
+    //    if (_myInputComponent._lookUP && gameObject.transform.rotation.y >= 0)
+    //    {
+    //        Vector2 miposicion = transform.position;
+    //        _bulletSpawnTransform.position= miposicion + new Vector2 (0.40f, 1.0f) ;
+    //    }
+    //    else if (_myInputComponent._lookUP && gameObject.transform.rotation.y < 0)
+    //    {
+    //        Vector2 miposicion = transform.position;
+    //        _bulletSpawnTransform.position = miposicion + new Vector2(-0.40f, 1.0f);
+    //    }
+    //    else if (!_myInputComponent._lookUP && gameObject.transform.rotation.y >= 0)
+    //    {
+    //        Vector2 miposicion = transform.position;
+    //        _bulletSpawnTransform.position = miposicion + new Vector2(1.0f, 0.015f);
+    //    }
+    //    else
+    //    {
+    //        Vector2 miposicion = transform.position;
+    //        _bulletSpawnTransform.position = miposicion + new Vector2(-1.0f, 0.015f);
+    //    }
+    //}
 }
