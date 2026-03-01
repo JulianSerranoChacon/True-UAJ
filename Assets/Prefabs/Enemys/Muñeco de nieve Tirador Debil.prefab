@@ -289,7 +289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bullet: {fileID: 1256174170972558883, guid: 920b985323cc86f4f8aa37d0868ec45e, type: 3}
-  _coolDownShoot: 1
+  _coolDownShoot: 2
   _bulletSpawnTransform: {fileID: 1364175519780991303}
   _patrolFlip: 3
   _disparoNormal: {fileID: 8300000, guid: f9a9a125870933b45bd879f01b41987b, type: 3}
