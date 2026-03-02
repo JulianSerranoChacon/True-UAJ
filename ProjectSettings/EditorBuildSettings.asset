@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Escenas definitivas/Intro/IntroScene.unity
     guid: ec490aeb48c4d3c42a413c891be211c8
   - enabled: 1
-    path: Assets/Scenes/Escenas definitivas/Tutorial.unity
-    guid: cc8466d1893707b4abf93147ab2f3cc3
+    path: Assets/Scenes/Escenas definitivas/TUTORIAL 2.unity
+    guid: 3898cd609611f854b87b8d4c767f9227
   - enabled: 1
     path: Assets/Scenes/Escenas definitivas/Nivel Hielo.unity
     guid: 9b92ee50378a94042adc0e9940b44f2d
