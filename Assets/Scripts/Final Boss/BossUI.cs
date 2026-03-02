@@ -47,7 +47,11 @@ public class BossUI : MonoBehaviour
 
     public void ActualizaVidaCabeza()
     {
-        _slider[2].fillAmount = _cabeza.GetComponent<HeadHealth>().GetVidaCabeza() / _cabeza.GetComponent<HeadHealth>().GetVidaCabezaInicial();
+        if (_cabeza != null && _slider[2] != null)
+        {
+            _slider[2].fillAmount = _cabeza.GetComponent<HeadHealth>().GetVidaCabeza() /
+                                    _cabeza.GetComponent<HeadHealth>().GetVidaCabezaInicial();
+        }
     }
     #endregion
     /*private void Start()
