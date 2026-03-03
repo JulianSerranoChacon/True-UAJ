@@ -409,15 +409,15 @@ public class CharacterController : MonoBehaviour
             _myInputComponent.enabled = true;
             _dash = false;
         }
-        else if(_dash && _myRigidBody2D.velocity.x <= 0.5f && IsCeiling())
+        else if(_dash && _myRigidBody2D.velocity.x <= 0.6f && IsCeiling())
         {
             if (_facingRight)
             {
-                transform.position += new Vector3(0.005f, 0, 0);
+                transform.position += new Vector3(0.02f, 0, 0);
             }
             else
             {
-                transform.position += new Vector3(- 0.005f, 0, 0);
+                transform.position += new Vector3(- 0.02f, 0, 0);
             }
         }
     }
