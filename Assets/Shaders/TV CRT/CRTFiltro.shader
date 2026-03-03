@@ -1,4 +1,4 @@
-Shader "Custom/CRTPostProcess"
+﻿Shader "Custom/CRTPostProcess"
 {
     Properties
     {
@@ -64,13 +64,17 @@ Shader "Custom/CRTPostProcess"
                 centered *= 1 + _Curvature * dot(centered, centered);
                 uv = centered * 0.5 + 0.5;
 
+                // ⚠️ Si la UV está fuera del rango, devolver negro
+                if (uv.x < 0 || uv.x > 1 || uv.y < 0 || uv.y > 1)
+                    return float4(0,0,0,1);
+
                 // RGB SPLIT
                 float r = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, uv + float2(_RGBSplit, 0)).r;
                 float g = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, uv).g;
                 float b = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, uv - float2(_RGBSplit, 0)).b;
                 float3 color = float3(r,g,b);
 
-                // SCANLINES REALES (MUY VISIBLES)
+                // SCANLINES
                 float scan = sin(uv.y * _ScanlineDensity);
                 float scanMask = scan * 0.5 + 0.5;
                 color *= lerp(1.0, scanMask, _ScanlineIntensity);

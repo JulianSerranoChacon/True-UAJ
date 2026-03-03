@@ -91,7 +91,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -608058569, guid: 03afec04e8f3c864782aa08c9efddc70, type: 3}
+  m_Sprite: {fileID: -1188381220, guid: 83ff9e645bda07446811f629a1fc5016, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -119,7 +119,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.25}
+    oldSize: {x: 0.18, y: 0.26}
     newSize: {x: 0.19, y: 0.23}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -219,6 +219,8 @@ MonoBehaviour:
   - {fileID: 1592227543846742981, guid: bc20f549fe6014149b8a3cde4d357571, type: 3}
   - {fileID: 1256174170972558883, guid: 40c69f83e64ff7643b019a1eff35d82f, type: 3}
   _bulletSpawnTransform: {fileID: 3307213394960240520}
+  _armaHielo_Desbloqueada: 0
+  _armaFuego_Desbloqueada: 0
   _coolDownShoot: 0.1
   _animatorControllers:
   - {fileID: 9100000, guid: a5472f5307bc8494188fa96d54648073, type: 2}
