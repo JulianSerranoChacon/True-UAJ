@@ -73,7 +73,7 @@ public class EnemyShoot : MonoBehaviour
         _initialCoolDownShoot = _coolDownShoot;
          _initialPatrolFlip = _patrolFlip;
         _animator = GetComponent<Animator>();
-        _canShoot= true;
+        _canShoot= false;
         _trueInitialCoolDownShoot = _coolDownShoot;
     }
 
