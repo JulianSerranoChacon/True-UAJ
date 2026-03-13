@@ -13,6 +13,12 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Image _Melee;
     float _currentTime;
     [SerializeField] private Image _slider;                          //La Barra de vida
+    [SerializeField] private Image _hitSlider;                       //La Barra que se resta al hacerse pupa
+    [SerializeField] private Image _curaSlider;                      //La Barra que se rellena al curarse
+    private bool _updateHitSlider = false;
+    private bool _updateCuraSlider = false;
+    float _hitSliderDelay = 0.5f;
+    float _curaSliderDelay = 0.5f;
     #endregion
 
     #region References
@@ -33,14 +39,44 @@ public class UIManager : MonoBehaviour
         }
         if (Currenttime<0)
         {
+            _updateCuraSlider = false;
+            _updateHitSlider = false;
+
+            _curaSliderDelay = 0.5f;
+            _hitSliderDelay = 0.5f;
+
+            _curaSlider.fillAmount = 0;
+            _hitSlider.fillAmount = 0;
+
             _timetext.text = "ERROR";
             _timetext.color = new Color(1, 0, 0, 1);
         }
     }
 
-    public void ActualizarInterfaz(float health)
+    public void ActualizarInterfaz(float health, bool hitted)
     {
-       _slider.fillAmount = health / GameManager.instance._player.GetComponent<MightyLifeComponent>().GetMaxHealth();
+        if (hitted)
+        {
+            _updateCuraSlider = false;
+            _updateHitSlider = true;
+
+            _curaSliderDelay = 0.5f;
+            _hitSliderDelay = 0.5f;
+
+            _slider.fillAmount = health / GameManager.instance._player.GetComponent<MightyLifeComponent>().GetMaxHealth();
+            _curaSlider.fillAmount = _slider.fillAmount;
+        }
+        else {
+            _updateCuraSlider = true;
+            _updateHitSlider = false;
+
+            _curaSliderDelay = 0.5f;
+            _hitSliderDelay = 0.5f;
+
+            _curaSlider.fillAmount = health / GameManager.instance._player.GetComponent<MightyLifeComponent>().GetMaxHealth();
+            _hitSlider.fillAmount = _slider.fillAmount;
+
+        }
     }
 
     public void currentWeaponState( int weapon)
@@ -75,5 +111,42 @@ public class UIManager : MonoBehaviour
         _mightyLifeComponent = GameManager.instance._player.GetComponent<MightyLifeComponent>();
         _characterController = GameManager.instance._player.GetComponent<CharacterController>();
         _currentTime = GameManager.instance._currentTime;
+    }
+
+    private void Update()
+    {
+        if (_updateHitSlider)
+        {
+            if (_hitSliderDelay >= 0.0f)
+                _hitSliderDelay -= Time.deltaTime;
+            else
+            {
+                if (_hitSlider.fillAmount > _slider.fillAmount)
+                    _hitSlider.fillAmount -= Time.deltaTime / 5;
+                else
+                {
+                    _hitSlider.fillAmount = _slider.fillAmount;
+                    _updateHitSlider = false;
+                    _hitSliderDelay = 0.5f;
+                }
+            }
+        }
+
+        if (_updateCuraSlider)
+        {
+            if (_curaSliderDelay >= 0.0f)
+                _curaSliderDelay -= Time.deltaTime;
+            else
+            {
+                if (_slider.fillAmount < _curaSlider.fillAmount)
+                    _slider.fillAmount += Time.deltaTime / 5;
+                else
+                {
+                    _slider.fillAmount = _curaSlider.fillAmount;
+                    _updateCuraSlider = false;
+                    _curaSliderDelay = 0.5f;
+                }
+            }
+        }
     }
 }

@@ -126,10 +126,22 @@ public class MightyLifeComponent : MonoBehaviour
     public void TakeDamage(float damage)
     {
         _health -= damage;
-        if (GameManager.instance._UImanager != null)
+
+        if (damage > 0)
         {
-            GameManager.instance._UImanager.ActualizarInterfaz(GetHealth());
+            if (GameManager.instance._UImanager != null)
+            {
+                GameManager.instance._UImanager.ActualizarInterfaz(GetHealth(), true);
+            }
         }
+        else
+        {
+            if (GameManager.instance._UImanager != null)
+            {
+                GameManager.instance._UImanager.ActualizarInterfaz(GetHealth(), false);
+            }
+        }
+
 
         if (_health <= 0)
         {
