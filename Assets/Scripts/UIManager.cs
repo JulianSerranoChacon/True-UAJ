@@ -74,7 +74,7 @@ public class UIManager : MonoBehaviour
             _hitSliderDelay = 0.5f;
 
             _curaSlider.fillAmount = health / GameManager.instance._player.GetComponent<MightyLifeComponent>().GetMaxHealth();
-            _hitSlider.fillAmount = _slider.fillAmount;
+            _hitSlider.fillAmount = _curaSlider.fillAmount;
 
         }
     }
