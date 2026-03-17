@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _MovementSmoothing: 0.1
-  _IceMoveSmoothing: 8
+  _IceMoveSmoothing: 3
   _movementSpeedX: 6
   _slowSpeedX: 1
   _jumpForce: 600
