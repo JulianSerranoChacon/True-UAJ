@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class ServerPersisttance : IPersistance
 {
-    // Start is called before the first frame update
-    void Send()
+    public void Send()
     {
 
     }
 
-    // Update is called once per frame
-    void Flush()
+    public void Flush()
     {
-
+        Debug.Log("Se estan guardando los eventos en el servidor...");
+        //Logica para guardar en servidor los eventos...
     }
 }

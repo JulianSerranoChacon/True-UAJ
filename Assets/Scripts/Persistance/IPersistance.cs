@@ -2,17 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IPersistance : MonoBehaviour
+//Interfaz del tipo de sistema de persistencia a implementar
+public interface IPersistance
 {
-    // Start is called before the first frame update
-    void Send()
-    {
-        
-    }
+    void Send();
 
-    // Update is called once per frame
-    void Flush()
-    {
-        
-    }
+    //Metodo para el volacado de los datos de la cola para persistir los datos
+    void Flush();
 }

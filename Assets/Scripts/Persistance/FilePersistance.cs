@@ -2,16 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+
+//Peristencia en disco
 public class FilePersistance : IPersistance { 
-    // Start is called before the first frame update
-    void Send()
+    public void Send()
     {
         
     }
 
-    // Update is called once per frame
-void Flush()
+    public void Flush()
     {
+
+        Debug.Log("Se estan guardando los eventos en el disco");
+        //Logica para guardar en disco los eventos...
+
 
     }
 }
