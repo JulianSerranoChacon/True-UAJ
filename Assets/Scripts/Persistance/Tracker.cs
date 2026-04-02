@@ -44,7 +44,7 @@ public class Tracker
     //Metodo que se encarga de cerrar el tracker
     public void End()
     {
-        //Antes debemos asegurarnos de que no queden elementos en la cola..
+        //Antes debemos asegurarnos de que no queden elementos en la cola.. hacemos el volcado de los datos que falten
         foreach(var stratergy in _persistenceObjects)
         {
             stratergy.Flush();
