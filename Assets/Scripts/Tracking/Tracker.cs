@@ -14,6 +14,9 @@ public class Tracker
     //Lista de "escuchadores" de eventos especializados (no se muy bien para que se usa aun...)
     List<int> _activeTrackers;
 
+    //Cola circular para almacenar eventos
+    CircularBuffer<TrackerEvent> _events;
+    [SerializeField] int _eventTrackerSize;
 
     //Acceso a la instancia unica del tracker
     public static Tracker Instance
@@ -39,6 +42,13 @@ public class Tracker
 
         //añadimos los listeners de eventos
         //ejemplo : _activeTrackers.Add(new PrgressionTracker())
+        _events = new CircularBuffer<TrackerEvent>(_eventTrackerSize);
+    }
+
+    //Método que se encarga de recibir eventos
+    public void AddEvent(TrackerEvent e)
+    {
+        _events.Add(e);
     }
 
     //Metodo que se encarga de cerrar el tracker
@@ -52,6 +62,7 @@ public class Tracker
     }
 
     //Metodo para enviar el evento a la cola de envios
+    //COMENTARIO: El nombre de este método me parece algo confuso, creo que mejor cambiarlo
     public void TrackEvent(int ev)
     {
         //El tracker recorre todas las estrategias de persistencia
