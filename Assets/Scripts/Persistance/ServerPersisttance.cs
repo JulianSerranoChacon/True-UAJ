@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class ServerPersisttance : IPersistance
 {
-    public void Send()
+    override public void Send(Event ev)
     {
 
     }
 
-    public void Flush()
+    override public void Flush()
     {
         Debug.Log("Se estan guardando los eventos en el servidor...");
         //Logica para guardar en servidor los eventos...

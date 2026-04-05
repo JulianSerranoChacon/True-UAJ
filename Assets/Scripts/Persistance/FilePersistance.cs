@@ -9,14 +9,14 @@ public class FilePersistance : IPersistance {
 
     //Habria que implementar aqui la cola circular
 
-    public void Send()
+   override public void Send(Event ev)
     {
         //Aqui habria que meter el evento en la cola circular y
         //definir la frecuencia con la que vamos a volcar los datos de dicha cola al disco...
 
     }
 
-    public void Flush()
+    override public void Flush()
     {
         Debug.Log("Se estan guardando los eventos en el disco");
         //Logica para guardar en disco los eventos...
