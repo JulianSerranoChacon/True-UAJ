@@ -9,11 +9,11 @@ public class FilePersistance : IPersistance {
 
     CircularBuffer<Event> CBuffer;
     //Placeholder hasta que decidamos la frecuencia
-    int queueSize = 500;
+    const int QUEUESIZE = 500;
     //Habria que implementar aqui la cola circular
     override public void Init()
     {
-       CBuffer= new CircularBuffer<Event> (queueSize);
+       CBuffer= new CircularBuffer<Event> (QUEUESIZE);
     }
    override public void Send(Event ev)
     {
