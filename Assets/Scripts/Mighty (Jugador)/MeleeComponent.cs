@@ -38,8 +38,13 @@ public class MeleeComponent : MonoBehaviour
 
     #region Methods
     //WIP: Falta hacer que al darle a la tecla de atacar, haga aleatoriamente (una u otra) las animaciones "Attack 1" y "Attack 2". Por el momento s�lo he puesto "Attack 1".
-    public void Attack()   
+    public void Attack()
     {
+        ////Sistema de Telemetria
+        ////Envia datos al TRACKER del Sistema de Telemetria
+        //Tracker.Instance.AddEvent(new PlayerMelee());
+        ////Sistema de Telemetria
+
         if (Time.time >= nextAttackTime) 
         {
             nextAttackTime = Time.time + 1f / attackRate;    
@@ -51,6 +56,14 @@ public class MeleeComponent : MonoBehaviour
             //"OverlapCircleAll" crea un c�rculo desde el objeto que le digas y del radio que le digas.
             //Funciona as�: OverlapCircleAll("centro","radio","lo que quieras detectar"). Funciona con f�sicas.
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+            ////Sistema de Telemetria
+            //if (hitEnemies.Length > 0)
+            //{
+            //    //Envia datos al TRACKER del Sistema de Telemetria
+            //    Tracker.Instance.AddEvent(new EnemyMeleeHit());
+            //}
+            ////Sistema de Telemetria
 
             //Da�o hacia los enemigos.
 

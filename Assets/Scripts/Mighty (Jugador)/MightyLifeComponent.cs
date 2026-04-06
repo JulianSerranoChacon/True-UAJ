@@ -136,6 +136,19 @@ public class MightyLifeComponent : MonoBehaviour
         }
         else
         {
+            ////Sistema de Telemetria
+            //if (damage != -_maxhealth) //No cuenta revivir como curarse
+            //{
+            //    PlayerHealing playerHealing = new PlayerHealing();
+            //    playerHealing.PreviousHealth = _health + damage; //el damage es negativo, por eso la suma
+            //    playerHealing.HealingAmount = damage * -1;
+            //    playerHealing.FinalHealth = _health;
+
+            //    //Envia datos al TRACKER del Sistema de Telemetria
+            //    Tracker.Instance.AddEvent(playerHealing);
+            //}
+            ////Sistema de Telemetria
+
             if (GameManager.instance._UImanager != null)
             {
                 GameManager.instance._UImanager.ActualizarInterfaz(GetHealth(), false);
@@ -145,6 +158,17 @@ public class MightyLifeComponent : MonoBehaviour
 
         if (_health <= 0)
         {
+            ////Sistema de Telemetria
+            //PlayerDeath playerDeath = new PlayerDeath();
+            //playerDeath.LevelID = SceneManager.GetActiveScene().buildIndex;
+            //playerDeath.CordX = transform.position.x;
+            //playerDeath.CordY = transform.position.y;
+            ////playerDeath.DeathCause hacen falta mas modificaciones
+
+            ////Envia datos al TRACKER del Sistema de Telemetria
+            //Tracker.Instance.AddEvent(playerDeath);
+            ////Sistema de Telemetria
+
             GetComponent<AudioSource>().PlayOneShot(_deathSFX);
             _death = true;
             _boxColiderNormal.enabled = false;
@@ -174,6 +198,19 @@ public class MightyLifeComponent : MonoBehaviour
     {
         if ((collision.gameObject.layer == 22 && _canBeDamaged && collision.gameObject.GetComponent<LanzaLlamasShooting>()._canShootFire) || collision.gameObject.layer == 23)
         {
+            ////Sistema de Telemetria
+            //PlayerHit playerHit = new PlayerHit();
+            //playerHit.LevelID = SceneManager.GetActiveScene().buildIndex;
+            //playerHit.CordX = transform.position.x;
+            //playerHit.CordY = transform.position.y;
+            ////playerHit.HitCause hacen falta mas modificaciones
+            //playerHit.HitDamage = _fireDamage;
+            //playerHit.CurrentHealth = _health - _fireDamage;
+
+            ////Envia datos al TRACKER del Sistema de Telemetria
+            //Tracker.Instance.AddEvent(playerHit);
+            ////Sistema de Telemetria
+
             OnPlayerHit(_fireDamage);
         }
     }

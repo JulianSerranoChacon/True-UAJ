@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -102,6 +103,15 @@ public class GameManager : MonoBehaviour
             _player.GetComponent<PauseMenu>().enabled = false;
             if (_characterController._doorTouched)
             {
+                ////Sistema de Telemetria
+                //PlayerEnd playerEnd = new PlayerEnd();
+                //playerEnd.LevelID = SceneManager.GetActiveScene().buildIndex;
+                //playerEnd.CurrentHealth = _mightyLifeComponent.GetHealth();
+
+                ////Envia datos al TRACKER del Sistema de Telemetria
+                //Tracker.Instance.AddEvent(playerEnd);
+                ////Sistema de Telemetria
+
                 _canExitLevel = true;
             }
 
