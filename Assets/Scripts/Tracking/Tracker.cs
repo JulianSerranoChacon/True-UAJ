@@ -45,7 +45,7 @@ public class Tracker
         _events = new CircularBuffer<TrackerEvent>(_eventTrackerSize);
     }
 
-    //M�todo que se encarga de recibir eventos
+    //Metodo que se encarga de recibir eventos
     public void AddEvent(TrackerEvent e)
     {
         _events.Add(e);
