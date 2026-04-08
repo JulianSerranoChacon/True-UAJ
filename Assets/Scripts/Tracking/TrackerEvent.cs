@@ -26,7 +26,7 @@ public class TrackerEvent
     // Virtual para poder sobreescrinir
     virtual public string ToJson()
     {
-        return "{\ntype: father\n" + this.parentToJson() + "\n}"; 
+        return "{\n\"type\": \"father\"\n" + this.parentToJson() + "\n}"; 
     }
 
     // Metodo para sacar los datos de la clase padre
