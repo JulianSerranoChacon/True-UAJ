@@ -136,18 +136,7 @@ public class MightyLifeComponent : MonoBehaviour
         }
         else
         {
-            ////Sistema de Telemetria
-            //if (damage != -_maxhealth) //No cuenta revivir como curarse
-            //{
-            //    PlayerHealing playerHealing = new PlayerHealing();
-            //    playerHealing.PreviousHealth = _health + damage; //el damage es negativo, por eso la suma
-            //    playerHealing.HealingAmount = damage * -1;
-            //    playerHealing.FinalHealth = _health;
-
-            //    //Envia datos al TRACKER del Sistema de Telemetria
-            //    Tracker.Instance.AddEvent(playerHealing);
-            //}
-            ////Sistema de Telemetria
+            //CheckTelemetrySysHealing((damage * -1));
 
             if (GameManager.instance._UImanager != null)
             {
@@ -158,17 +147,6 @@ public class MightyLifeComponent : MonoBehaviour
 
         if (_health <= 0)
         {
-            ////Sistema de Telemetria
-            //PlayerDeath playerDeath = new PlayerDeath();
-            //playerDeath.LevelID = SceneManager.GetActiveScene().buildIndex;
-            //playerDeath.CordX = transform.position.x;
-            //playerDeath.CordY = transform.position.y;
-            ////playerDeath.DeathCause hacen falta mas modificaciones
-
-            ////Envia datos al TRACKER del Sistema de Telemetria
-            //Tracker.Instance.AddEvent(playerDeath);
-            ////Sistema de Telemetria
-
             GetComponent<AudioSource>().PlayOneShot(_deathSFX);
             _death = true;
             _boxColiderNormal.enabled = false;
@@ -183,11 +161,84 @@ public class MightyLifeComponent : MonoBehaviour
         TakeDamage(-_maxhealth);
         //transform.position = _spawnPoint.position;
     }
+
+    //Sistema de Telemetria
+    private void CheckTelemetrySysHealing(float cureAmount)
+    {
+        if (cureAmount != -_maxhealth) //No cuenta revivir como curarse
+        {
+            PlayerHealing playerHealing = new PlayerHealing();
+            playerHealing.TimeStamp = Time.realtimeSinceStartup;
+
+            playerHealing.PreviousHealth = _health - cureAmount;
+            playerHealing.HealingAmount = cureAmount;
+            playerHealing.FinalHealth = _health;
+
+            //Envia datos al TRACKER del Sistema de Telemetria
+            Tracker.Instance.AddEvent(playerHealing);
+        }
+    }
+    //Sistema de Telemetria
+
+    //Sistema de Telemetria
+    private void CheckTelemetrySysDeath()
+    {
+        PlayerDeath playerDeath = new PlayerDeath();
+        playerDeath.TimeStamp = Time.realtimeSinceStartup;
+
+        playerDeath.LevelID = SceneManager.GetActiveScene().buildIndex;
+        playerDeath.CordX = transform.position.x;
+        playerDeath.CordY = transform.position.y;
+        //playerDeath.DeathCause hacen falta mas modificaciones
+
+        //Envia datos al TRACKER del Sistema de Telemetria
+        Tracker.Instance.AddEvent(playerDeath);
+    }
+    //Sistema de Telemetria
+
+    //Sistema de Telemetria
+    private void CheckTelemetrySysLanzallamas()
+    {
+        PlayerHit playerHit = new PlayerHit();
+        playerHit.TimeStamp = Time.realtimeSinceStartup;
+
+        playerHit.LevelID = SceneManager.GetActiveScene().buildIndex;
+        playerHit.CordX = transform.position.x;
+        playerHit.CordY = transform.position.y;
+        //playerHit.HitCause hacen falta mas modificaciones
+        playerHit.HitDamage = _fireDamage;
+        playerHit.CurrentHealth = _health - _fireDamage;
+
+        //Envia datos al TRACKER del Sistema de Telemetria
+        Tracker.Instance.AddEvent(playerHit);
+    }
+    //Sistema de Telemetria
+
+    //Sistema de Telemetria
+    private void CheckTelemetrySysCheckpoint(Collider2D col)
+    {
+
+        if (col.gameObject.GetInstanceID() != Tracker.Instance.TrackerCP_ID || Tracker.Instance.TrackerCP_ID == -1)
+        {
+            Tracker.Instance.TrackerCP_ID = col.gameObject.GetInstanceID();
+            PlayerCheckPoint playerCP = new PlayerCheckPoint();
+            playerCP.TimeStamp = Time.realtimeSinceStartup;
+
+            playerCP.LevelID = SceneManager.GetActiveScene().buildIndex;
+            playerCP.CheckpointID = col.gameObject.GetInstanceID();
+
+            //Envia datos al TRACKER del Sistema de Telemetria
+            Tracker.Instance.AddEvent(playerCP);
+        }
+    }
+    //Sistema de Telemetria
+
     #region collision methods
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.layer == 10)
         {
+            //CheckTelemetrySysDeath();
             _animator.SetTrigger("_damaged");
             GetComponent<AudioSource>().PlayOneShot(_hurt);
             TakeDamage(GetHealth());
@@ -198,19 +249,7 @@ public class MightyLifeComponent : MonoBehaviour
     {
         if ((collision.gameObject.layer == 22 && _canBeDamaged && collision.gameObject.GetComponent<LanzaLlamasShooting>()._canShootFire) || collision.gameObject.layer == 23)
         {
-            ////Sistema de Telemetria
-            //PlayerHit playerHit = new PlayerHit();
-            //playerHit.LevelID = SceneManager.GetActiveScene().buildIndex;
-            //playerHit.CordX = transform.position.x;
-            //playerHit.CordY = transform.position.y;
-            ////playerHit.HitCause hacen falta mas modificaciones
-            //playerHit.HitDamage = _fireDamage;
-            //playerHit.CurrentHealth = _health - _fireDamage;
-
-            ////Envia datos al TRACKER del Sistema de Telemetria
-            //Tracker.Instance.AddEvent(playerHit);
-            ////Sistema de Telemetria
-
+            //CheckTelemetrySysLanzallamas();
             OnPlayerHit(_fireDamage);
         }
     }
@@ -252,6 +291,7 @@ public class MightyLifeComponent : MonoBehaviour
         //si tocamos checkpoint, guardamos su transform
         if (other.gameObject.layer == 24)
         {
+            //CheckTelemetrySysCheckpoint(other);
             SpawnsManager.instance.SetRespawnPosition(gameObject.transform.position);
         }
     }

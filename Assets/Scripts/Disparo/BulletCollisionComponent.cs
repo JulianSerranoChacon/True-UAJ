@@ -45,35 +45,7 @@ public class BulletCollisionComponent : MonoBehaviour
         }
         else if (collision.GetComponent<MightyLifeComponent>() != null && collision.gameObject.GetComponent<MightyLifeComponent>()._canBeDamaged && _enemysBulletDamage != 0)
         {
-            ////Sistema de Telemetria
-            //if (collision.gameObject.GetComponent<MightyLifeComponent>().GetHealth() - _enemysBulletDamage > 0)
-            //{
-            //    //Sistema de Telemetria
-            //    PlayerHit playerHit = new PlayerHit();
-            //    playerHit.LevelID = SceneManager.GetActiveScene().buildIndex;
-            //    playerHit.CordX = transform.position.x;
-            //    playerHit.CordY = transform.position.y;
-            //    //playerHit.HitCause hacen falta mas modificaciones
-            //    playerHit.HitDamage = _enemysBulletDamage;
-            //    playerHit.CurrentHealth = collision.gameObject.GetComponent<MightyLifeComponent>().GetHealth() - _enemysBulletDamage;
-
-            //    //Envia datos al TRACKER del Sistema de Telemetria
-            //    Tracker.Instance.AddEvent(playerHit);
-            //}
-            //else
-            //{
-            //    //Sistema de Telemetria
-            //    PlayerDeath playerDeath = new PlayerDeath();
-            //    playerDeath.LevelID = SceneManager.GetActiveScene().buildIndex;
-            //    playerDeath.CordX = transform.position.x;
-            //    playerDeath.CordY = transform.position.y;
-            //    //playerDeath.DeathCause hacen falta mas modificaciones
-
-            //    //Envia datos al TRACKER del Sistema de Telemetria
-            //    Tracker.Instance.AddEvent(playerDeath);
-            //}
-            ////Sistema de Telemetria
-
+            //CheckTelemetrySys(collision);
             collision.GetComponent<MightyLifeComponent>().OnPlayerHit(_enemysBulletDamage);
         }
     }
@@ -251,6 +223,42 @@ public class BulletCollisionComponent : MonoBehaviour
         }
     } 
     #endregion
+
+    //Sistema de Telemetria
+    private void CheckTelemetrySys(GameObject col)
+    {
+        if (col.gameObject.GetComponent<MightyLifeComponent>().GetHealth() - _enemysBulletDamage > 0)
+        {
+            //Sistema de Telemetria
+            PlayerHit playerHit = new PlayerHit();
+            playerHit.TimeStamp = Time.realtimeSinceStartup;
+
+            playerHit.LevelID = SceneManager.GetActiveScene().buildIndex;
+            playerHit.CordX = transform.position.x;
+            playerHit.CordY = transform.position.y;
+            //playerHit.HitCause hacen falta mas modificaciones
+            playerHit.HitDamage = _enemysBulletDamage;
+            playerHit.CurrentHealth = col.gameObject.GetComponent<MightyLifeComponent>().GetHealth() - _enemysBulletDamage;
+
+            //Envia datos al TRACKER del Sistema de Telemetria
+            Tracker.Instance.AddEvent(playerHit);
+        }
+        else
+        {
+            //Sistema de Telemetria
+            PlayerDeath playerDeath = new PlayerDeath();
+            playerDeath.TimeStamp = Time.realtimeSinceStartup;
+
+            playerDeath.LevelID = SceneManager.GetActiveScene().buildIndex;
+            playerDeath.CordX = transform.position.x;
+            playerDeath.CordY = transform.position.y;
+            //playerDeath.DeathCause hacen falta mas modificaciones
+
+            //Envia datos al TRACKER del Sistema de Telemetria
+            Tracker.Instance.AddEvent(playerDeath);
+        }
+    }
+    //Sistema de Telemetria
 
     #endregion
 
