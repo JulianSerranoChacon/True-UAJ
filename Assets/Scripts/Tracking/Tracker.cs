@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Cinemachine.DocumentationSortingAttribute;
 
 //Clase que representa el Tracker de eventos
 public class Tracker
@@ -17,6 +18,9 @@ public class Tracker
     //Cola circular para almacenar eventos
     CircularBuffer<TrackerEvent> _events;
     [SerializeField] int _eventTrackerSize;
+
+    //ID del ultimo checkpoint tocado
+    private int trackerCP_ID;
 
     //Acceso a la instancia unica del tracker
     public static Tracker Instance
@@ -73,5 +77,11 @@ public class Tracker
         }
     }
 
+    //Metodo para obtener o cambiar el ID del ultimo checkpoint tocado
+    public int TrackerCP_ID
+    {
+        get { return trackerCP_ID; }
+        set { trackerCP_ID = value; }
+    }
 
 }
