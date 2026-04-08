@@ -8,7 +8,7 @@ using UnityEngine;
 public class FilePersistance : IPersistance {
 
 
-   override public void Send(Event ev)
+   override public void Send(TrackerEvent ev)
     {
         //Aqui habria que meter el evento en la cola circular y
         //definir la frecuencia con la que vamos a volcar los datos de dicha cola al disco...

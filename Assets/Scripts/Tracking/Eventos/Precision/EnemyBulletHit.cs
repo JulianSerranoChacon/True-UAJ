@@ -4,6 +4,6 @@ public class EnemyBulletHit : TrackerEvent
 
     public override string ToJson()
     {
-        return "{\ntype: enBulHit\n" + this.parentToJson() + "\n}";
+        return "{\n\"type\": \"enBulHit\"\n" + this.parentToJson() + "\n}";
     }
 }

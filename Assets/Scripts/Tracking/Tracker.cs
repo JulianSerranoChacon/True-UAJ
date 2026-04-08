@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static Cinemachine.DocumentationSortingAttribute;
+using UnityEngine.Analytics;
 
 //Clase que representa el Tracker de eventos
 public class Tracker
@@ -68,7 +68,7 @@ public class Tracker
     }
 
     //Metodo para enviar el evento a la cola de envios
-    public void TrackEvent(Event ev)
+    public void EventTracking(TrackerEvent ev)
     {
         //El tracker recorre todas las estrategias de persistencia
         foreach (var stratergy in _persistenceObjects)
@@ -82,6 +82,17 @@ public class Tracker
     {
         get { return trackerCP_ID; }
         set { trackerCP_ID = value; }
+    }
+
+    //Metodo para obtener el tiempo y la ID
+    public double GetEventTime()
+    {
+        return AnalyticsSessionInfo.sessionElapsedTime;
+    }
+
+    public long GetSesionID()
+    {
+        return AnalyticsSessionInfo.sessionId;
     }
 
 }

@@ -1,20 +1,20 @@
 public class TrackerEvent 
 {
 
-    private int sessionID;
-    private float timeStamp;
+    private long sessionID;
+    private double timeStamp;
 
     #region Bean 
     //Constructor vacio, getters y setters publicos - Patron Bean/POYO
     public TrackerEvent() { }
 
-    public int SessionID
+    public long SessionID
     {
         get { return sessionID; }
         set { sessionID = value; }
     }
 
-    public float TimeStamp
+    public double TimeStamp
     {
         get { return timeStamp; }
         set { timeStamp = value; }  
@@ -33,7 +33,7 @@ public class TrackerEvent
     // y no tener que repetir texto
     protected string parentToJson()
     {
-        return "time: " + timeStamp + ",\nsesID: " + sessionID; 
+        return "\"time\": " + timeStamp + ",\n\"sesID\": " + sessionID; 
     }
     #endregion
 }

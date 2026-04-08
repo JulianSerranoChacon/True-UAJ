@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ServerPersisttance : IPersistance
 {
-    override public void Send(Event ev)
+    override public void Send(TrackerEvent ev)
     {
 
     }

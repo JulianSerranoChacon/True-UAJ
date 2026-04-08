@@ -5,7 +5,7 @@ using UnityEngine;
 public class JsonSerializer : ISerializer
 {
      
-    override public string SerializeEvent(Event ev)
+    override public string SerializeEvent(TrackerEvent ev)
     {
         return JsonUtility.ToJson(ev);
     }
@@ -13,12 +13,14 @@ public class JsonSerializer : ISerializer
     public override string SerializeTrackingQueue(CircularBuffer<TrackerEvent> evQ)
     {
         //Copiarlo a lo mejor para no vaciar la cola de eventos???
-        string result = "";
+        string result = "{\n";
 
         while (evQ.Peek() != null)
         {
             result += evQ.Read().ToJson();
         }
+
+        result += "}";
 
         return result;
     }
