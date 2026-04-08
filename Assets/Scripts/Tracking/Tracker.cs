@@ -38,7 +38,9 @@ public class Tracker
     {
         //Seteamos el tipo de estrategia de persistencia que vayamos a usar
         //De momento solo persistencia en disco, si da tiempo, en red
-        _persistenceObjects.Add(new FilePersistance());
+        FilePersistance fp = new FilePersistance();
+        fp.Init();
+        _persistenceObjects.Add(fp);
 
         //a�adimos los listeners de eventos
         //ejemplo : _activeTrackers.Add(new PrgressionTracker())

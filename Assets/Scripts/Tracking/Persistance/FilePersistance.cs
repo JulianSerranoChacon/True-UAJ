@@ -7,20 +7,12 @@ using UnityEngine;
 //Peristencia en disco
 public class FilePersistance : IPersistance {
 
-    CircularBuffer<Event> CBuffer;
-    //Placeholder hasta que decidamos la frecuencia
-    const int QUEUESIZE = 500;
-    //Habria que implementar aqui la cola circular
-    override public void Init()
-    {
-       CBuffer= new CircularBuffer<Event> (QUEUESIZE);
-    }
+
    override public void Send(Event ev)
     {
-        CBuffer.Add (ev);
         //Aqui habria que meter el evento en la cola circular y
         //definir la frecuencia con la que vamos a volcar los datos de dicha cola al disco...
-
+        CBuffer.Add(ev);    
     }
 
     override public void Flush()

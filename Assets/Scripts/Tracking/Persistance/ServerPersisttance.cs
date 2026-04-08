@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class ServerPersisttance : IPersistance
 {
-    public override void Init()
-    {
-        
-    }
     override public void Send(Event ev)
     {
 
