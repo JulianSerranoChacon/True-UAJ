@@ -5,7 +5,7 @@ using UnityEngine;
 public class JsonSerializer : ISerializer
 {
      
-    override public string SerializeEvent(Event ev)
+    override public string SerializeEvent(TrackerEvent ev)
     {
         return JsonUtility.ToJson(ev);
     }
