@@ -64,6 +64,21 @@ public class GameManager : MonoBehaviour
     {
         return (_escena != 2 && _escena != 3); //Se le puede comparar sin necesidad de poner el nombre de la escena? No lo se
     }
+
+    //Sistema de Telemetria
+    private void CheckTelemetrySys()
+    {
+        Tracker.Instance.TrackerCP_ID = -1;
+        PlayerEnd playerEnd = new PlayerEnd();
+        playerEnd.TimeStamp = Time.realtimeSinceStartup;
+
+        playerEnd.LevelID = SceneManager.GetActiveScene().buildIndex;
+        playerEnd.CurrentHealth = _mightyLifeComponent.GetHealth();
+
+        //Envia datos al TRACKER del Sistema de Telemetria
+        Tracker.Instance.AddEvent(playerEnd);
+    }
+    //Sistema de Telemetria
     #endregion
 
     // awake para la instancia de la clase
@@ -103,15 +118,7 @@ public class GameManager : MonoBehaviour
             _player.GetComponent<PauseMenu>().enabled = false;
             if (_characterController._doorTouched)
             {
-                ////Sistema de Telemetria
-                //PlayerEnd playerEnd = new PlayerEnd();
-                //playerEnd.LevelID = SceneManager.GetActiveScene().buildIndex;
-                //playerEnd.CurrentHealth = _mightyLifeComponent.GetHealth();
-
-                ////Envia datos al TRACKER del Sistema de Telemetria
-                //Tracker.Instance.AddEvent(playerEnd);
-                ////Sistema de Telemetria
-
+                //CheckTelemetrySys();
                 _canExitLevel = true;
             }
 
