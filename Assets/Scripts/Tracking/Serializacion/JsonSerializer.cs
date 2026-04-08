@@ -13,12 +13,14 @@ public class JsonSerializer : ISerializer
     public override string SerializeTrackingQueue(CircularBuffer<TrackerEvent> evQ)
     {
         //Copiarlo a lo mejor para no vaciar la cola de eventos???
-        string result = "";
+        string result = "{\n";
 
         while (evQ.Peek() != null)
         {
             result += evQ.Read().ToJson();
         }
+
+        result += "}";
 
         return result;
     }

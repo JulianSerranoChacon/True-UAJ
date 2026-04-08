@@ -4,6 +4,6 @@ public class PlayerShoot : TrackerEvent
 
     public override string ToJson()
     {
-        return "{\ntype: playShot\n" + this.parentToJson() + "\n}";
+        return "{\n\"type\": \"playShot\"\n" + this.parentToJson() + "\n}";
     }
 }
