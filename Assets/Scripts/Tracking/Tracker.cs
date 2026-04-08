@@ -64,7 +64,7 @@ public class Tracker
     }
 
     //Metodo para enviar el evento a la cola de envios
-    public void TrackEvent(Event ev)
+    public void EventTracking(TrackerEvent ev)
     {
         //El tracker recorre todas las estrategias de persistencia
         foreach (var stratergy in _persistenceObjects)
