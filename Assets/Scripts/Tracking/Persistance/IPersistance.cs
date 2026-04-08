@@ -1,15 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 //Interfaz del tipo de sistema de persistencia a implementar
 public abstract class IPersistance
 {
     protected CircularBuffer<TrackerEvent> CBuffer;
+    protected StreamWriter sw;
     protected const int QueueSize = 500;
-    public void Init()
+    ISerializer serializer;
+    public void Init(ISerializer Is)
     {
+        serializer = Is;
         CBuffer=new CircularBuffer<TrackerEvent>(QueueSize);
+        sw = new StreamWriter(Application.dataPath + "/NewTextFile.json", true);
     }
    abstract public void Send(TrackerEvent ev);
 
