@@ -8,22 +8,13 @@ using UnityEngine;
 public class FilePersistance : IPersistance {
 
 
-   override public void Send(TrackerEvent ev)
-    {
-        //Aqui habria que meter el evento en la cola circular y
-        //definir la frecuencia con la que vamos a volcar los datos de dicha cola al disco...
-
-        CBuffer.Add(ev);    
-    }
-
     override public void Flush(CircularBuffer<TrackerEvent>evq)
     {
-        CBuffer = evq;
 
         Debug.Log("Se estan guardando los eventos en el disco");
         //Logica para guardar en disco los eventos...
         //Codigo de experimento de persistencia
-        string eventos = serializer.SerializeTrackingQueue(CBuffer);
+        string eventos = serializer.SerializeTrackingQueue(evq);
          sw.WriteLine(eventos);
         
         AssetDatabase.Refresh();

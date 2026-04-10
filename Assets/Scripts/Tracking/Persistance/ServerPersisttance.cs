@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class ServerPersisttance : IPersistance
 {
-    override public void Send(TrackerEvent ev)
-    {
-
-    }
-
     override public void Flush(CircularBuffer<TrackerEvent> evq)
     {
         Debug.Log("Se estan guardando los eventos en el servidor...");

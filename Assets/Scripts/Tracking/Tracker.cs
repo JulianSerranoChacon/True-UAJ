@@ -73,7 +73,7 @@ public class Tracker
         //El tracker recorre todas las estrategias de persistencia
         foreach (var stratergy in _persistenceObjects)
         {
-            stratergy.Send(ev);
+       
         }
     }
 
