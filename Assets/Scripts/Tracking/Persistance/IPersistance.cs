@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using UnityEngine;
 
@@ -7,10 +8,17 @@ public abstract class IPersistance
     protected CircularBuffer<TrackerEvent> CBuffer;
     protected StreamWriter sw;
     protected ISerializer serializer;
-    public void Init(ISerializer Is)
+    public void Init(ISerializer Is, String fileName)
     {
         serializer = Is;
-        sw = new StreamWriter(Application.dataPath + "/NewTextFile.json", true);
+        try
+        {
+            sw = new StreamWriter(Application.dataPath + "/"+fileName+".json", true);
+        }
+        catch (ArgumentException e)
+        {
+            Debug.LogError(e.Message);
+        }
     }
    abstract public void Send(TrackerEvent ev);
 

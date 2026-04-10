@@ -43,7 +43,7 @@ public class Tracker
         //Seteamos el tipo de estrategia de persistencia que vayamos a usar
         //De momento solo persistencia en disco, si da tiempo, en red
         FilePersistance fp = new FilePersistance();
-        fp.Init(new JsonSerializer());
+        fp.Init(new JsonSerializer(),GetSesionID().ToString());
         _persistenceObjects.Add(fp);
 
         //a�adimos los listeners de eventos
@@ -63,7 +63,7 @@ public class Tracker
         //Antes debemos asegurarnos de que no queden elementos en la cola.. hacemos el volcado de los datos que falten
         foreach(var stratergy in _persistenceObjects)
         {
-            stratergy.Flush();
+            stratergy.Flush(_events);
         }
     }
 
