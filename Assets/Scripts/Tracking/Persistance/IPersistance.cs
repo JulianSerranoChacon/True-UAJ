@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
@@ -8,16 +6,14 @@ public abstract class IPersistance
 {
     protected CircularBuffer<TrackerEvent> CBuffer;
     protected StreamWriter sw;
-    protected const int QueueSize = 500;
-    ISerializer serializer;
+    protected ISerializer serializer;
     public void Init(ISerializer Is)
     {
         serializer = Is;
-        CBuffer=new CircularBuffer<TrackerEvent>(QueueSize);
         sw = new StreamWriter(Application.dataPath + "/NewTextFile.json", true);
     }
    abstract public void Send(TrackerEvent ev);
 
     //Metodo para el volacado de los datos de la cola para persistir los datos
-    abstract public void Flush();
+    abstract public void Flush(CircularBuffer<TrackerEvent> evq);
 }

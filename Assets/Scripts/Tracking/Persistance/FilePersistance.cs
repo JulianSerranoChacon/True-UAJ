@@ -16,13 +16,14 @@ public class FilePersistance : IPersistance {
         CBuffer.Add(ev);    
     }
 
-    override public void Flush()
+    override public void Flush(CircularBuffer<TrackerEvent>evq)
     {
+        CBuffer = evq;
+
         Debug.Log("Se estan guardando los eventos en el disco");
         //Logica para guardar en disco los eventos...
         //Codigo de experimento de persistencia
-        JsonSerializer js = new JsonSerializer();
-        string eventos = js.SerializeTrackingQueue(CBuffer);
+        string eventos = serializer.SerializeTrackingQueue(CBuffer);
          sw.WriteLine(eventos);
         
         AssetDatabase.Refresh();
