@@ -15,9 +15,10 @@ public abstract class IPersistance
         {
             sw = new StreamWriter(Application.dataPath + "/"+fileName+".json", true);
         }
-        catch (ArgumentException e)
+        catch (ArgumentNullException e)
         {
             Debug.LogError(e.Message);
+            throw e;
         }
     }
    abstract public void Send(TrackerEvent ev);
