@@ -133,7 +133,19 @@ public class EnemyHealth : MonoBehaviour
             playerHit.LevelID = SceneManager.GetActiveScene().buildIndex;
             playerHit.CordX = transform.position.x;
             playerHit.CordY = transform.position.y;
-            //playerHit.HitCause hacen falta mas modificaciones
+
+            if (GetComponent<EnemyMovement>() != null)
+            {
+                playerHit.HitCause = cause.Enem1;
+            }
+            else if (GetComponent<EnemyFlyingMovement>() != null)
+            {
+                playerHit.HitCause = cause.Enem3;
+            }
+            else
+            {
+                playerHit.HitCause = cause.Enem2;
+            }
             playerHit.HitDamage = _damage;
             playerHit.CurrentHealth = col.gameObject.GetComponent<MightyLifeComponent>().GetHealth() - _damage;
 
@@ -149,7 +161,19 @@ public class EnemyHealth : MonoBehaviour
             playerDeath.LevelID = SceneManager.GetActiveScene().buildIndex;
             playerDeath.CordX = transform.position.x;
             playerDeath.CordY = transform.position.y;
-            //playerDeath.DeathCause hacen falta mas modificaciones
+
+            if (GetComponent<EnemyMovement>() != null)
+            {
+                playerDeath.DeathCause = cause.Enem1;
+            }
+            else if (GetComponent<EnemyFlyingMovement>() != null)
+            {
+                playerDeath.DeathCause = cause.Enem3;
+            }
+            else
+            {
+                playerDeath.DeathCause = cause.Enem2;
+            }
 
             //Envia datos al TRACKER del Sistema de Telemetria
             Tracker.Instance.AddEvent(playerDeath);

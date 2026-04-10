@@ -8,6 +8,18 @@ public class SpawnsManager : MonoBehaviour
     private static Vector3 _respawnPosition;
     private static float _finishedGame = 0;
 
+
+    //ID del ultimo checkpoint tocado
+    private int trackerCP_ID;
+
+
+    //Metodo para obtener o cambiar el ID del ultimo checkpoint tocado
+    public int TrackerCP_ID
+    {
+        get { return trackerCP_ID; }
+        set { trackerCP_ID = value; }
+    }
+
     public void SetfinishedGame(float finished)
     {
         _finishedGame = finished;

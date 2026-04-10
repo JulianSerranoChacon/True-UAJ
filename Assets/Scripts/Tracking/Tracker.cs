@@ -19,9 +19,6 @@ public class Tracker
     CircularBuffer<TrackerEvent> _events;
     [SerializeField] int _eventTrackerSize;
 
-    //ID del ultimo checkpoint tocado
-    private int trackerCP_ID;
-
     //Acceso a la instancia unica del tracker
     public static Tracker Instance
     {
@@ -75,13 +72,6 @@ public class Tracker
         {
        
         }
-    }
-
-    //Metodo para obtener o cambiar el ID del ultimo checkpoint tocado
-    public int TrackerCP_ID
-    {
-        get { return trackerCP_ID; }
-        set { trackerCP_ID = value; }
     }
 
     //Metodo para obtener el tiempo y la ID

@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
     //Sistema de Telemetria
     private void CheckTelemetrySys()
     {
-        Tracker.Instance.TrackerCP_ID = -1;
+        SpawnsManager.instance.TrackerCP_ID = -1;
         PlayerEnd playerEnd = new PlayerEnd();
         playerEnd.TimeStamp = Time.realtimeSinceStartup;
 

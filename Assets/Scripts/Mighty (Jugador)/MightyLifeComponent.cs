@@ -181,7 +181,7 @@ public class MightyLifeComponent : MonoBehaviour
     //Sistema de Telemetria
 
     //Sistema de Telemetria
-    private void CheckTelemetrySysDeath()
+    private void CheckTelemetrySysSpikesDeath()
     {
         PlayerDeath playerDeath = new PlayerDeath();
         playerDeath.TimeStamp = Time.realtimeSinceStartup;
@@ -189,7 +189,7 @@ public class MightyLifeComponent : MonoBehaviour
         playerDeath.LevelID = SceneManager.GetActiveScene().buildIndex;
         playerDeath.CordX = transform.position.x;
         playerDeath.CordY = transform.position.y;
-        //playerDeath.DeathCause hacen falta mas modificaciones
+        playerDeath.DeathCause = cause.Spikes;
 
         //Envia datos al TRACKER del Sistema de Telemetria
         Tracker.Instance.AddEvent(playerDeath);
@@ -199,18 +199,34 @@ public class MightyLifeComponent : MonoBehaviour
     //Sistema de Telemetria
     private void CheckTelemetrySysLanzallamas()
     {
-        PlayerHit playerHit = new PlayerHit();
-        playerHit.TimeStamp = Time.realtimeSinceStartup;
+        if (_health > 0)
+        {
+            PlayerHit playerHit = new PlayerHit();
+            playerHit.TimeStamp = Time.realtimeSinceStartup;
 
-        playerHit.LevelID = SceneManager.GetActiveScene().buildIndex;
-        playerHit.CordX = transform.position.x;
-        playerHit.CordY = transform.position.y;
-        //playerHit.HitCause hacen falta mas modificaciones
-        playerHit.HitDamage = _fireDamage;
-        playerHit.CurrentHealth = _health - _fireDamage;
+            playerHit.LevelID = SceneManager.GetActiveScene().buildIndex;
+            playerHit.CordX = transform.position.x;
+            playerHit.CordY = transform.position.y;
+            playerHit.HitCause = cause.Fire;
+            playerHit.HitDamage = _fireDamage;
+            playerHit.CurrentHealth = _health - _fireDamage;
 
-        //Envia datos al TRACKER del Sistema de Telemetria
-        Tracker.Instance.AddEvent(playerHit);
+            //Envia datos al TRACKER del Sistema de Telemetria
+            Tracker.Instance.AddEvent(playerHit);
+        }
+        else
+        {
+            PlayerDeath playerDeath = new PlayerDeath();
+            playerDeath.TimeStamp = Time.realtimeSinceStartup;
+
+            playerDeath.LevelID = SceneManager.GetActiveScene().buildIndex;
+            playerDeath.CordX = transform.position.x;
+            playerDeath.CordY = transform.position.y;
+            playerDeath.DeathCause = cause.Fire;
+
+            //Envia datos al TRACKER del Sistema de Telemetria
+            Tracker.Instance.AddEvent(playerDeath);
+        }
     }
     //Sistema de Telemetria
 
@@ -218,9 +234,9 @@ public class MightyLifeComponent : MonoBehaviour
     private void CheckTelemetrySysCheckpoint(Collider2D col)
     {
 
-        if (col.gameObject.GetInstanceID() != Tracker.Instance.TrackerCP_ID || Tracker.Instance.TrackerCP_ID == -1)
+        if (col.gameObject.GetInstanceID() != SpawnsManager.instance.TrackerCP_ID || SpawnsManager.instance.TrackerCP_ID == -1)
         {
-            Tracker.Instance.TrackerCP_ID = col.gameObject.GetInstanceID();
+            SpawnsManager.instance.TrackerCP_ID = col.gameObject.GetInstanceID();
             PlayerCheckPoint playerCP = new PlayerCheckPoint();
             playerCP.TimeStamp = Time.realtimeSinceStartup;
 
@@ -238,7 +254,7 @@ public class MightyLifeComponent : MonoBehaviour
     {
         if (collision.gameObject.layer == 10)
         {
-            //CheckTelemetrySysDeath();
+            //CheckTelemetrySysSpikesDeath();
             _animator.SetTrigger("_damaged");
             GetComponent<AudioSource>().PlayOneShot(_hurt);
             TakeDamage(GetHealth());
@@ -249,8 +265,8 @@ public class MightyLifeComponent : MonoBehaviour
     {
         if ((collision.gameObject.layer == 22 && _canBeDamaged && collision.gameObject.GetComponent<LanzaLlamasShooting>()._canShootFire) || collision.gameObject.layer == 23)
         {
-            //CheckTelemetrySysLanzallamas();
             OnPlayerHit(_fireDamage);
+            //CheckTelemetrySysLanzallamas();
         }
     }
 

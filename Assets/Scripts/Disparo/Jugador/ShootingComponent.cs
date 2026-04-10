@@ -45,8 +45,10 @@ public class ShootingComponent : MonoBehaviour
     // instanciamos la bala en la posici�n del spawn (cuidado no es hija suya, no confundir con la sobrecarga del transform del parent)
     {
         ////Sistema de Telemetria
+        //PlayerShoot playerShoot = new PlayerShoot();
+        //playerShoot.TimeStamp = Time.realtimeSinceStartup;
         ////Envia datos al TRACKER del Sistema de Telemetria
-        //Tracker.Instance.AddEvent(new PlayerShoot());
+        //Tracker.Instance.AddEvent(playerShoot);
         ////Sistema de Telemetria
 
         GetComponent<AudioSource>().PlayOneShot(_disparoNormal);

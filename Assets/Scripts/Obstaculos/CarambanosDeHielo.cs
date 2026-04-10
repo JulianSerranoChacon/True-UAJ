@@ -45,7 +45,7 @@ public class CarambanosDeHielo : MonoBehaviour
             playerHit.LevelID = SceneManager.GetActiveScene().buildIndex;
             playerHit.CordX = transform.position.x;
             playerHit.CordY = transform.position.y;
-            //playerHit.HitCause hacen falta mas modificaciones
+            playerHit.HitCause = cause.Ice;
             playerHit.HitDamage = _damage;
             playerHit.CurrentHealth = collision.gameObject.GetComponent<MightyLifeComponent>().GetHealth() - _damage;
 
@@ -61,7 +61,7 @@ public class CarambanosDeHielo : MonoBehaviour
             playerDeath.LevelID = SceneManager.GetActiveScene().buildIndex;
             playerDeath.CordX = transform.position.x;
             playerDeath.CordY = transform.position.y;
-            //playerDeath.DeathCause hacen falta mas modificaciones
+            playerDeath.DeathCause = cause.Ice;
 
             //Envia datos al TRACKER del Sistema de Telemetria
             Tracker.Instance.AddEvent(playerDeath);

@@ -37,8 +37,10 @@ public class BulletCollisionComponent : MonoBehaviour
         if (collision.GetComponent<EnemyHealth>() != null && _enemysBulletDamage == 0)
         {
             ////Sistema de Telemetria
+            //EnemyBulletHit bulletHit = new EnemyBulletHit();
+            //bulletHit.TimeStamp = Time.realtimeSinceStartup;
             ////Envia datos al TRACKER del Sistema de Telemetria
-            //Tracker.Instance.AddEvent(new EnemyBulletHit());
+            //Tracker.Instance.AddEvent(bulletHit);
             ////Sistema de Telemetria
 
             OnHitEnemy(collision);
@@ -236,7 +238,7 @@ public class BulletCollisionComponent : MonoBehaviour
             playerHit.LevelID = SceneManager.GetActiveScene().buildIndex;
             playerHit.CordX = transform.position.x;
             playerHit.CordY = transform.position.y;
-            //playerHit.HitCause hacen falta mas modificaciones
+            playerHit.HitCause = cause.Enem2;
             playerHit.HitDamage = _enemysBulletDamage;
             playerHit.CurrentHealth = col.gameObject.GetComponent<MightyLifeComponent>().GetHealth() - _enemysBulletDamage;
 
@@ -252,7 +254,7 @@ public class BulletCollisionComponent : MonoBehaviour
             playerDeath.LevelID = SceneManager.GetActiveScene().buildIndex;
             playerDeath.CordX = transform.position.x;
             playerDeath.CordY = transform.position.y;
-            //playerDeath.DeathCause hacen falta mas modificaciones
+            playerDeath.DeathCause = cause.Enem2;
 
             //Envia datos al TRACKER del Sistema de Telemetria
             Tracker.Instance.AddEvent(playerDeath);

@@ -1,4 +1,4 @@
-public enum cause { Spikes, Enem1, Enem2, Enem3};
+public enum cause { Spikes, Enem1, Enem2, Enem3, Ice, Fire};
 
 public class PlayerDeath : TrackerEvent
 {
