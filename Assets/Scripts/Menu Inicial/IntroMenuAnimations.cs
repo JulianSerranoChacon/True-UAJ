@@ -15,7 +15,6 @@ public class IntroMenuAnimations : MonoBehaviour
 
         _rb.AddForce(_animSpeed * new Vector2(_direccion,0));
 
-        Tracker.Instance.Init();
         SesionStart start = new SesionStart();
         start.TimeStamp = Tracker.Instance.GetEventTime();
         start.SessionID = Tracker.Instance.GetSesionID();

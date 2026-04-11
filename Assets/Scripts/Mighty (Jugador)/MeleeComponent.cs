@@ -40,12 +40,13 @@ public class MeleeComponent : MonoBehaviour
     //WIP: Falta hacer que al darle a la tecla de atacar, haga aleatoriamente (una u otra) las animaciones "Attack 1" y "Attack 2". Por el momento s�lo he puesto "Attack 1".
     public void Attack()
     {
-        ////Sistema de Telemetria
-        //PlayerMelee playerMelee = new PlayerMelee();
-        //playerMelee.TimeStamp = Time.realtimeSinceStartup;
-        ////Envia datos al TRACKER del Sistema de Telemetria
-        //Tracker.Instance.AddEvent(playerMelee);
-        ////Sistema de Telemetria
+        //Sistema de Telemetria
+        PlayerMelee playerMelee = new PlayerMelee();
+        playerMelee.TimeStamp = Tracker.Instance.GetEventTime();
+        playerMelee.SessionID = Tracker.Instance.GetSesionID();
+        //Envia datos al TRACKER del Sistema de Telemetria
+        Tracker.Instance.AddEvent(playerMelee);
+        //Sistema de Telemetria
 
         if (Time.time >= nextAttackTime) 
         {
@@ -59,15 +60,16 @@ public class MeleeComponent : MonoBehaviour
             //Funciona as�: OverlapCircleAll("centro","radio","lo que quieras detectar"). Funciona con f�sicas.
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
-            ////Sistema de Telemetria
-            //if (hitEnemies.Length > 0)
-            //{
-            //    EnemyMeleeHit meleeHit = new EnemyMeleeHit();
-            //    meleeHit.TimeStamp = Time.realtimeSinceStartup;
-            //    //Envia datos al TRACKER del Sistema de Telemetria
-            //    Tracker.Instance.AddEvent(meleeHit);
-            //}
-            ////Sistema de Telemetria
+            //Sistema de Telemetria
+            if (hitEnemies.Length > 0)
+            {
+                EnemyMeleeHit meleeHit = new EnemyMeleeHit();
+                meleeHit.TimeStamp = Tracker.Instance.GetEventTime();
+                meleeHit.SessionID = Tracker.Instance.GetSesionID();
+                //Envia datos al TRACKER del Sistema de Telemetria
+                Tracker.Instance.AddEvent(meleeHit);
+            }
+            //Sistema de Telemetria
 
             //Da�o hacia los enemigos.
 
