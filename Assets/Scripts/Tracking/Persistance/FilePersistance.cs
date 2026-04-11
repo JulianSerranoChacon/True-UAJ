@@ -10,14 +10,16 @@ public class FilePersistance : IPersistance {
 
     override public void Flush(CircularBuffer<TrackerEvent>evq)
     {
+        if (!fileNull)
+        {
+            Debug.Log("Se estan guardando los eventos en el disco");
+            //Logica para guardar en disco los eventos...
+            //Codigo de experimento de persistencia
+            string eventos = serializer.SerializeTrackingQueue(evq);
+            sw.WriteLine(eventos);
 
-        Debug.Log("Se estan guardando los eventos en el disco");
-        //Logica para guardar en disco los eventos...
-        //Codigo de experimento de persistencia
-        string eventos = serializer.SerializeTrackingQueue(evq);
-         sw.WriteLine(eventos);
-        
-        AssetDatabase.Refresh();
+            AssetDatabase.Refresh();
+        }
 
     }
 }

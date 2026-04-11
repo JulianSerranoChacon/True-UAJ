@@ -7,6 +7,7 @@ public abstract class IPersistance
 {
     protected StreamWriter sw;
     protected ISerializer serializer;
+    protected bool fileNull = false;
     public void Init(ISerializer Is, String fileName)
     {
         serializer = Is;
@@ -17,12 +18,15 @@ public abstract class IPersistance
         catch (ArgumentNullException e)
         {
             Debug.LogError(e.Message);
-            throw e;
+            fileNull = true;
         }
     }
     public void Close()
     {
-        sw.Close();
+        if (!fileNull)
+        {
+            sw.Close();
+        }
     }
     //Metodo para el volacado de los datos de la cola para persistir los datos
     abstract public void Flush(CircularBuffer<TrackerEvent> evq);
