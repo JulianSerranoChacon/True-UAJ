@@ -81,12 +81,6 @@ public class IntroMenuCommands : MonoBehaviour
     }
     public void SalirDeljuego()
     {
-        SesionEnd end = new SesionEnd();
-        end.TimeStamp = Tracker.Instance.GetEventTime();
-        end.SessionID = Tracker.Instance.GetSesionID();
-
-        Tracker.Instance.AddEvent(end);
-
         GetComponent<AudioSource>().PlayOneShot(_okSFX);
         _fade.GetComponent<Animator>().SetTrigger("OUT");
         menu.SetActive(false);

@@ -47,6 +47,12 @@ public class Tracker
         //a�adimos los listeners de eventos
         //ejemplo : _activeTrackers.Add(new PrgressionTracker())
         _events = new CircularBuffer<TrackerEvent>(_eventTrackerSize);
+      
+        SesionStart start = new SesionStart();
+        start.TimeStamp = Tracker.Instance.GetEventTime();
+        start.SessionID = Tracker.Instance.GetSesionID();
+        _events.Add(start);
+        
     }
 
     //Metodo que se encarga de recibir eventos
@@ -58,9 +64,13 @@ public class Tracker
     //Metodo que se encarga de cerrar el tracker
     public void End()
     {
-        _events.Add(new SesionEnd());
         //Antes debemos asegurarnos de que no queden elementos en la cola.. hacemos el volcado de los datos que falten
-        foreach(var stratergy in _persistenceObjects)
+        SesionEnd end = new SesionEnd();
+        end.TimeStamp = Tracker.Instance.GetEventTime();
+        end.SessionID = Tracker.Instance.GetSesionID();
+        _events.Add(end);
+        
+        foreach (var stratergy in _persistenceObjects)
         {
             stratergy.Flush(_events);
         }
