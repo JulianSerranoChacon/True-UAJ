@@ -44,12 +44,12 @@ public class ShootingComponent : MonoBehaviour
     public void Shoot()
     // instanciamos la bala en la posici�n del spawn (cuidado no es hija suya, no confundir con la sobrecarga del transform del parent)
     {
-        ////Sistema de Telemetria
-        //PlayerShoot playerShoot = new PlayerShoot();
-        //playerShoot.TimeStamp = Time.realtimeSinceStartup;
-        ////Envia datos al TRACKER del Sistema de Telemetria
-        //Tracker.Instance.AddEvent(playerShoot);
-        ////Sistema de Telemetria
+        //Sistema de Telemetria
+        PlayerShoot playerShoot = new PlayerShoot();
+        playerShoot.TimeStamp = Time.realtimeSinceStartup;
+        //Envia datos al TRACKER del Sistema de Telemetria
+        Tracker.Instance.AddEvent(playerShoot);
+        //Sistema de Telemetria
 
         GetComponent<AudioSource>().PlayOneShot(_disparoNormal);
         //Crea un tipo de Bala en base a actualBullet, y su direccion se deermina mediante la rotacion y posicion de _bulletSpawnTransform

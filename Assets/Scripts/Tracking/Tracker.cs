@@ -41,6 +41,7 @@ public class Tracker
         //De momento solo persistencia en disco, si da tiempo, en red
         FilePersistance fp = new FilePersistance();
         fp.Init(new JsonSerializer(),GetSesionID().ToString());
+        _persistenceObjects = new List<IPersistance>();
         _persistenceObjects.Add(fp);
 
         //a�adimos los listeners de eventos
