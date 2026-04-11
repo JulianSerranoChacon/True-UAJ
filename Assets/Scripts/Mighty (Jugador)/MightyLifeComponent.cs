@@ -251,6 +251,8 @@ public class MightyLifeComponent : MonoBehaviour
 
             //Envia datos al TRACKER del Sistema de Telemetria
             Tracker.Instance.AddEvent(playerCP);
+
+            Tracker.Instance.Flush();
         }
     }
     //Sistema de Telemetria

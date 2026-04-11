@@ -78,6 +78,8 @@ public class GameManager : MonoBehaviour
 
         //Envia datos al TRACKER del Sistema de Telemetria
         Tracker.Instance.AddEvent(playerEnd);
+
+        Tracker.Instance.Flush();
     }
     //Sistema de Telemetria
     #endregion

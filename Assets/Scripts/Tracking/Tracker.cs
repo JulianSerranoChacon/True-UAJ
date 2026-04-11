@@ -61,6 +61,14 @@ public class Tracker
         _events.Add(e);
     }
 
+    public void Flush()
+    {
+        foreach (var stratergy in _persistenceObjects)
+        {
+            stratergy.Flush(_events);
+        }
+    }
+
     //Metodo que se encarga de cerrar el tracker
     public void End()
     {
@@ -69,11 +77,8 @@ public class Tracker
         end.TimeStamp = Tracker.Instance.GetEventTime();
         end.SessionID = Tracker.Instance.GetSesionID();
         _events.Add(end);
-        
-        foreach (var stratergy in _persistenceObjects)
-        {
-            stratergy.Flush(_events);
-        }
+
+        Flush();
         foreach (var stratergy in _persistenceObjects)
         {
             stratergy.Close();
