@@ -88,6 +88,7 @@ public class IntroMenuCommands : MonoBehaviour
     }
     private void SalirR()
     {
+        Tracker.Instance.End();
         Application.Quit();
     }
 

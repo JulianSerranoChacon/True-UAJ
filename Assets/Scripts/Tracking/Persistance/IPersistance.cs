@@ -20,6 +20,10 @@ public abstract class IPersistance
             throw e;
         }
     }
+    public void Close()
+    {
+        sw.Close();
+    }
     //Metodo para el volacado de los datos de la cola para persistir los datos
     abstract public void Flush(CircularBuffer<TrackerEvent> evq);
 }
