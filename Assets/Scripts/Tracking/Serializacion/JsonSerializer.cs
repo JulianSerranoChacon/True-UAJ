@@ -15,7 +15,7 @@ public class JsonSerializer : ISerializer
         //Copiarlo a lo mejor para no vaciar la cola de eventos???
         string result = "{\n";
 
-        while (evQ.Peek() != null)
+        while (!evQ.Empty())
         {
             result += evQ.Read().ToJson();
         }

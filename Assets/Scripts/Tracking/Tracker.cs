@@ -17,7 +17,7 @@ public class Tracker
 
     //Cola circular para almacenar eventos
     CircularBuffer<TrackerEvent> _events;
-    [SerializeField] int _eventTrackerSize;
+    [SerializeField] int _eventTrackerSize=100;
 
     //Acceso a la instancia unica del tracker
     public static Tracker Instance
@@ -58,10 +58,15 @@ public class Tracker
     //Metodo que se encarga de cerrar el tracker
     public void End()
     {
+        _events.Add(new SesionEnd());
         //Antes debemos asegurarnos de que no queden elementos en la cola.. hacemos el volcado de los datos que falten
         foreach(var stratergy in _persistenceObjects)
         {
             stratergy.Flush(_events);
+        }
+        foreach (var stratergy in _persistenceObjects)
+        {
+            stratergy.Close();
         }
     }
 

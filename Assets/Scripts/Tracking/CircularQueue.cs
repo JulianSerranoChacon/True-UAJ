@@ -1,4 +1,7 @@
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Drawing;
+using UnityEngine;
 
 //Nevulus te la como
 //Muchas gracias por la clase
@@ -10,11 +13,13 @@ public class CircularBuffer<T>
     public CircularBuffer(int size)
     {
         _queue = new Queue<T>(size);
+    
         _size = size;
     }
 
     public void Add(T obj)
     {
+        UnityEngine.Debug.Log(_size);
         if (_queue.Count == _size)
         {
             _queue.Dequeue();
@@ -29,7 +34,13 @@ public class CircularBuffer<T>
     }
 
     public T Peek()
+
     {
         return _queue.Peek();
+    }
+
+    public bool Empty()
+    {
+        return _queue.Count == 0;
     }
 }
