@@ -36,18 +36,19 @@ public class BulletCollisionComponent : MonoBehaviour
     {
         if (collision.GetComponent<EnemyHealth>() != null && _enemysBulletDamage == 0)
         {
-            ////Sistema de Telemetria
-            //EnemyBulletHit bulletHit = new EnemyBulletHit();
-            //bulletHit.TimeStamp = Time.realtimeSinceStartup;
-            ////Envia datos al TRACKER del Sistema de Telemetria
-            //Tracker.Instance.AddEvent(bulletHit);
-            ////Sistema de Telemetria
+            //Sistema de Telemetria
+            EnemyBulletHit bulletHit = new EnemyBulletHit();
+            bulletHit.TimeStamp = Tracker.Instance.GetEventTime();
+            bulletHit.SessionID = Tracker.Instance.GetSesionID();
+            //Envia datos al TRACKER del Sistema de Telemetria
+            Tracker.Instance.AddEvent(bulletHit);
+            //Sistema de Telemetria
 
             OnHitEnemy(collision);
         }
         else if (collision.GetComponent<MightyLifeComponent>() != null && collision.gameObject.GetComponent<MightyLifeComponent>()._canBeDamaged && _enemysBulletDamage != 0)
         {
-            //CheckTelemetrySys(collision);
+            CheckTelemetrySys(collision);
             collision.GetComponent<MightyLifeComponent>().OnPlayerHit(_enemysBulletDamage);
         }
     }
@@ -233,7 +234,8 @@ public class BulletCollisionComponent : MonoBehaviour
         {
             //Sistema de Telemetria
             PlayerHit playerHit = new PlayerHit();
-            playerHit.TimeStamp = Time.realtimeSinceStartup;
+            playerHit.TimeStamp = Tracker.Instance.GetEventTime();
+            playerHit.SessionID = Tracker.Instance.GetSesionID();
 
             playerHit.LevelID = SceneManager.GetActiveScene().buildIndex;
             playerHit.CordX = transform.position.x;
@@ -249,7 +251,8 @@ public class BulletCollisionComponent : MonoBehaviour
         {
             //Sistema de Telemetria
             PlayerDeath playerDeath = new PlayerDeath();
-            playerDeath.TimeStamp = Time.realtimeSinceStartup;
+            playerDeath.TimeStamp = Tracker.Instance.GetEventTime();
+            playerDeath.SessionID = Tracker.Instance.GetSesionID();
 
             playerDeath.LevelID = SceneManager.GetActiveScene().buildIndex;
             playerDeath.CordX = transform.position.x;

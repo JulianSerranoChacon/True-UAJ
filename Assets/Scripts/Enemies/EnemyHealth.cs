@@ -102,7 +102,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<MightyLifeComponent>() != null && collision.gameObject.GetComponent<MightyLifeComponent>()._canBeDamaged && !GetComponent<EnemyStateManager>().GetCongelado())
         {
-            //CheckTelemetrySys(collision);
+            CheckTelemetrySys(collision);
 
             collision.gameObject.GetComponent<MightyLifeComponent>().OnPlayerHit(_damage);
         }
@@ -128,7 +128,8 @@ public class EnemyHealth : MonoBehaviour
         {
             //Sistema de Telemetria
             PlayerHit playerHit = new PlayerHit();
-            playerHit.TimeStamp = Time.realtimeSinceStartup;
+            playerHit.TimeStamp = Tracker.Instance.GetEventTime();
+            playerHit.SessionID = Tracker.Instance.GetSesionID();
 
             playerHit.LevelID = SceneManager.GetActiveScene().buildIndex;
             playerHit.CordX = transform.position.x;
@@ -156,7 +157,8 @@ public class EnemyHealth : MonoBehaviour
         {
             //Sistema de Telemetria
             PlayerDeath playerDeath = new PlayerDeath();
-            playerDeath.TimeStamp = Time.realtimeSinceStartup;
+            playerDeath.TimeStamp = Tracker.Instance.GetEventTime();
+            playerDeath.SessionID = Tracker.Instance.GetSesionID();
 
             playerDeath.LevelID = SceneManager.GetActiveScene().buildIndex;
             playerDeath.CordX = transform.position.x;

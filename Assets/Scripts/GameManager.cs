@@ -70,7 +70,8 @@ public class GameManager : MonoBehaviour
     {
         SpawnsManager.instance.TrackerCP_ID = -1;
         PlayerEnd playerEnd = new PlayerEnd();
-        playerEnd.TimeStamp = Time.realtimeSinceStartup;
+        playerEnd.TimeStamp = Tracker.Instance.GetEventTime();
+        playerEnd.SessionID = Tracker.Instance.GetSesionID();
 
         playerEnd.LevelID = SceneManager.GetActiveScene().buildIndex;
         playerEnd.CurrentHealth = _mightyLifeComponent.GetHealth();
@@ -118,7 +119,7 @@ public class GameManager : MonoBehaviour
             _player.GetComponent<PauseMenu>().enabled = false;
             if (_characterController._doorTouched)
             {
-                //CheckTelemetrySys();
+                CheckTelemetrySys();
                 _canExitLevel = true;
             }
 

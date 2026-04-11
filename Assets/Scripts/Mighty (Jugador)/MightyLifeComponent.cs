@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -136,7 +137,7 @@ public class MightyLifeComponent : MonoBehaviour
         }
         else
         {
-            //CheckTelemetrySysHealing((damage * -1));
+            CheckTelemetrySysHealing((damage));
 
             if (GameManager.instance._UImanager != null)
             {
@@ -165,10 +166,11 @@ public class MightyLifeComponent : MonoBehaviour
     //Sistema de Telemetria
     private void CheckTelemetrySysHealing(float cureAmount)
     {
-        if (cureAmount != -_maxhealth) //No cuenta revivir como curarse
+        if (cureAmount != _maxhealth) //No cuenta revivir como curarse
         {
             PlayerHealing playerHealing = new PlayerHealing();
-            playerHealing.TimeStamp = Time.realtimeSinceStartup;
+            playerHealing.TimeStamp = Tracker.Instance.GetEventTime();
+            playerHealing.SessionID = Tracker.Instance.GetSesionID();
 
             playerHealing.PreviousHealth = _health - cureAmount;
             playerHealing.HealingAmount = cureAmount;
@@ -184,7 +186,8 @@ public class MightyLifeComponent : MonoBehaviour
     private void CheckTelemetrySysSpikesDeath()
     {
         PlayerDeath playerDeath = new PlayerDeath();
-        playerDeath.TimeStamp = Time.realtimeSinceStartup;
+        playerDeath.TimeStamp = Tracker.Instance.GetEventTime();
+        playerDeath.SessionID = Tracker.Instance.GetSesionID();
 
         playerDeath.LevelID = SceneManager.GetActiveScene().buildIndex;
         playerDeath.CordX = transform.position.x;
@@ -202,7 +205,8 @@ public class MightyLifeComponent : MonoBehaviour
         if (_health > 0)
         {
             PlayerHit playerHit = new PlayerHit();
-            playerHit.TimeStamp = Time.realtimeSinceStartup;
+            playerHit.TimeStamp = Tracker.Instance.GetEventTime();
+            playerHit.SessionID = Tracker.Instance.GetSesionID();
 
             playerHit.LevelID = SceneManager.GetActiveScene().buildIndex;
             playerHit.CordX = transform.position.x;
@@ -217,7 +221,8 @@ public class MightyLifeComponent : MonoBehaviour
         else
         {
             PlayerDeath playerDeath = new PlayerDeath();
-            playerDeath.TimeStamp = Time.realtimeSinceStartup;
+            playerDeath.TimeStamp = Tracker.Instance.GetEventTime();
+            playerDeath.SessionID = Tracker.Instance.GetSesionID();
 
             playerDeath.LevelID = SceneManager.GetActiveScene().buildIndex;
             playerDeath.CordX = transform.position.x;
@@ -238,7 +243,8 @@ public class MightyLifeComponent : MonoBehaviour
         {
             SpawnsManager.instance.TrackerCP_ID = col.gameObject.GetInstanceID();
             PlayerCheckPoint playerCP = new PlayerCheckPoint();
-            playerCP.TimeStamp = Time.realtimeSinceStartup;
+            playerCP.TimeStamp = Tracker.Instance.GetEventTime();
+            playerCP.SessionID = Tracker.Instance.GetSesionID();
 
             playerCP.LevelID = SceneManager.GetActiveScene().buildIndex;
             playerCP.CheckpointID = col.gameObject.GetInstanceID();
@@ -254,7 +260,7 @@ public class MightyLifeComponent : MonoBehaviour
     {
         if (collision.gameObject.layer == 10)
         {
-            //CheckTelemetrySysSpikesDeath();
+            CheckTelemetrySysSpikesDeath();
             _animator.SetTrigger("_damaged");
             GetComponent<AudioSource>().PlayOneShot(_hurt);
             TakeDamage(GetHealth());
@@ -266,7 +272,7 @@ public class MightyLifeComponent : MonoBehaviour
         if ((collision.gameObject.layer == 22 && _canBeDamaged && collision.gameObject.GetComponent<LanzaLlamasShooting>()._canShootFire) || collision.gameObject.layer == 23)
         {
             OnPlayerHit(_fireDamage);
-            //CheckTelemetrySysLanzallamas();
+            CheckTelemetrySysLanzallamas();
         }
     }
 
@@ -307,7 +313,7 @@ public class MightyLifeComponent : MonoBehaviour
         //si tocamos checkpoint, guardamos su transform
         if (other.gameObject.layer == 24)
         {
-            //CheckTelemetrySysCheckpoint(other);
+            CheckTelemetrySysCheckpoint(other);
             SpawnsManager.instance.SetRespawnPosition(gameObject.transform.position);
         }
     }
