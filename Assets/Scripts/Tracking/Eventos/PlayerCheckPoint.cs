@@ -20,8 +20,7 @@ public class PlayerCheckPoint : TrackerEvent
     #endregion
 
     public override string ToJson()
-    {
-        //TODO
-        return "{\ntype: playerCP\n" + this.parentToJson() + "Lo que sea que vaya despues\n}";
+    {        
+        return "{\n\"type\": \"playerCP\"\n" + this.parentToJson() + "\n\"levelID\": " + levelID + "\n\"checkpointID\": "+ checkpointID +"\n}";
     }
 }

@@ -20,8 +20,7 @@ public class PlayerEnd : TrackerEvent
     #endregion
 
     public override string ToJson()
-    {
-        //TODO
-        return "{\ntype: playerEnd\n" + this.parentToJson() + "Lo que sea que vaya despues\n}";
+    {        
+        return "{\n\"type\": \"playerEnd\"\n" + this.parentToJson() + "\n\"levelID\": " + levelID + "\n\"currentHealth\": " + currentHealth + "\n}";
     }
 }

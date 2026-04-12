@@ -36,8 +36,7 @@ public class PlayerDeath : TrackerEvent
     #endregion
 
     public override string ToJson()
-    {
-        //TODO
-        return "{\ntype: playerDeath\n" + this.parentToJson() + "Lo que sea que vaya despues\n}";
+    {        
+        return "{\n\"type\": \"playerDeath\"\n" + this.parentToJson() + "\n\"levelID\": " + levelID + "\n\"coordX\": " + cordX + "\n\"coordY\": " + cordY + "\n\"deathCause\": " + deathCause.ToString() + "\n}";
     }
 }

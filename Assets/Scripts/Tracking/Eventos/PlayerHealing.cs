@@ -27,8 +27,7 @@ public class PlayerHealing : TrackerEvent
     #endregion
 
     public override string ToJson()
-    {
-        //TODO
-        return "{\ntype: playerHeal\n" + this.parentToJson() + "Lo que sea que vaya despues\n}";
+    {        
+        return "{\ntype\": \"playerHeal\"\n" + this.parentToJson() + "\n\"previousHealth\": " + previousHealth + "\n\"healingAmount\": " + healingAmount + "\n\"finalHealth\": " + finalHealth + "\n}";
     }
 }

@@ -48,8 +48,8 @@ public class PlayerHit : TrackerEvent
     #endregion
 
     public override string ToJson()
-    {
-        //TODO
-        return "{\ntype: playerHit\n" + this.parentToJson() + "Lo que sea que vaya despues\n}";
+    {        
+        return "{\n\"type\": \"playerHit\"\n" + this.parentToJson() + "\n\"levelID\": " + levelID + "\n\"cordX\": " + cordX + "\n\"cordY\": " + cordY 
+            + "\n\"hitCause\": " + hitCause.ToString() + "\n\"hitDamage\": " + hitDamage + "\n\"currentHealth\": " + currentHealth + "\n}";
     }
 }

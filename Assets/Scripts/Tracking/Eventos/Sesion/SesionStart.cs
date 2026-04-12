@@ -4,6 +4,6 @@ public class SesionStart : TrackerEvent
 
     public override string ToJson()
     {
-        return "{\ntype: sesStart\n" + this.parentToJson() + "\n}";
+        return "{\n\"type\": \"sesStart\"\n" + this.parentToJson() + "\n}";
     }
 }
