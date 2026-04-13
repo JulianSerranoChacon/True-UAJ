@@ -18,9 +18,12 @@ public class JsonSerializer : ISerializer
         while (!evQ.Empty())
         {
             result += evQ.Read().ToJson();
+
+            if (!evQ.Empty())
+                result += ",\n";
         }
 
-        result += "}";
+        result += "\n}";
 
         return result;
     }
