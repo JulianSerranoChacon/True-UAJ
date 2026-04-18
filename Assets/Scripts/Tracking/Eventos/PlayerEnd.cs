@@ -21,6 +21,6 @@ public class PlayerEnd : TrackerEvent
 
     public override string ToJson()
     {        
-        return "{\n\"type\": \"playerEnd\"\n" + this.parentToJson() + "\n\"levelID\": " + levelID + "\n\"currentHealth\": " + currentHealth + "\n}";
+        return "{\n\"type\": \"playerEnd\"\n" + this.parentToJson() + ",\n\"levelID\": " + levelID + ",\n\"currentHealth\": " + currentHealth + "\n}";
     }
 }

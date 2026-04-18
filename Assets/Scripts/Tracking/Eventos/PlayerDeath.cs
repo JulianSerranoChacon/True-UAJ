@@ -37,6 +37,6 @@ public class PlayerDeath : TrackerEvent
 
     public override string ToJson()
     {        
-        return "{\n\"type\": \"playerDeath\"\n" + this.parentToJson() + "\n\"levelID\": " + levelID + "\n\"coordX\": " + cordX + "\n\"coordY\": " + cordY + "\n\"deathCause\": " + deathCause.ToString() + "\n}";
+        return "{\n\"type\": \"playerDeath\"\n" + this.parentToJson() + ",\n\"levelID\": " + levelID + ",\n\"coordX\": " + cordX + ",\n\"coordY\": " + cordY + ",\n\"deathCause\": " + deathCause.ToString() + ",\n}";
     }
 }
