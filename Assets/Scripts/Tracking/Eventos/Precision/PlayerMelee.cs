@@ -4,6 +4,6 @@ public class PlayerMelee : TrackerEvent
 
     public override string ToJson()
     {
-        return "{\n\"type\": \"playMel\"\n" + this.parentToJson() + "\n}";
+        return "{\n\"type\": \"playMel\"\n" + this.parentToJson() + "\n}\n,";
     }
 }

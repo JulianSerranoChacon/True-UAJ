@@ -32,6 +32,6 @@ public class PlayerHealing : TrackerEvent
     {        
         return "{\n\"type\": \"playerHeal\"\n" + this.parentToJson() + ",\n\"previousHealth\": " + previousHealth.ToString(CultureInfo.CreateSpecificCulture("en-GB"))
             + ",\n\"healingAmount\": " + healingAmount.ToString(CultureInfo.CreateSpecificCulture("en-GB")) + ",\n\"finalHealth\": " + 
-            finalHealth.ToString(CultureInfo.CreateSpecificCulture("en-GB")) + "\n}";
+            finalHealth.ToString(CultureInfo.CreateSpecificCulture("en-GB")) + "\n}\n,";
     }
 }

@@ -21,6 +21,6 @@ public class PlayerCheckPoint : TrackerEvent
 
     public override string ToJson()
     {        
-        return "{\n\"type\": \"playerCP\"\n" + this.parentToJson() + ",\n\"levelID\": " + levelID + ",\n\"checkpointID\": "+ checkpointID +"\n}";
+        return "{\n\"type\": \"playerCP\"\n" + this.parentToJson() + ",\n\"levelID\": " + levelID + ",\n\"checkpointID\": "+ checkpointID + "\n}\n,";
     }
 }

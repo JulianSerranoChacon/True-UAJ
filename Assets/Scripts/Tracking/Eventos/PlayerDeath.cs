@@ -40,6 +40,6 @@ public class PlayerDeath : TrackerEvent
     public override string ToJson()
     {        
         return "{\n\"type\": \"playerDeath\"\n" + this.parentToJson() + ",\n\"levelID\": " + levelID + ",\n\"coordX\": " + cordX.ToString(CultureInfo.CreateSpecificCulture("en-GB"))
-            + ",\n\"coordY\": " + cordY.ToString(CultureInfo.CreateSpecificCulture("en-GB")) + ",\n\"deathCause\": " + (int)deathCause + ",\n}";
+            + ",\n\"coordY\": " + cordY.ToString(CultureInfo.CreateSpecificCulture("en-GB")) + ",\n\"deathCause\": " + (int)deathCause + "\n}\n,";
     }
 }

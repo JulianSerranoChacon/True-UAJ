@@ -4,6 +4,6 @@ public class EnemyMeleeHit : TrackerEvent
 
     public override string ToJson()
     {
-        return "{\n\"type\": \"enMelHit\"\n" + this.parentToJson() + "\n}";
+        return "{\n\"type\": \"enMelHit\"\n" + this.parentToJson() + "\n}\n,";
     }
 }

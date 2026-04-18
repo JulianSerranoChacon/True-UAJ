@@ -24,6 +24,6 @@ public class PlayerEnd : TrackerEvent
     public override string ToJson()
     {        
         return "{\n\"type\": \"playerEnd\"\n" + this.parentToJson() + ",\n\"levelID\": " + levelID + ",\n\"currentHealth\": " + 
-            currentHealth.ToString(CultureInfo.CreateSpecificCulture("en-GB")) + "\n}";
+            currentHealth.ToString(CultureInfo.CreateSpecificCulture("en-GB")) + "\n}\n,";
     }
 }
