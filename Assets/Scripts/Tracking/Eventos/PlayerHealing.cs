@@ -1,3 +1,5 @@
+using System.Globalization;
+
 public class PlayerHealing : TrackerEvent
 {
     private float previousHealth;
@@ -28,6 +30,8 @@ public class PlayerHealing : TrackerEvent
 
     public override string ToJson()
     {        
-        return "{\n\"type\": \"playerHeal\"\n" + this.parentToJson() + ",\n\"previousHealth\": " + previousHealth + ",\n\"healingAmount\": " + healingAmount + ",\n\"finalHealth\": " + finalHealth + "\n}";
+        return "{\n\"type\": \"playerHeal\"\n" + this.parentToJson() + ",\n\"previousHealth\": " + previousHealth.ToString(CultureInfo.CreateSpecificCulture("en-GB"))
+            + ",\n\"healingAmount\": " + healingAmount.ToString(CultureInfo.CreateSpecificCulture("en-GB")) + ",\n\"finalHealth\": " + 
+            finalHealth.ToString(CultureInfo.CreateSpecificCulture("en-GB")) + "\n}";
     }
 }

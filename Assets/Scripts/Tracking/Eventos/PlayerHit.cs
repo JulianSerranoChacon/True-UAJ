@@ -53,6 +53,7 @@ public class PlayerHit : TrackerEvent
     {        
         return "{\n\"type\": \"playerHit\"\n" + this.parentToJson() + ",\n\"levelID\": " + levelID + ",\n\"cordX\": " + cordX.ToString(CultureInfo.CreateSpecificCulture("en-GB")) +
             ",\n\"cordY\": " + cordY.ToString(CultureInfo.CreateSpecificCulture("en-GB")) + ",\n\"hitCause\": " + (int)hitCause + ",\n\"hitDamage\": " + 
-            hitDamage + ",\n\"currentHealth\": " + currentHealth + "\n}";
+            hitDamage.ToString(CultureInfo.CreateSpecificCulture("en-GB")) + ",\n\"currentHealth\": " + currentHealth.ToString(CultureInfo.CreateSpecificCulture("en-GB"))
+            + "\n}";
     }
 }

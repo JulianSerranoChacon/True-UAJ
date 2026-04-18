@@ -1,3 +1,5 @@
+using System.Globalization;
+
 public enum cause { Spikes, Enem1, Enem2, Enem3, Ice, Fire};
 
 public class PlayerDeath : TrackerEvent
@@ -37,6 +39,7 @@ public class PlayerDeath : TrackerEvent
 
     public override string ToJson()
     {        
-        return "{\n\"type\": \"playerDeath\"\n" + this.parentToJson() + ",\n\"levelID\": " + levelID + ",\n\"coordX\": " + cordX + ",\n\"coordY\": " + cordY + ",\n\"deathCause\": " + deathCause.ToString() + ",\n}";
+        return "{\n\"type\": \"playerDeath\"\n" + this.parentToJson() + ",\n\"levelID\": " + levelID + ",\n\"coordX\": " + cordX.ToString(CultureInfo.CreateSpecificCulture("en-GB"))
+            + ",\n\"coordY\": " + cordY.ToString(CultureInfo.CreateSpecificCulture("en-GB")) + ",\n\"deathCause\": " + (int)deathCause + ",\n}";
     }
 }

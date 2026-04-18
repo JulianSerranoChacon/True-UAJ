@@ -1,3 +1,5 @@
+using System.Globalization;
+
 public class PlayerEnd : TrackerEvent
 {
     private int levelID;
@@ -21,6 +23,7 @@ public class PlayerEnd : TrackerEvent
 
     public override string ToJson()
     {        
-        return "{\n\"type\": \"playerEnd\"\n" + this.parentToJson() + ",\n\"levelID\": " + levelID + ",\n\"currentHealth\": " + currentHealth + "\n}";
+        return "{\n\"type\": \"playerEnd\"\n" + this.parentToJson() + ",\n\"levelID\": " + levelID + ",\n\"currentHealth\": " + 
+            currentHealth.ToString(CultureInfo.CreateSpecificCulture("en-GB")) + "\n}";
     }
 }
