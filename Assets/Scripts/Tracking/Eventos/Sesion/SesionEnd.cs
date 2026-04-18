@@ -4,6 +4,6 @@ public class SesionEnd : TrackerEvent
 
     public override string ToJson()
     {
-        return "{\n\"type\": \"sesEnd\"\n" + this.parentToJson() + "\n}";
+        return "{\n\"type\": \"sesEnd\"\n" + this.parentToJson() + "\n} \n] ";
     }
 }

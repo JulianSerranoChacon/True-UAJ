@@ -1,0 +1,49 @@
+[
+{
+"type": "sesStart"
+,"time": 5635,
+"sesID": 2135241217889926157
+},
+{
+"type": "playerCP"
+,"time": 5636,
+"sesID": 2135241217889926157,
+"levelID": 2,
+"checkpointID": -9752
+},
+{
+"type": "playShot"
+,"time": 8043,
+"sesID": 2135241217889926157
+},
+{
+"type": "playShot"
+,"time": 8233,
+"sesID": 2135241217889926157
+},
+{
+"type": "playShot"
+,"time": 8353,
+"sesID": 2135241217889926157
+},
+{
+"type": "playShot"
+,"time": 8479,
+"sesID": 2135241217889926157
+},
+{
+"type": "playShot"
+,"time": 8593,
+"sesID": 2135241217889926157
+},
+{
+"type": "playShot"
+,"time": 8707,
+"sesID": 2135241217889926157
+},
+{
+"type": "sesEnd"
+,"time": 33602,
+"sesID": 2135241217889926157
+} 
+] 
