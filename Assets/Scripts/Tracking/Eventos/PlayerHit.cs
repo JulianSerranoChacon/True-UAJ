@@ -1,3 +1,5 @@
+using System.Globalization;
+
 public class PlayerHit : TrackerEvent
 {
     private int levelID;
@@ -49,7 +51,8 @@ public class PlayerHit : TrackerEvent
 
     public override string ToJson()
     {        
-        return "{\n\"type\": \"playerHit\"\n" + this.parentToJson() + ",\n\"levelID\": " + levelID + ",\n\"cordX\": " + cordX + ",\n\"cordY\": " + cordY 
-            + ",\n\"hitCause\": " + hitCause.ToString() + ",\n\"hitDamage\": " + hitDamage + ",\n\"currentHealth\": " + currentHealth + "\n}";
+        return "{\n\"type\": \"playerHit\"\n" + this.parentToJson() + ",\n\"levelID\": " + levelID + ",\n\"cordX\": " + cordX.ToString(CultureInfo.CreateSpecificCulture("en-GB")) +
+            ",\n\"cordY\": " + cordY.ToString(CultureInfo.CreateSpecificCulture("en-GB")) + ",\n\"hitCause\": " + (int)hitCause + ",\n\"hitDamage\": " + 
+            hitDamage + ",\n\"currentHealth\": " + currentHealth + "\n}";
     }
 }
