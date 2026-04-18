@@ -1,0 +1,159 @@
+[
+{
+"type": "sesStart"
+,"time": 24657,
+"sesID": 292358381037340585
+},
+{
+"type": "playerCP"
+,"time": 24658,
+"sesID": 292358381037340585,
+"levelID": 2,
+"checkpointID": -45080
+}
+]
+[
+{
+"type": "playShot"
+,"time": 26385,
+"sesID": 292358381037340585
+},
+{
+"type": "playShot"
+,"time": 26570,
+"sesID": 292358381037340585
+},
+{
+"type": "playShot"
+,"time": 26759,
+"sesID": 292358381037340585
+},
+{
+"type": "playShot"
+,"time": 26989,
+"sesID": 292358381037340585
+},
+{
+"type": "playShot"
+,"time": 27210,
+"sesID": 292358381037340585
+},
+{
+"type": "playShot"
+,"time": 27360,
+"sesID": 292358381037340585
+},
+{
+"type": "playShot"
+,"time": 27585,
+"sesID": 292358381037340585
+},
+{
+"type": "playShot"
+,"time": 30100,
+"sesID": 292358381037340585
+},
+{
+"type": "playShot"
+,"time": 30329,
+"sesID": 292358381037340585
+},
+{
+"type": "enBulHit"
+,"time": 30444,
+"sesID": 292358381037340585
+},
+{
+"type": "playShot"
+,"time": 30516,
+"sesID": 292358381037340585
+},
+{
+"type": "enBulHit"
+,"time": 30625,
+"sesID": 292358381037340585
+},
+{
+"type": "playShot"
+,"time": 30702,
+"sesID": 292358381037340585
+},
+{
+"type": "enBulHit"
+,"time": 30786,
+"sesID": 292358381037340585
+},
+{
+"type": "playShot"
+,"time": 30892,
+"sesID": 292358381037340585
+},
+{
+"type": "playShot"
+,"time": 31567,
+"sesID": 292358381037340585
+},
+{
+"type": "playShot"
+,"time": 31753,
+"sesID": 292358381037340585
+},
+{
+"type": "playShot"
+,"time": 31941,
+"sesID": 292358381037340585
+},
+{
+"type": "playShot"
+,"time": 33219,
+"sesID": 292358381037340585
+},
+{
+"type": "enBulHit"
+,"time": 33665,
+"sesID": 292358381037340585
+},
+{
+"type": "playShot"
+,"time": 33782,
+"sesID": 292358381037340585
+},
+{
+"type": "playShot"
+,"time": 34008,
+"sesID": 292358381037340585
+},
+{
+"type": "enBulHit"
+,"time": 34124,
+"sesID": 292358381037340585
+},
+{
+"type": "playShot"
+,"time": 34196,
+"sesID": 292358381037340585
+},
+{
+"type": "enBulHit"
+,"time": 34263,
+"sesID": 292358381037340585
+},
+{
+"type": "playShot"
+,"time": 34382,
+"sesID": 292358381037340585
+},
+{
+"type": "playerHeal"
+,"time": 34963,
+"sesID": 292358381037340585,
+"previousHealth": 85,
+"healingAmount": 0,
+"finalHealth": 85
+},
+{
+"type": "sesEnd"
+,"time": 42655,
+"sesID": 292358381037340585
+}
+]

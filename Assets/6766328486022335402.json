@@ -1,0 +1,2413 @@
+[
+{
+"type": "sesStart"
+,"time": 8018,
+"sesID": 6766328486022335402
+},
+{
+"type": "playerCP"
+,"time": 8018,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"checkpointID": -46952
+}
+]
+[
+{
+"type": "playShot"
+,"time": 10997,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 11223,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 11410,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 11562,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 11710,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 13853,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 14122,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 14262,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 14340,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 14462,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 14528,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 14642,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 14681,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 14905,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 15431,
+"sesID": 6766328486022335402
+},
+{
+"type": "playerHit"
+,"time": 18345,
+"sesID": 6766328486022335402
+"levelID": 2
+"cordX": 58,36286
+"cordY": -2,50557
+"hitCause": Enem1
+"hitDamage": 5
+"currentHealth": 80
+},
+{
+"type": "playShot"
+,"time": 20710,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 20723,
+"sesID": 6766328486022335402
+},
+{
+"type": "playerHit"
+,"time": 20862,
+"sesID": 6766328486022335402
+"levelID": 2
+"cordX": 59,75555
+"cordY": -2,50557
+"hitCause": Enem1
+"hitDamage": 5
+"currentHealth": 75
+},
+{
+"type": "playShot"
+,"time": 21876,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 21904,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 22055,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 22064,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 22248,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 22885,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 24048,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 25657,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 25959,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 26146,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 26374,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 26598,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 27877,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 28064,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 28251,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 28477,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 28664,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 30655,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 30883,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 34264,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 36288,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 36510,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 36700,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 36887,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 37073,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 37300,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 37487,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 37675,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 37864,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 38090,
+"sesID": 6766328486022335402
+},
+{
+"type": "playerCP"
+,"time": 43442,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"checkpointID": -46450
+}
+]
+[
+{
+"type": "playShot"
+,"time": 45548,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 45842,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 46014,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 46222,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 49257,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 49262,
+"sesID": 6766328486022335402
+},
+{
+"type": "playerHit"
+,"time": 49422,
+"sesID": 6766328486022335402
+"levelID": 2
+"cordX": 150,7341
+"cordY": -2,505573
+"hitCause": Enem1
+"hitDamage": 5
+"currentHealth": 70
+},
+{
+"type": "playShot"
+,"time": 49955,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 49964,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 50116,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 50123,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 50267,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 50722,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 51284,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 51384,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 51423,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 51462,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 51582,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 51768,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 53518,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 54008,
+"sesID": 6766328486022335402
+},
+{
+"type": "playerHit"
+,"time": 63784,
+"sesID": 6766328486022335402
+"levelID": 2
+"cordX": 172,49
+"cordY": 20,7506
+"hitCause": Enem2
+"hitDamage": 5
+"currentHealth": 65
+},
+{
+"type": "playShot"
+,"time": 66018,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 66281,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 66469,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 66658,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 66844,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 67033,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 67258,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 67521,
+"sesID": 6766328486022335402
+},
+{
+"type": "playerHit"
+,"time": 67564,
+"sesID": 6766328486022335402
+"levelID": 2
+"cordX": 166,4632
+"cordY": 21,00102
+"hitCause": Enem2
+"hitDamage": 10
+"currentHealth": 55
+},
+{
+"type": "playShot"
+,"time": 68072,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 68235,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 68264,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 68403,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 68404,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 68635,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 68808,
+"sesID": 6766328486022335402
+},
+{
+"type": "playerCP"
+,"time": 71583,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"checkpointID": -46796
+}
+]
+[
+{
+"type": "playShot"
+,"time": 73335,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 73538,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 73582,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 73783,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 83086,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 83285,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 83362,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 83447,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 83593,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 84250,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 84466,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 84655,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 84848,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 84923,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 85007,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 85160,
+"sesID": 6766328486022335402
+},
+{
+"type": "playerHit"
+,"time": 85302,
+"sesID": 6766328486022335402
+"levelID": 2
+"cordX": 172,5459
+"cordY": 38,00103
+"hitCause": Enem2
+"hitDamage": 10
+"currentHealth": 45
+},
+{
+"type": "playerHeal"
+,"time": 86962,
+"sesID": 6766328486022335402,
+"previousHealth": 65,
+"healingAmount": -10,
+"finalHealth": 55
+},
+{
+"type": "playShot"
+,"time": 87940,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 88127,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 88241,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 88293,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 88383,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 88462,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 88483,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 88627,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 88902,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 89082,
+"sesID": 6766328486022335402
+},
+{
+"type": "playerHit"
+,"time": 90384,
+"sesID": 6766328486022335402
+"levelID": 2
+"cordX": 150,6621
+"cordY": 41,4944
+"hitCause": Enem1
+"hitDamage": 5
+"currentHealth": 50
+},
+{
+"type": "playShot"
+,"time": 91927,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 93074,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 93103,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 93227,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 93390,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 96982,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 97158,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 97282,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 97330,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 97423,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 97492,
+"sesID": 6766328486022335402
+},
+{
+"type": "playerHit"
+,"time": 97803,
+"sesID": 6766328486022335402
+"levelID": 2
+"cordX": 139,7159
+"cordY": 42,00102
+"hitCause": Enem2
+"hitDamage": 10
+"currentHealth": 40
+},
+{
+"type": "playShot"
+,"time": 108800,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 110719,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 110944,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 111170,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 111437,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 111625,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 111851,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 112076,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 112301,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 112527,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 112752,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 112978,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 113166,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 113223,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 113393,
+"sesID": 6766328486022335402
+},
+{
+"type": "playerHit"
+,"time": 114684,
+"sesID": 6766328486022335402
+"levelID": 2
+"cordX": 86,55949
+"cordY": 35,88847
+"hitCause": Enem3
+"hitDamage": 5
+"currentHealth": 35
+},
+{
+"type": "playShot"
+,"time": 115282,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 115342,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 115457,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 115463,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 115641,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 115834,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 125967,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 126193,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 126419,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 126646,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 126871,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 127098,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 127360,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 127591,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 127813,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 128038,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 128263,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 128442,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 128488,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 128583,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 128651,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 128827,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 129020,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 129084,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 129204,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 129392,
+"sesID": 6766328486022335402
+},
+{
+"type": "playerEnd"
+,"time": 133223,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 133254,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 133282,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 133310,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 133343,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 133372,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 133400,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 133430,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 133461,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 133489,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 133519,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 133548,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 133575,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 133603,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 133631,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 133657,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 133684,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 133709,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 133739,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 133766,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 133793,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 133818,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 133844,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 133874,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 133902,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 133930,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 133974,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134002,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134031,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134058,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134088,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134119,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134147,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134175,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134202,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134230,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134258,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134286,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134317,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134345,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134372,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134400,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134428,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134461,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134489,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134517,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134545,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134574,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134601,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134630,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134657,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134687,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134718,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134749,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134778,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134813,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134843,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134871,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134906,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134937,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 134967,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135000,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135026,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135051,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135080,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135111,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135138,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135167,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135195,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135221,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135254,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135283,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135326,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135362,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135394,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135428,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135454,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135482,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135509,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135538,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135567,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135595,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135623,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135654,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135682,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135709,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135738,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135766,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135795,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135822,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135850,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135879,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135905,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135934,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135964,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 135992,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136022,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136050,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136075,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136103,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136136,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136164,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136192,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136221,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136249,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136275,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136306,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136335,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136365,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136393,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136424,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136453,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136481,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136512,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136540,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136570,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136600,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136628,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136659,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136704,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136734,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136764,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136791,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136821,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136852,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136883,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136912,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136943,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 136976,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 137004,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 137031,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 137060,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 137091,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 137123,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 137148,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 137169,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 137204,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerEnd"
+,"time": 137235,
+"sesID": 6766328486022335402,
+"levelID": 2,
+"currentHealth": 35
+}
+]
+[
+{
+"type": "playerCP"
+,"time": 141181,
+"sesID": 6766328486022335402,
+"levelID": 3,
+"checkpointID": -52154
+}
+]
+[
+{
+"type": "playShot"
+,"time": 147861,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 148124,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 148575,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 149492,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 149716,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 149735,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 149900,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 150135,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 150360,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 150584,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 150885,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 151074,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 151265,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 151275,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 151488,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 151901,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 152145,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 152331,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 152531,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 152535,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 152714,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 154502,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 155204,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 156063,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 156177,
+"sesID": 6766328486022335402
+},
+{
+"type": "playerHit"
+,"time": 156196,
+"sesID": 6766328486022335402
+"levelID": 3
+"cordX": -9,804171
+"cordY": 12,04052
+"hitCause": Enem2
+"hitDamage": 10
+"currentHealth": 90
+},
+{
+"type": "playShot"
+,"time": 156708,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 157217,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 157461,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 157575,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 157687,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 157795,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 157872,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 161760,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 161936,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 162115,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 162129,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 162256,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 162331,
+"sesID": 6766328486022335402
+},
+{
+"type": "enBulHit"
+,"time": 162415,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 162502,
+"sesID": 6766328486022335402
+},
+{
+"type": "playShot"
+,"time": 162681,
+"sesID": 6766328486022335402
+},
+{
+"type": "sesEnd"
+,"time": 169040,
+"sesID": 6766328486022335402
+}
+]

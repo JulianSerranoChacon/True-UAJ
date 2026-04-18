@@ -1,0 +1,164 @@
+[
+{
+"type": "sesStart"
+,"time": 20080,
+"sesID": 7955441950767837077
+},
+{
+"type": "playerCP"
+,"time": 20080,
+"sesID": 7955441950767837077,
+"levelID": 2,
+"checkpointID": -42930
+}
+]
+[
+{
+"type": "playShot"
+,"time": 21877,
+"sesID": 7955441950767837077
+},
+{
+"type": "playShot"
+,"time": 22101,
+"sesID": 7955441950767837077
+},
+{
+"type": "playShot"
+,"time": 22289,
+"sesID": 7955441950767837077
+},
+{
+"type": "playShot"
+,"time": 22515,
+"sesID": 7955441950767837077
+},
+{
+"type": "playShot"
+,"time": 22664,
+"sesID": 7955441950767837077
+},
+{
+"type": "playShot"
+,"time": 22815,
+"sesID": 7955441950767837077
+},
+{
+"type": "playShot"
+,"time": 23001,
+"sesID": 7955441950767837077
+},
+{
+"type": "playShot"
+,"time": 23228,
+"sesID": 7955441950767837077
+},
+{
+"type": "playShot"
+,"time": 25405,
+"sesID": 7955441950767837077
+},
+{
+"type": "playShot"
+,"time": 25556,
+"sesID": 7955441950767837077
+},
+{
+"type": "playShot"
+,"time": 25781,
+"sesID": 7955441950767837077
+},
+{
+"type": "playShot"
+,"time": 25931,
+"sesID": 7955441950767837077
+},
+{
+"type": "enBulHit"
+,"time": 25938,
+"sesID": 7955441950767837077
+},
+{
+"type": "enBulHit"
+,"time": 26116,
+"sesID": 7955441950767837077
+},
+{
+"type": "playShot"
+,"time": 26119,
+"sesID": 7955441950767837077
+},
+{
+"type": "enBulHit"
+,"time": 26225,
+"sesID": 7955441950767837077
+},
+{
+"type": "playShot"
+,"time": 26304,
+"sesID": 7955441950767837077
+},
+{
+"type": "playShot"
+,"time": 26456,
+"sesID": 7955441950767837077
+},
+{
+"type": "playShot"
+,"time": 26681,
+"sesID": 7955441950767837077
+},
+{
+"type": "playShot"
+,"time": 26830,
+"sesID": 7955441950767837077
+},
+{
+"type": "playShot"
+,"time": 27020,
+"sesID": 7955441950767837077
+},
+{
+type": "playerHeal"
+,"time": 27056,
+"sesID": 7955441950767837077,
+"previousHealth": 85,
+"healingAmount": 0,
+"finalHealth": 85
+},
+{
+"type": "playShot"
+,"time": 27206,
+"sesID": 7955441950767837077
+},
+{
+"type": "playShot"
+,"time": 27393,
+"sesID": 7955441950767837077
+},
+{
+"type": "enBulHit"
+,"time": 27537,
+"sesID": 7955441950767837077
+},
+{
+"type": "playShot"
+,"time": 27583,
+"sesID": 7955441950767837077
+},
+{
+"type": "enBulHit"
+,"time": 27658,
+"sesID": 7955441950767837077
+},
+{
+"type": "enBulHit"
+,"time": 27816,
+"sesID": 7955441950767837077
+},
+{
+"type": "sesEnd"
+,"time": 37271,
+"sesID": 7955441950767837077
+}
+]
