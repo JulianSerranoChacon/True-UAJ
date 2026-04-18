@@ -33,7 +33,7 @@ public class TrackerEvent
     // y no tener que repetir texto
     protected string parentToJson()
     {
-        return "\"time\": " + timeStamp + ",\n\"sesID\": " + sessionID; 
+        return ",\"time\": " + timeStamp + ",\n\"sesID\": " + sessionID; 
     }
     #endregion
 }

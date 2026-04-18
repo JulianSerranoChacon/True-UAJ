@@ -1,0 +1,154 @@
+{
+{
+"type": "sesStart"
+"time": 135,
+"sesID": 8821565386110394578
+},
+{
+"type": "playerCP"
+"time": 136,
+"sesID": 8821565386110394578
+"levelID": 2
+"checkpointID": -35758
+}
+}
+{
+{
+"type": "playShot"
+"time": 6013,
+"sesID": 8821565386110394578
+},
+{
+"type": "playShot"
+"time": 6238,
+"sesID": 8821565386110394578
+},
+{
+"type": "playShot"
+"time": 6576,
+"sesID": 8821565386110394578
+},
+{
+"type": "playShot"
+"time": 6763,
+"sesID": 8821565386110394578
+},
+{
+"type": "playShot"
+"time": 9532,
+"sesID": 8821565386110394578
+},
+{
+"type": "playShot"
+"time": 9719,
+"sesID": 8821565386110394578
+},
+{
+"type": "enBulHit"
+"time": 9816,
+"sesID": 8821565386110394578
+},
+{
+"type": "playShot"
+"time": 9907,
+"sesID": 8821565386110394578
+},
+{
+"type": "enBulHit"
+"time": 9977,
+"sesID": 8821565386110394578
+},
+{
+"type": "playShot"
+"time": 10094,
+"sesID": 8821565386110394578
+},
+{
+"type": "enBulHit"
+"time": 10136,
+"sesID": 8821565386110394578
+},
+{
+"type": "playShot"
+"time": 10249,
+"sesID": 8821565386110394578
+},
+{
+"type": "playShot"
+"time": 10733,
+"sesID": 8821565386110394578
+},
+{
+"type": "playShot"
+"time": 10921,
+"sesID": 8821565386110394578
+},
+{
+"type": "playShot"
+"time": 11109,
+"sesID": 8821565386110394578
+},
+{
+"type": "enBulHit"
+"time": 11776,
+"sesID": 8821565386110394578
+},
+{
+"type": "playShot"
+"time": 12612,
+"sesID": 8821565386110394578
+},
+{
+"type": "enBulHit"
+"time": 12695,
+"sesID": 8821565386110394578
+},
+{
+"type": "playShot"
+"time": 12799,
+"sesID": 8821565386110394578
+},
+{
+"type": "enBulHit"
+"time": 12817,
+"sesID": 8821565386110394578
+},
+{
+"type": "playShot"
+"time": 12979,
+"sesID": 8821565386110394578
+},
+{
+"type": "playShot"
+"time": 13203,
+"sesID": 8821565386110394578
+},
+{
+"type": "playShot"
+"time": 44114,
+"sesID": 8821565386110394578
+},
+{
+"type": "playShot"
+"time": 44302,
+"sesID": 8821565386110394578
+},
+{
+"type": "playShot"
+"time": 44452,
+"sesID": 8821565386110394578
+},
+{
+"type": "playShot"
+"time": 44602,
+"sesID": 8821565386110394578
+},
+{
+"type": "playShot"
+"time": 44753,
+"sesID": 8821565386110394578
+},
+{
+"type": "playShot"
+"time": 44941,
+"sesID": 88
