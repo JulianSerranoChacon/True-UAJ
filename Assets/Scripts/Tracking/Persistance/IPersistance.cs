@@ -13,7 +13,7 @@ public abstract class IPersistance
         serializer = Is;
         try
         {
-            sw = new StreamWriter(Application.dataPath + "/Sessions/"+fileName+".json", true);
+            sw = new StreamWriter("../True-UAJ/Analisis/Sessions/" + fileName+".json", true);
         }
         catch (ArgumentNullException e)
         {
