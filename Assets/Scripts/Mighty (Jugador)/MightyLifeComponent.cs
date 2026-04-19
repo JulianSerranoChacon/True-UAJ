@@ -166,7 +166,7 @@ public class MightyLifeComponent : MonoBehaviour
     //Sistema de Telemetria
     private void CheckTelemetrySysHealing(float cureAmount)
     {
-        if (cureAmount != _maxhealth) //No cuenta revivir como curarse
+        if (cureAmount != _maxhealth || cureAmount == 0) //No cuenta revivir como curarse, ni tampoco recibir 0 curacion como curarse
         {
             PlayerHealing playerHealing = new PlayerHealing();
             playerHealing.TimeStamp = Tracker.Instance.GetEventTime();
