@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float _deathTimeDamage; //Da�o que quita cada ciclo
     public bool _canUseMelee { get; private set; }
     public bool _canExitLevel { get; private set; }
+
+    private bool _checkTS;
     #endregion
 
     #region References
@@ -97,6 +99,7 @@ public class GameManager : MonoBehaviour
         _canExitLevel = false;
         _currentWeapon = 2;
         _currentTime = 600.0f;
+        _checkTS = true;
     }
 
     void Update()
@@ -121,7 +124,11 @@ public class GameManager : MonoBehaviour
             _player.GetComponent<PauseMenu>().enabled = false;
             if (_characterController._doorTouched)
             {
-                CheckTelemetrySys();
+                if (_checkTS)
+                {
+                    CheckTelemetrySys();
+                    _checkTS = false;
+                }
                 _canExitLevel = true;
             }
 
