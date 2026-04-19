@@ -126,7 +126,10 @@ public class MightyLifeComponent : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        _health -= damage;
+        float initHealth = _health;
+       _health -= damage;
+        if (_health > _maxhealth)
+            _health = _maxhealth;
 
         if (damage > 0)
         {
@@ -137,15 +140,13 @@ public class MightyLifeComponent : MonoBehaviour
         }
         else
         {
-            CheckTelemetrySysHealing((-damage));
+            CheckTelemetrySysHealing((-damage),initHealth);
 
             if (GameManager.instance._UImanager != null)
             {
                 GameManager.instance._UImanager.ActualizarInterfaz(GetHealth(), false);
             }
         }
-
-
         if (_health <= 0)
         {
             GetComponent<AudioSource>().PlayOneShot(_deathSFX);
@@ -164,18 +165,17 @@ public class MightyLifeComponent : MonoBehaviour
     }
 
     //Sistema de Telemetria
-    private void CheckTelemetrySysHealing(float cureAmount)
+    private void CheckTelemetrySysHealing(float cureAmount,float initialHealth)
     {
-        if (cureAmount != _maxhealth || cureAmount == 0) //No cuenta revivir como curarse, ni tampoco recibir 0 curacion como curarse
+        if (cureAmount != _maxhealth ) //No cuenta revivir como curarse
         {
             PlayerHealing playerHealing = new PlayerHealing();
             playerHealing.TimeStamp = Tracker.Instance.GetEventTime();
             playerHealing.SessionID = Tracker.Instance.GetSesionID();
 
-            playerHealing.PreviousHealth = _health - cureAmount;
+            playerHealing.PreviousHealth = initialHealth;
             playerHealing.HealingAmount = cureAmount;
-            playerHealing.FinalHealth = _health;
-
+            playerHealing.FinalHealth = _health ;
             //Envia datos al TRACKER del Sistema de Telemetria
             Tracker.Instance.AddEvent(playerHealing);
         }
@@ -323,6 +323,7 @@ public class MightyLifeComponent : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        Debug.Log(_maxhealth);
         _animator = GetComponent<Animator>();
         _myInputComponent = GetComponent<InputComponent>();
        

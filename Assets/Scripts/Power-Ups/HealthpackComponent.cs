@@ -19,17 +19,8 @@ public class HealthpackComponent : MonoBehaviour
             // referencias en la colision
             _myMightyLifeComponent =collision.gameObject.GetComponent<MightyLifeComponent>();
 
-            //Comprueba que la vida actual es menos que la vida máxima establecida.
-            if (_myMightyLifeComponent.GetHealth() <= _myMightyLifeComponent.GetMaxHealth() - _sanation)
-            {
-                //Hacer que se le sume a la vida actual el "healthbonus". La vida sumada hacerlo en negativo porque es "Hacer daño" pero invertido.
                 _myMightyLifeComponent.TakeDamage(-_sanation);
-            }
-            else
-            {
-                //Con la resta de la vida máxima y la vida actual conseguimos la vida que le falta, y se le cura la resta. Se pone en negativo porque el TakeDamage negativo es curación
-                _myMightyLifeComponent.TakeDamage(-(_myMightyLifeComponent.GetMaxHealth() - _myMightyLifeComponent.GetHealth()));
-            }
+ 
             Destroy(gameObject);
         }
     }

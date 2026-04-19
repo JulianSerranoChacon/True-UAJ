@@ -19,7 +19,6 @@ public class CircularBuffer<T>
 
     public void Add(T obj)
     {
-        UnityEngine.Debug.Log(_size);
         if (_queue.Count == _size)
         {
             _queue.Dequeue();
