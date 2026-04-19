@@ -137,7 +137,7 @@ public class MightyLifeComponent : MonoBehaviour
         }
         else
         {
-            CheckTelemetrySysHealing((damage));
+            CheckTelemetrySysHealing((-damage));
 
             if (GameManager.instance._UImanager != null)
             {
