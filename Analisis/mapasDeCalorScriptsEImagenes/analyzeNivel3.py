@@ -57,7 +57,7 @@ if __name__ == '__main__':
         print(f"Crea la carpeta {folder_path} y mete el archivo json dentro.")
     else:
         for file_name in os.listdir(folder_path):
-            if file_name.endswith('2.json'):
+            if file_name.endswith('.json'):
                 file_path = os.path.join(folder_path, file_name)
                 print(f"Procesando: {file_name}...")
 
