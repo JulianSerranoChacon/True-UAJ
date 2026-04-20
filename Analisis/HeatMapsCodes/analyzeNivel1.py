@@ -45,7 +45,7 @@ def drawHexbinHeatmap(data_list, background_image, output_file, target_level, gr
     print(f"¡Éxito! Imagen guardada como: {output_file}")
 
 if __name__ == '__main__':
-    folder_path = './data'
+    folder_path = '../.././Assets/Sessions'
     all_hits = []
     # ID de la sesion para ponerla en el nombre del archivo
     ID_SESION = "desconocida"
