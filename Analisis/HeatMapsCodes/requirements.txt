@@ -1,2 +1,4 @@
-pandas
-matplotlib==3.10.0
+pandas==3.0.2
+seaborn
+matplotlib==3.10.8
+scipy
