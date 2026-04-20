@@ -35,4 +35,7 @@ call python analyzeNivel2.py
 echo Ejecutando Nivel 3...
 call python analyzeNivel3.py
 
+echo Creando Metricas...
+call python Analisis.py
+
 echo Creacion de heatmaps completada

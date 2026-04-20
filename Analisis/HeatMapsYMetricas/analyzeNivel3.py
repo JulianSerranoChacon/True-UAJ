@@ -85,7 +85,7 @@ if __name__ == '__main__':
     drawHexbinHeatmap(
         data_list=all_hits,
         background_image="bgNivel3.png",
-        output_file=f"resultado_hits_nivel_3_{ID_SESION}.png",
+        output_file=f"./HeatMaps/resultado_hits_nivel_3_{ID_SESION}.png",
         target_level=ID_NIVEL_DESEADO,
         gridsize=(152, 303),
         extent=[0, 152, 0, 303]

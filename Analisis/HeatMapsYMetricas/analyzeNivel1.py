@@ -18,8 +18,8 @@ def drawHexbinHeatmap(data_list, background_image, output_file, target_level, gr
         print(f"Aviso: No se encontraron impactos (hits) para el Level ID: {target_level}")
         return
 
-    # Proporción vertical (8x16 es buena para 153x337)
-    fig, ax = plt.subplots(figsize=(8, 16)) 
+    # Proporción vertical (9x12 es buena para 99x155)
+    fig, ax = plt.subplots(figsize=(9, 12)) 
 
     try:
         img = plt.imread(background_image)
@@ -29,8 +29,8 @@ def drawHexbinHeatmap(data_list, background_image, output_file, target_level, gr
 
     # Dibujamos el mapa
     hb = ax.hexbin(
-        x=(data["x"] + 19), 
-        y=(data["y"] - 58),
+        x=(data["x"] + 59), 
+        y=(data["y"] + 9),
         gridsize=gridsize,
         extent=extent,
         alpha=0.6,
@@ -50,7 +50,7 @@ if __name__ == '__main__':
     # ID de la sesion para ponerla en el nombre del archivo
     ID_SESION = "desconocida"
     # Nivel a procesar
-    ID_NIVEL_DESEADO = 4 
+    ID_NIVEL_DESEADO = 3 
 
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
@@ -86,9 +86,9 @@ if __name__ == '__main__':
     # Dibujar el heatmap con la lista de hits ya limpia
     drawHexbinHeatmap(
         data_list=all_hits,
-        background_image="bgNivel2.png",
-        output_file=f"resultado_hits_nivel_2_{ID_SESION}.png",
+        background_image="bgNivel1.png",
+        output_file=f"./HeatMaps/resultado_hits_nivel_1_{ID_SESION}.png",
         target_level=ID_NIVEL_DESEADO,
-        gridsize=(153, 337),
-        extent=[0, 153, 0, 337]
+        gridsize=(99, 155),
+        extent=[0, 99, 0, 155]
     )
