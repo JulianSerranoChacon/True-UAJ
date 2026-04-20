@@ -17,7 +17,7 @@ public class Tracker
 
     //Cola circular para almacenar eventos
     CircularBuffer<TrackerEvent> _events;
-    [SerializeField] int _eventTrackerSize=100;
+    [SerializeField] int _eventTrackerSize = 100;
 
     //Acceso a la instancia unica del tracker
     public static Tracker Instance

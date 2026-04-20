@@ -13,7 +13,14 @@ public abstract class IPersistance
         serializer = Is;
         try
         {
-            sw = new StreamWriter("../True-UAJ/Analisis/Sessions/" + fileName+".json", true);
+            string dirPath = Path.Combine(Application.dataPath, "Sessions");
+
+            if (!Directory.Exists(dirPath)) 
+                Directory.CreateDirectory(dirPath);
+
+            string fullPath = Path.Combine(dirPath, fileName);
+
+            sw = new StreamWriter(fullPath + ".json", true);
         }
         catch (ArgumentNullException e)
         {
@@ -23,9 +30,10 @@ public abstract class IPersistance
     }
     public void Close()
     {
-        if (!fileNull)
+        if (!fileNull && sw != null)
         {
             sw.Close();
+            sw = null;
         }
     }
     //Metodo para el volacado de los datos de la cola para persistir los datos
