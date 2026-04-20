@@ -1,0 +1,4385 @@
+[
+{
+"type": "sesStart"
+,"time": 17425,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerCP"
+,"time": 17426,
+"sesID": 2653900764562976546,
+"levelID": 2,
+"checkpointID": -74658
+}
+,
+{
+"type": "playShot"
+,"time": 122619,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 122773,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 122979,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 123107,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 123514,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 125064,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 126145,
+"sesID": 2653900764562976546,
+"levelID": 2,
+"cordX": 36.20883,
+"cordY": -2.505558,
+"hitCause": 1,
+"hitDamage": 5,
+"currentHealth": 80
+}
+,{
+"type": "playerHit"
+,"time": 127674,
+"sesID": 2653900764562976546,
+"levelID": 2,
+"cordX": 31.40634,
+"cordY": -2.505555,
+"hitCause": 1,
+"hitDamage": 5,
+"currentHealth": 75
+}
+,{
+"type": "playShot"
+,"time": 128325,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 128360,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 128549,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 128589,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 129246,
+"sesID": 2653900764562976546,
+"levelID": 2,
+"cordX": 29.59868,
+"cordY": -2.505554,
+"hitCause": 1,
+"hitDamage": 5,
+"currentHealth": 70
+}
+,{
+"type": "playerHit"
+,"time": 130739,
+"sesID": 2653900764562976546,
+"levelID": 2,
+"cordX": 29.41039,
+"cordY": -2.505554,
+"hitCause": 1,
+"hitDamage": 5,
+"currentHealth": 65
+}
+,{
+"type": "playShot"
+,"time": 131717,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 131838,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 131978,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 132158,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 132312,
+"sesID": 2653900764562976546,
+"levelID": 2,
+"cordX": 29.40606,
+"cordY": -2.505554,
+"hitCause": 1,
+"hitDamage": 5,
+"currentHealth": 60
+}
+,{
+"type": "playerHit"
+,"time": 133850,
+"sesID": 2653900764562976546,
+"levelID": 2,
+"cordX": 29.47095,
+"cordY": -2.505554,
+"hitCause": 1,
+"hitDamage": 5,
+"currentHealth": 55
+}
+,{
+"type": "playerHit"
+,"time": 137750,
+"sesID": 2653900764562976546,
+"levelID": 2,
+"cordX": 40.50873,
+"cordY": -2.505553,
+"hitCause": 1,
+"hitDamage": 5,
+"currentHealth": 50
+}
+,{
+"type": "playerHit"
+,"time": 139262,
+"sesID": 2653900764562976546,
+"levelID": 2,
+"cordX": 40.00487,
+"cordY": -2.505553,
+"hitCause": 1,
+"hitDamage": 5,
+"currentHealth": 45
+}
+,{
+"type": "playerHit"
+,"time": 140737,
+"sesID": 2653900764562976546,
+"levelID": 2,
+"cordX": 40.61155,
+"cordY": -2.505553,
+"hitCause": 1,
+"hitDamage": 5,
+"currentHealth": 40
+}
+,{
+"type": "playerHit"
+,"time": 142255,
+"sesID": 2653900764562976546,
+"levelID": 2,
+"cordX": 39.99511,
+"cordY": -2.505553,
+"hitCause": 1,
+"hitDamage": 5,
+"currentHealth": 35
+}
+,{
+"type": "playShot"
+,"time": 142895,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 142900,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 143021,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHeal"
+,"time": 144309,
+"sesID": 2653900764562976546,
+"previousHealth": 35,
+"healingAmount": 10,
+"finalHealth": 45
+}
+,{
+"type": "playShot"
+,"time": 144542,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 144701,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 144827,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 144990,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 145141,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 145233,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 145753,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 146339,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 146415,
+"sesID": 2653900764562976546,
+"levelID": 2,
+"cordX": 53.03898,
+"cordY": -2.505569,
+"hitCause": 1,
+"hitDamage": 5,
+"currentHealth": 40
+}
+,{
+"type": "playShot"
+,"time": 147047,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 147082,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 147206,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 147250,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 147334,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 147502,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 147661,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHeal"
+,"time": 148012,
+"sesID": 2653900764562976546,
+"previousHealth": 40,
+"healingAmount": 10,
+"finalHealth": 50
+}
+,{
+"type": "playShot"
+,"time": 149426,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 149714,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 149874,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 153435,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 153597,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 153699,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 153851,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 154004,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 154271,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 156226,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 159533,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 161296,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 162596,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 162800,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 169232,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 169428,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 169591,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 169757,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 171227,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 171393,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 171516,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 172189,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerCP"
+,"time": 179420,
+"sesID": 2653900764562976546,
+"levelID": 2,
+"checkpointID": -74156
+}
+,
+{
+"type": "playShot"
+,"time": 181815,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 181978,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 182097,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 182181,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 182225,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 182307,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 182349,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 182510,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 182642,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 189753,
+"sesID": 2653900764562976546,
+"levelID": 2,
+"cordX": 147.7762,
+"cordY": -2.505572,
+"hitCause": 1,
+"hitDamage": 5,
+"currentHealth": 45
+}
+,{
+"type": "playShot"
+,"time": 190977,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 191115,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 191126,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 191260,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 191302,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 191389,
+"sesID": 2653900764562976546,
+"levelID": 2,
+"cordX": 146.7226,
+"cordY": -2.505571,
+"hitCause": 1,
+"hitDamage": 5,
+"currentHealth": 40
+}
+,{
+"type": "playShot"
+,"time": 191943,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 191980,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 192154,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 192191,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 192290,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 192300,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 192392,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 192397,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 192507,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 192628,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 192749,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 238644,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 238874,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 239007,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 239546,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 239833,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 239972,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 240117,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 240240,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 240409,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 240702,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 241548,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 241736,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 241847,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 241848,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 241975,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 242032,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 242079,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerCP"
+,"time": 245798,
+"sesID": 2653900764562976546,
+"levelID": 2,
+"checkpointID": -74502
+}
+,
+{
+"type": "playShot"
+,"time": 247786,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 247985,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 248065,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 248113,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 248233,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 248277,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 250636,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 250787,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 250910,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 251035,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 251154,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 251441,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 252133,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 252246,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 252367,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 252441,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 252488,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 252571,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 256588,
+"sesID": 2653900764562976546,
+"levelID": 2,
+"cordX": 154.3591,
+"cordY": 41.4944,
+"hitCause": 1,
+"hitDamage": 5,
+"currentHealth": 35
+}
+,{
+"type": "playShot"
+,"time": 257373,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 257411,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 257499,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 257535,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 257641,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 257665,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 257806,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 257970,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 258010,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 258132,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 258172,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 258293,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 258328,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 258447,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 261766,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 261912,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 262063,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 262064,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 262183,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 262184,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 262342,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 273125,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 273195,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 273282,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 273366,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 273402,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 273444,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 273527,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 273643,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 273759,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 273971,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHeal"
+,"time": 274125,
+"sesID": 2653900764562976546,
+"previousHealth": 35,
+"healingAmount": 10,
+"finalHealth": 45
+}
+,{
+"type": "playShot"
+,"time": 295144,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 295328,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 295488,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 296227,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 296384,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 296540,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 296699,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 296868,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 297056,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 297336,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 297530,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 308243,
+"sesID": 2653900764562976546,
+"levelID": 2,
+"cordX": 85.2509,
+"cordY": 54.97681,
+"hitCause": 3,
+"hitDamage": 5,
+"currentHealth": 40
+}
+,{
+"type": "playerHit"
+,"time": 310694,
+"sesID": 2653900764562976546,
+"levelID": 2,
+"cordX": 80.61546,
+"cordY": 53.9526,
+"hitCause": 3,
+"hitDamage": 5,
+"currentHealth": 35
+}
+,{
+"type": "playShot"
+,"time": 315480,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 315644,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 315778,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 315892,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 316012,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 316135,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 316262,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 316381,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 316421,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 316493,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 316532,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 316615,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 316616,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 316774,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHeal"
+,"time": 318375,
+"sesID": 2653900764562976546,
+"previousHealth": 35,
+"healingAmount": 10,
+"finalHealth": 45
+}
+,{
+"type": "playerEnd"
+,"time": 321498,
+"sesID": 2653900764562976546,
+"levelID": 2,
+"currentHealth": 45
+}
+,
+{
+"type": "playerCP"
+,"time": 328781,
+"sesID": 2653900764562976546,
+"levelID": 3,
+"checkpointID": -81526
+}
+,
+{
+"type": "playShot"
+,"time": 330325,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 330537,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 330713,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 334998,
+"sesID": 2653900764562976546,
+"levelID": 3,
+"cordX": -6.512498,
+"cordY": 7.490175,
+"hitCause": 1,
+"hitDamage": 10,
+"currentHealth": 90
+}
+,{
+"type": "playShot"
+,"time": 335745,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 335757,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 335875,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 335882,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 335988,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 335997,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 336122,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 336229,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 336957,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 336963,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 337081,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 337101,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 337200,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 337219,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 337314,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 340598,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 340720,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 340732,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 340860,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 340863,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 340990,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 341249,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 341424,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 341551,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 341689,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 341842,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 341859,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 341974,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHeal"
+,"time": 345778,
+"sesID": 2653900764562976546,
+"previousHealth": 90,
+"healingAmount": 10,
+"finalHealth": 100
+}
+,{
+"type": "playShot"
+,"time": 359560,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 359699,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 359836,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 359944,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 360495,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 360627,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 360698,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 360741,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 360864,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 360919,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 360971,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 361611,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 361617,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 361758,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHeal"
+,"time": 362319,
+"sesID": 2653900764562976546,
+"previousHealth": 100,
+"healingAmount": 10,
+"finalHealth": 100
+}
+,{
+"type": "playerCP"
+,"time": 364155,
+"sesID": 2653900764562976546,
+"levelID": 3,
+"checkpointID": -81020
+}
+,
+{
+"type": "playerHit"
+,"time": 370280,
+"sesID": 2653900764562976546,
+"levelID": 3,
+"cordX": 2.03,
+"cordY": 37.46145,
+"hitCause": 4,
+"hitDamage": 10,
+"currentHealth": 90
+}
+,{
+"type": "playShot"
+,"time": 374154,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 374400,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 376011,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 376160,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 376196,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 376274,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 376280,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 376398,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 376528,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 376636,
+"sesID": 2653900764562976546,
+"levelID": 3,
+"cordX": 27.5278,
+"cordY": 37.46597,
+"hitCause": 1,
+"hitDamage": 10,
+"currentHealth": 80
+}
+,{
+"type": "playShot"
+,"time": 377261,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 377279,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 377374,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 377498,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHeal"
+,"time": 379095,
+"sesID": 2653900764562976546,
+"previousHealth": 80,
+"healingAmount": 10,
+"finalHealth": 90
+}
+,{
+"type": "playShot"
+,"time": 383750,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 383889,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 383935,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 384032,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 384041,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 384720,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 384857,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 384860,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 384984,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 385518,
+"sesID": 2653900764562976546,
+"levelID": 3,
+"cordX": 18.19396,
+"cordY": 49.65675,
+"hitCause": 2,
+"hitDamage": 10,
+"currentHealth": 80
+}
+,{
+"type": "playerDeath"
+,"time": 386916,
+"sesID": 2653900764562976546,
+"levelID": 3,
+"coordX": 19.00938,
+"coordY": 25.68554,
+"deathCause": 0
+}
+,{
+"type": "playerCP"
+,"time": 392074,
+"sesID": 2653900764562976546,
+"levelID": 3,
+"checkpointID": -84042
+}
+,
+{
+"type": "playShot"
+,"time": 394374,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 394511,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 394524,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 394544,
+"sesID": 2653900764562976546,
+"levelID": 3,
+"cordX": -8.197687,
+"cordY": 28.49225,
+"hitCause": 1,
+"hitDamage": 10,
+"currentHealth": 90
+}
+,{
+"type": "playShot"
+,"time": 395227,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 395768,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 395893,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 395904,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 396007,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 396042,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 396130,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 396255,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 404249,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 404283,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 404393,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 404512,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 404631,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 404806,
+"sesID": 2653900764562976546,
+"levelID": 3,
+"cordX": 28.31856,
+"cordY": 37.47425,
+"hitCause": 1,
+"hitDamage": 10,
+"currentHealth": 80
+}
+,{
+"type": "playShot"
+,"time": 405332,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 405361,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 405456,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 405463,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 405585,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 405714,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 412466,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 412604,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 412717,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 412763,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 412833,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 412861,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 413513,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 413648,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 413664,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 413725,
+"sesID": 2653900764562976546,
+"levelID": 3,
+"cordX": 17.2486,
+"cordY": 53.04056,
+"hitCause": 2,
+"hitDamage": 10,
+"currentHealth": 70
+}
+,{
+"type": "playerHeal"
+,"time": 415284,
+"sesID": 2653900764562976546,
+"previousHealth": 70,
+"healingAmount": 10,
+"finalHealth": 80
+}
+,{
+"type": "playShot"
+,"time": 419469,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 419609,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 419729,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 419764,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 419859,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 419905,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 419971,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 420025,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 421987,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 422080,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 422128,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 422224,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 422250,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 422341,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 422388,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHeal"
+,"time": 423343,
+"sesID": 2653900764562976546,
+"previousHealth": 80,
+"healingAmount": 10,
+"finalHealth": 90
+}
+,{
+"type": "playerHeal"
+,"time": 424683,
+"sesID": 2653900764562976546,
+"previousHealth": 90,
+"healingAmount": 10,
+"finalHealth": 100
+}
+,{
+"type": "playShot"
+,"time": 427225,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 427366,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 427489,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 427662,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 427683,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 427787,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 427803,
+"sesID": 2653900764562976546,
+"levelID": 3,
+"cordX": 24.82717,
+"cordY": 59.9534,
+"hitCause": 3,
+"hitDamage": 10,
+"currentHealth": 90
+}
+,{
+"type": "enBulHit"
+,"time": 427803,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 428391,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 428403,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 428508,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 428627,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHeal"
+,"time": 428921,
+"sesID": 2653900764562976546,
+"previousHealth": 90,
+"healingAmount": 10,
+"finalHealth": 100
+}
+,{
+"type": "playerHit"
+,"time": 434003,
+"sesID": 2653900764562976546,
+"levelID": 3,
+"cordX": 14.54149,
+"cordY": 71.21822,
+"hitCause": 4,
+"hitDamage": 10,
+"currentHealth": 90
+}
+,{
+"type": "playShot"
+,"time": 436524,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 436663,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 436778,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 436822,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 436891,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 436963,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 437004,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 437182,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 441045,
+"sesID": 2653900764562976546,
+"levelID": 3,
+"cordX": -5.578892,
+"cordY": 67.46991,
+"hitCause": 1,
+"hitDamage": 10,
+"currentHealth": 80
+}
+,{
+"type": "playShot"
+,"time": 441672,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 441684,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 441827,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 441885,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 441947,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 442024,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 442078,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 444400,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 444544,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 444644,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 444668,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 444794,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 444803,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 444924,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 444926,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerCP"
+,"time": 449222,
+"sesID": 2653900764562976546,
+"levelID": 3,
+"checkpointID": -83736
+}
+,
+{
+"type": "playerHeal"
+,"time": 461484,
+"sesID": 2653900764562976546,
+"previousHealth": 80,
+"healingAmount": 10,
+"finalHealth": 90
+}
+,{
+"type": "playShot"
+,"time": 463631,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 463724,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 463759,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 463840,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 463871,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 463961,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 463999,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 464132,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 464248,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 465680,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 465761,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 465809,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 465902,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 465934,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 466021,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 466066,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 466195,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 468346,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 468502,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 468614,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 468780,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 468946,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 469102,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 469229,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 469362,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 469490,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 469707,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 469782,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 469861,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 470396,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 470444,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 470524,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 470543,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 470647,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 470682,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 470784,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 470934,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHeal"
+,"time": 471321,
+"sesID": 2653900764562976546,
+"previousHealth": 90,
+"healingAmount": 10,
+"finalHealth": 100
+}
+,{
+"type": "playShot"
+,"time": 475389,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 475517,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 475542,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 475642,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 475664,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 475770,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 475781,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 475904,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 476043,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHeal"
+,"time": 477464,
+"sesID": 2653900764562976546,
+"previousHealth": 100,
+"healingAmount": 10,
+"finalHealth": 100
+}
+,{
+"type": "playShot"
+,"time": 479850,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 480063,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 480101,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 480180,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 480185,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 480315,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 480320,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 480443,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 481504,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 491909,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 492334,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 492468,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 492592,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 492661,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 496062,
+"sesID": 2653900764562976546,
+"levelID": 3,
+"cordX": -8.498508,
+"cordY": 93.23415,
+"hitCause": 4,
+"hitDamage": 10,
+"currentHealth": 90
+}
+,{
+"type": "playShot"
+,"time": 497238,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 497372,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 497400,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 497494,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 497623,
+"sesID": 2653900764562976546,
+"levelID": 3,
+"cordX": -2.589421,
+"cordY": 91.9922,
+"hitCause": 1,
+"hitDamage": 10,
+"currentHealth": 80
+}
+,{
+"type": "playShot"
+,"time": 498244,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 498262,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 498379,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 498385,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 498501,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 500467,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 500522,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 500723,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 500740,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 500847,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 500861,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 506320,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 506363,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 506469,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 506503,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 506605,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 506645,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 506722,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 506840,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 509678,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 509922,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 509944,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 509962,
+"sesID": 2653900764562976546,
+"levelID": 3,
+"cordX": 0.5079174,
+"cordY": 119.2957,
+"hitCause": 3,
+"hitDamage": 10,
+"currentHealth": 70
+}
+,{
+"type": "playShot"
+,"time": 510600,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 510759,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 510781,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 510901,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 510920,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 511063,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 511208,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerEnd"
+,"time": 518421,
+"sesID": 2653900764562976546,
+"levelID": 3,
+"currentHealth": 70
+}
+,
+{
+"type": "playerCP"
+,"time": 526547,
+"sesID": 2653900764562976546,
+"levelID": 4,
+"checkpointID": -90162
+}
+,
+{
+"type": "playShot"
+,"time": 534101,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 534249,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 538563,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 539317,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 539469,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 539502,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 539609,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 539800,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 540293,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 540459,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 540482,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 540595,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 540643,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 543579,
+"sesID": 2653900764562976546,
+"levelID": 4,
+"cordX": 35.31786,
+"cordY": 79.91084,
+"hitCause": 2,
+"hitDamage": 10,
+"currentHealth": 105
+}
+,{
+"type": "playerHeal"
+,"time": 544101,
+"sesID": 2653900764562976546,
+"previousHealth": 105,
+"healingAmount": 10,
+"finalHealth": 115
+}
+,{
+"type": "playShot"
+,"time": 548110,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 548245,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 548364,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 548442,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 548488,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 548564,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 548606,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 548620,
+"sesID": 2653900764562976546,
+"levelID": 4,
+"cordX": 40.84926,
+"cordY": 79.74697,
+"hitCause": 2,
+"hitDamage": 10,
+"currentHealth": 105
+}
+,{
+"type": "enBulHit"
+,"time": 548687,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 548804,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 549124,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 550301,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 556453,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 556579,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 556582,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 556695,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 556701,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 556805,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 556817,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 556932,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 557043,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 558181,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 558302,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 558332,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 558451,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 558604,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 561852,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 561971,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 562024,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 562083,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 562101,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 562203,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 562243,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 562312,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 562324,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 562437,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 562556,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 568897,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 568983,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 569019,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 569080,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 569129,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 569179,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 569247,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 569259,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 571945,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 572189,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 572343,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 572486,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 572748,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 572888,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 573012,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 573026,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 573080,
+"sesID": 2653900764562976546,
+"levelID": 4,
+"cordX": 56.35596,
+"cordY": 120.7355,
+"hitCause": 3,
+"hitDamage": 15,
+"currentHealth": 90
+}
+,{
+"type": "playShot"
+,"time": 573833,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 573861,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 573969,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 574095,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 574102,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 574218,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 574224,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 574330,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 574564,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHeal"
+,"time": 574941,
+"sesID": 2653900764562976546,
+"previousHealth": 90,
+"healingAmount": 10,
+"finalHealth": 100
+}
+,{
+"type": "playShot"
+,"time": 579096,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 579231,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 579338,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 579471,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 579872,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 579943,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 580019,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 580136,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 580255,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 580389,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 580403,
+"sesID": 2653900764562976546,
+"levelID": 4,
+"cordX": 78.20142,
+"cordY": 124.747,
+"hitCause": 2,
+"hitDamage": 10,
+"currentHealth": 90
+}
+,{
+"type": "enBulHit"
+,"time": 580424,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 581019,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 581026,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 581144,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 581163,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 581268,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 581392,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 596511,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 596524,
+"sesID": 2653900764562976546,
+"levelID": 4,
+"cordX": 110.3299,
+"cordY": 145.0552,
+"hitCause": 2,
+"hitDamage": 15,
+"currentHealth": 75
+}
+,{
+"type": "playerCP"
+,"time": 597999,
+"sesID": 2653900764562976546,
+"levelID": 4,
+"checkpointID": -89472
+}
+,
+{
+"type": "playShot"
+,"time": 599814,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 599882,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 599963,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 599999,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 600082,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 600099,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 600203,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 600222,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 600310,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 600458,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 600577,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHeal"
+,"time": 600982,
+"sesID": 2653900764562976546,
+"previousHealth": 75,
+"healingAmount": 10,
+"finalHealth": 85
+}
+,{
+"type": "playShot"
+,"time": 608164,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 608286,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 608405,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 608623,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 608733,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 608853,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 609163,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 609469,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 609579,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 609699,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 609780,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 609828,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 611089,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 611216,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 611324,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 611448,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 611556,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 611676,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 611793,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 611914,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 612100,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 612479,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 612580,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 612699,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 612782,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 612819,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 612933,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerDeath"
+,"time": 618479,
+"sesID": 2653900764562976546,
+"levelID": 4,
+"coordX": 97.90706,
+"coordY": 163.7515,
+"deathCause": 0
+}
+,{
+"type": "playerCP"
+,"time": 623730,
+"sesID": 2653900764562976546,
+"levelID": 4,
+"checkpointID": -94500
+}
+,
+{
+"type": "playerHit"
+,"time": 627253,
+"sesID": 2653900764562976546,
+"levelID": 4,
+"cordX": 116.2737,
+"cordY": 154.3762,
+"hitCause": 3,
+"hitDamage": 15,
+"currentHealth": 100
+}
+,{
+"type": "playShot"
+,"time": 629651,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 629857,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 630017,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 630036,
+"sesID": 2653900764562976546,
+"levelID": 4,
+"cordX": 114.2674,
+"cordY": 147.5319,
+"hitCause": 3,
+"hitDamage": 15,
+"currentHealth": 85
+}
+,{
+"type": "enBulHit"
+,"time": 630036,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 630671,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 630879,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerDeath"
+,"time": 630973,
+"sesID": 2653900764562976546,
+"levelID": 4,
+"coordX": 113.8506,
+"coordY": 128.7534,
+"deathCause": 0
+}
+,{
+"type": "playerCP"
+,"time": 636186,
+"sesID": 2653900764562976546,
+"levelID": 4,
+"checkpointID": -97164
+}
+,
+{
+"type": "playShot"
+,"time": 638832,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 638966,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 639009,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 639087,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 639096,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 639211,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 639220,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 639294,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 639351,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 646632,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 646762,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 646830,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 646892,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 647031,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 647178,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 647270,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 648042,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 648114,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 648198,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 648270,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 648342,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 653448,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 653683,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 663910,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 664080,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 664093,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 664213,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 664253,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 664326,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 664373,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 664471,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 667206,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 667346,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 667476,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 668870,
+"sesID": 2653900764562976546,
+"levelID": 4,
+"cordX": 92.43488,
+"cordY": 189.5926,
+"hitCause": 1,
+"hitDamage": 15,
+"currentHealth": 100
+}
+,{
+"type": "playShot"
+,"time": 673868,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 677004,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 677090,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 677146,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 677207,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 677267,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 677308,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 677381,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 677387,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 677502,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHeal"
+,"time": 699509,
+"sesID": 2653900764562976546,
+"previousHealth": 100,
+"healingAmount": 10,
+"finalHealth": 110
+}
+,{
+"type": "playerHit"
+,"time": 703111,
+"sesID": 2653900764562976546,
+"levelID": 4,
+"cordX": 67.63742,
+"cordY": 227.5911,
+"hitCause": 3,
+"hitDamage": 15,
+"currentHealth": 95
+}
+,{
+"type": "playerHit"
+,"time": 704708,
+"sesID": 2653900764562976546,
+"levelID": 4,
+"cordX": 55.35539,
+"cordY": 224.3969,
+"hitCause": 1,
+"hitDamage": 15,
+"currentHealth": 80
+}
+,{
+"type": "playShot"
+,"time": 709162,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 709303,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 709432,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 709566,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 709710,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 709824,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 709960,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 710095,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 710217,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 710344,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 710463,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 710600,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 710724,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 710857,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 710983,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 711131,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 711304,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 711435,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 711617,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 711742,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 711882,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 712050,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 712252,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 712472,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerCP"
+,"time": 713650,
+"sesID": 2653900764562976546,
+"levelID": 4,
+"checkpointID": -97306
+}
+,
+{
+"type": "playShot"
+,"time": 715790,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 715940,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 715970,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 716047,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 716072,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 716127,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 716192,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 716207,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 719026,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 719087,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 719182,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 719250,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 719293,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 719368,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 720229,
+"sesID": 2653900764562976546,
+"levelID": 4,
+"cordX": -1.794457,
+"cordY": 255.9885,
+"hitCause": 2,
+"hitDamage": 10,
+"currentHealth": 70
+}
+,{
+"type": "playShot"
+,"time": 721692,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 721714,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 721812,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 721935,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 727785,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 727911,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 727930,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 728035,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 728067,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 728146,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 728189,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 728293,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHeal"
+,"time": 729707,
+"sesID": 2653900764562976546,
+"previousHealth": 70,
+"healingAmount": 10,
+"finalHealth": 80
+}
+,{
+"type": "playerHeal"
+,"time": 730786,
+"sesID": 2653900764562976546,
+"previousHealth": 80,
+"healingAmount": 10,
+"finalHealth": 90
+}
+,{
+"type": "playShot"
+,"time": 733580,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 733734,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 733871,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 734000,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 739187,
+"sesID": 2653900764562976546,
+"levelID": 4,
+"cordX": 34.65531,
+"cordY": 272.5491,
+"hitCause": 1,
+"hitDamage": 15,
+"currentHealth": 75
+}
+,{
+"type": "playerDeath"
+,"time": 746612,
+"sesID": 2653900764562976546,
+"levelID": 4,
+"coordX": 29.42285,
+"coordY": 283.6994,
+"deathCause": 0
+}
+,{
+"type": "playerCP"
+,"time": 752559,
+"sesID": 2653900764562976546,
+"levelID": 4,
+"checkpointID": -101930
+}
+,
+{
+"type": "playShot"
+,"time": 755313,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 755472,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 755504,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 755587,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 755612,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 755663,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 755716,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 755724,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 755865,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 758241,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 758285,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 758374,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 758422,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 758489,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 758544,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 758741,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 759576,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 759621,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 759723,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHeal"
+,"time": 794637,
+"sesID": 2653900764562976546,
+"previousHealth": 115,
+"healingAmount": 10,
+"finalHealth": 115
+}
+,{
+"type": "playShot"
+,"time": 797254,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 803007,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 803159,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 803281,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 803322,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 803403,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 803443,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 803505,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 803560,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 803656,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHeal"
+,"time": 805176,
+"sesID": 2653900764562976546,
+"previousHealth": 115,
+"healingAmount": 10,
+"finalHealth": 115
+}
+,{
+"type": "playShot"
+,"time": 821702,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 821860,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 821991,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 822437,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 822459,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 822576,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 822585,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 822643,
+"sesID": 2653900764562976546,
+"levelID": 4,
+"cordX": 42.06902,
+"cordY": 290.9165,
+"hitCause": 3,
+"hitDamage": 15,
+"currentHealth": 100
+}
+,{
+"type": "playShot"
+,"time": 823192,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 823197,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 823302,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 823322,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 823424,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 823540,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHeal"
+,"time": 823843,
+"sesID": 2653900764562976546,
+"previousHealth": 100,
+"healingAmount": 10,
+"finalHealth": 110
+}
+,{
+"type": "playShot"
+,"time": 823847,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 824007,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 824192,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 824386,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 824600,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 824613,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 824740,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 824783,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 824993,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 825197,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 825387,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 825655,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 825700,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 825789,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 825796,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 825907,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 826032,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playerHit"
+,"time": 829160,
+"sesID": 2653900764562976546,
+"levelID": 4,
+"cordX": 55.21743,
+"cordY": 278.3831,
+"hitCause": 1,
+"hitDamage": 15,
+"currentHealth": 95
+}
+,{
+"type": "playShot"
+,"time": 830304,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 830337,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 830431,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 830460,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 830563,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 830622,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 830680,
+"sesID": 2653900764562976546
+}
+,{
+"type": "enBulHit"
+,"time": 830759,
+"sesID": 2653900764562976546
+}
+,{
+"type": "playShot"
+,"time": 830803,
+"sesID": 2653900764562976546
+}
+,{
+"type": "sesEnd"
+,"time": 839364,
+"sesID": 2653900764562976546
+} 
+] 
