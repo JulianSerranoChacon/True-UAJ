@@ -45,8 +45,6 @@ def drawHexbinHeatmap(data_list, background_image, output_file, target_level, gr
 if __name__ == '__main__':
     folder_path = '../.././Assets/Sessions'
     all_hits = []
-    # ID de la sesion para ponerla en el nombre del archivo
-    ID_SESION = "desconocida"
     # Nivel a procesar
     ID_NIVEL_DESEADO = 5 
 
@@ -64,9 +62,6 @@ if __name__ == '__main__':
                         data = json.load(f)
                     
                     for event in data:
-                        # Extraemos el sesID del primer evento que lo contenga (como sesStart)
-                        if ID_SESION == "desconocida" and "sesID" in event:
-                            ID_SESION = event["sesID"]
                         if event.get("type") == "playerHit":
                             
                             hit = {
@@ -85,7 +80,7 @@ if __name__ == '__main__':
     drawHexbinHeatmap(
         data_list=all_hits,
         background_image="bgNivel3.png",
-        output_file=f"./HeatMaps/resultado_hits_nivel_3_{ID_SESION}.png",
+        output_file=f"./HeatMaps/resultado_hits_nivel_3.png",
         target_level=ID_NIVEL_DESEADO,
         gridsize=(152, 303),
         extent=[0, 152, 0, 303]
