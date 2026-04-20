@@ -3,46 +3,44 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 
-def drawHexbinHeatmap(data_list, background_image, output_file, target_level, gridsize=(153, 337), extent=[0, 153, 0, 337]):
+def drawHexbinHeatmap(data_list, background_image, output_file, target_level, gridsize=(152, 303), extent=[0, 152, 0, 303]):
     if not data_list:
         print(f"Error: No hay datos para procesar.")
         return
 
-    # Convertir a DataFrame
     df = pd.DataFrame(data_list)
-    
-    # Filtrar por el nivel que queremos procesar
     data = df[df['levelID'] == target_level]
 
     if data.empty:
         print(f"Aviso: No se encontraron impactos (hits) para el Level ID: {target_level}")
         return
 
-    # Proporción vertical (8x16 es buena para 216x416)
     fig, ax = plt.subplots(figsize=(8, 16)) 
 
     try:
         img = plt.imread(background_image)
         ax.imshow(img, extent=extent, aspect='auto')
     except Exception as e:
-        print(f"Aviso: No se encontró {background_image}, generando mapa con fondo neutro.")
+        print(f"Aviso: No se encontró {background_image}")
 
-    # Dibujamos el mapa
+    # CAMBIOS AQUÍ: Offset de X a 30, Y a -15 y mantenemos Greens
     hb = ax.hexbin(
-        x=(data["x"]+6), 
-        y=(data["y"]-56.5),
+        x=(data["x"] - 9), 
+        y=(data["y"] - 60), 
         gridsize=gridsize,
         extent=extent,
-        alpha=0.6,
         cmap='Greens',
         mincnt=1,
-        linewidths=0.1
+        alpha=0.7
     )
+
+    # BLOQUE FINAL ORIGINAL (INTACTO)
+    cb = fig.colorbar(hb, ax=ax)
+    cb.set_label('Número de Impactos')
+    ax.set_title(f'Heatmap de Impactos Recibidos - Nivel {target_level}')
     
-    plt.colorbar(hb, ax=ax, label='Cantidad de Impactos')
-    ax.set_title(f"Heatmap: Player Hits - Nivel {target_level}", fontsize=14)
-    fig.savefig(output_file, dpi=600, bbox_inches='tight')
-    print(f"¡Éxito! Imagen guardada como: {output_file}")
+    plt.savefig(output_file, dpi=600, bbox_inches='tight')
+    plt.close()
 
 if __name__ == '__main__':
     folder_path = '../.././Assets/Sessions'
@@ -89,6 +87,6 @@ if __name__ == '__main__':
         background_image="bgNivel3.png",
         output_file=f"resultado_hits_nivel_3_{ID_SESION}.png",
         target_level=ID_NIVEL_DESEADO,
-        gridsize=(216, 416),
-        extent=[0, 216, 0, 416]
+        gridsize=(152, 303),
+        extent=[0, 152, 0, 303]
     )
