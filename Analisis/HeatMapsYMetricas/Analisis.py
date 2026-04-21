@@ -101,18 +101,18 @@ ar = [sum(singleDf['MuTut']), sum(singleDf['MuN1']), sum(singleDf['MuN2']), sum(
 #auxdf.loc[0] = ar
 #auxdf
 #max = auxdf.plot(y=['MuTut','MuN1','MuN2','MuN3'], kind='bar')
-if(np.count_nonzero(ar)!=0):
-      plt.pie(ar, labels = mlabels, startangle = 90)
-      plt.title("Distribución de Muertes por Nivel")
-      plt.savefig('./Metricas/Metrica1.png')
+
+plt.pie(ar, labels = mlabels, startangle = 90)
+plt.title("Distribución de Muertes por Nivel")
+plt.savefig('./Metricas/Metrica1.png')
 
 #Metrica 3
 mlabels = ['MuSpike', 'MuE1', 'MuE2', 'MuE3', 'MuFi', 'MuIc']
 ar = [sum(singleDf['MuSpike']), sum(singleDf['MuE1']), sum(singleDf['MuE2']), sum(singleDf['MuE3']), sum(singleDf['MuFi']), sum(singleDf['MuIc'])]
-if(np.count_nonzero(ar)!=0):
-      plt.pie(ar, labels = mlabels, startangle = 90)
-      plt.title("Distribución de Muertes por Causas")
-      plt.savefig('./Metricas/Metrica3.png')
+plt.clf()
+plt.pie(ar, labels = mlabels, startangle = 90)
+plt.title("Distribución de Muertes por Causas")
+plt.savefig('./Metricas/Metrica3.png')
 
 #Metrica 4
 mlabels = ['TimTut', 'TimN1', 'TimN2', 'TimN3']
@@ -129,10 +129,10 @@ plt.savefig('./Metricas/Metrica4.png')
 mlabels = ['AciertosDisparos', 'FallosDisparo', 'AciertosMelee', 'FallosMelee']
 ar = [sum(singleDf['DisAc']), sum(singleDf['Dis']) - sum(singleDf['DisAc']), 
       sum(singleDf['MelAc']), sum(singleDf['Mel']) - sum(singleDf['MelAc'])]
-if(np.count_nonzero(ar)!=0):
-      plt.pie(ar, labels = mlabels, startangle = 90)
-      plt.title("Tasa de Aciertos y fallos de los distintos ataques del jugador")
-      plt.savefig('./Metricas/Metrica5y6.png')
+plt.clf
+plt.pie(ar, labels = mlabels, startangle = 90)
+plt.title("Tasa de Aciertos y fallos de los distintos ataques del jugador")
+plt.savefig('./Metricas/Metrica5y6.png')
 
 #Metrica 7
 mlabels = ['DamTut','DamN1','DamN2','DamN3']
