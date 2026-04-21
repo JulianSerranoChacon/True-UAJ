@@ -1,0 +1,65 @@
+[
+{
+"type": "sesStart"
+,"time": 126,
+"sesID": 5624375542076185581
+}
+,{
+"type": "playerCP"
+,"time": 126,
+"sesID": 5624375542076185581,
+"levelID": 4,
+"checkpointID": -37040
+}
+,
+{
+"type": "playShot"
+,"time": 6016,
+"sesID": 5624375542076185581
+}
+,{
+"type": "playShot"
+,"time": 6181,
+"sesID": 5624375542076185581
+}
+,{
+"type": "playShot"
+,"time": 6316,
+"sesID": 5624375542076185581
+}
+,{
+"type": "playShot"
+,"time": 6444,
+"sesID": 5624375542076185581
+}
+,{
+"type": "playShot"
+,"time": 6585,
+"sesID": 5624375542076185581
+}
+,{
+"type": "playShot"
+,"time": 6714,
+"sesID": 5624375542076185581
+}
+,{
+"type": "playShot"
+,"time": 6835,
+"sesID": 5624375542076185581
+}
+,{
+"type": "playShot"
+,"time": 6993,
+"sesID": 5624375542076185581
+}
+,{
+"type": "playShot"
+,"time": 7133,
+"sesID": 5624375542076185581
+}
+,{
+"type": "sesEnd"
+,"time": 19463,
+"sesID": 5624375542076185581
+} 
+] 
