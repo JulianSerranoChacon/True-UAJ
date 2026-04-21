@@ -122,14 +122,16 @@ ar2[ar2==0]=1
 ar=ar1/ar2
 auxdf = pd.DataFrame(columns = mlabels)
 auxdf.loc[0] = ar
+plt.clf()
 max = auxdf.plot(y=['TimTut', 'TimN1', 'TimN2', 'TimN3'], kind='bar')
 plt.title("Distribución de Tiempo tardado por Nivel")
 plt.savefig('./Metricas/Metrica4.png')
+
 #Metrica 5 y 6
 mlabels = ['AciertosDisparos', 'FallosDisparo', 'AciertosMelee', 'FallosMelee']
 ar = [sum(singleDf['DisAc']), sum(singleDf['Dis']) - sum(singleDf['DisAc']), 
       sum(singleDf['MelAc']), sum(singleDf['Mel']) - sum(singleDf['MelAc'])]
-plt.clf
+plt.clf()
 plt.pie(ar, labels = mlabels, startangle = 90)
 plt.title("Tasa de Aciertos y fallos de los distintos ataques del jugador")
 plt.savefig('./Metricas/Metrica5y6.png')
