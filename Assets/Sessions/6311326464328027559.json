@@ -1,0 +1,85 @@
+[
+{
+"type": "sesStart"
+,"time": 9677,
+"sesID": 6311326464328027559
+}
+,{
+"type": "playerCP"
+,"time": 9677,
+"sesID": 6311326464328027559,
+"levelID": 2,
+"checkpointID": -12638
+}
+,
+{
+"type": "playShot"
+,"time": 10668,
+"sesID": 6311326464328027559
+}
+,{
+"type": "playShot"
+,"time": 10804,
+"sesID": 6311326464328027559
+}
+,{
+"type": "playShot"
+,"time": 10944,
+"sesID": 6311326464328027559
+}
+,{
+"type": "playShot"
+,"time": 11446,
+"sesID": 6311326464328027559
+}
+,{
+"type": "playShot"
+,"time": 11591,
+"sesID": 6311326464328027559
+}
+,{
+"type": "playShot"
+,"time": 11766,
+"sesID": 6311326464328027559
+}
+,{
+"type": "playShot"
+,"time": 12073,
+"sesID": 6311326464328027559
+}
+,{
+"type": "playShot"
+,"time": 12249,
+"sesID": 6311326464328027559
+}
+,{
+"type": "playShot"
+,"time": 12402,
+"sesID": 6311326464328027559
+}
+,{
+"type": "playShot"
+,"time": 12562,
+"sesID": 6311326464328027559
+}
+,{
+"type": "playShot"
+,"time": 12733,
+"sesID": 6311326464328027559
+}
+,{
+"type": "playShot"
+,"time": 12905,
+"sesID": 6311326464328027559
+}
+,{
+"type": "playShot"
+,"time": 13982,
+"sesID": 6311326464328027559
+}
+,{
+"type": "sesEnd"
+,"time": 19074,
+"sesID": 6311326464328027559
+} 
+] 
