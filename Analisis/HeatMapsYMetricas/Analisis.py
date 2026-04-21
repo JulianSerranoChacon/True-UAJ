@@ -167,7 +167,7 @@ plt.title("Media de cuanto se cura cada jugador por minuto")
 plt.savefig('./Metricas/Metrica9.png')
 
 # Métrica 10: Proporción de curación malgastada
-mlabels = ['TotalWastedHeal','TotalNonWatedHeal','TotalHeal']
+mlabels = ['TotalWastedHeal','TotalNonWastedHeal','TotalHeal']
 auxdf = pd.DataFrame(columns = mlabels)
 
 
