@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ServerPersisttance : IPersistance
+public class ServerPersistance : IPersistance
 {
     override public void Flush(CircularBuffer<TrackerEvent> evq)
     {

@@ -57,3 +57,19 @@ Clase padre del resto de serializadores diseñada para que se pueda implementar 
 ### [JSonSerializer](./Assets/Scripts/Tracking/Serializacion/JsonSerializer.cs)
 Clase que serializa los eventos a Json llamando a la funcion ToJson de los eventos (se autoserializan).
 
+
+### Persistencia
+
+### [IPersistance](./Assets/Scripts/Tracking/Persistance/IPersistance.cs)
+
+Clase padre del resto de tipos de persistencia del sistema de telemetría que gracias al patrón Command, se puede añadir nuevos formatos de persistencia fácilmente.
+
+### [FilePersistance](./Assets/Scripts/Tracking/Persistance/FilePersistance.cs)
+
+Clase que se encarga la implemetación del metodo Flush() de la clase IPersistance para volcar todos los datos de telemetría al disco del ordenador.
+
+### [ServerPersistance](./Assets/Scripts/Tracking/Persistance/ServerPersistance.cs)
+
+Clase que se encarga la implemetación del metodo Flush() de la clase IPersistance para volcar todos los datos de telemetría a un servidor en la red (No implementado, pero con opción de implementar a futuro).
+
+
