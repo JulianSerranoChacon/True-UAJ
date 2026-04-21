@@ -173,7 +173,7 @@ auxdf = pd.DataFrame(columns = mlabels)
 
 ar=[sum(singleDf['OvHeal']),sum(singleDf['AmountHeal'])-sum(singleDf['OvHeal']),sum(singleDf['AmountHeal'])]
 auxdf.loc[0] = ar
-ax = auxdf.plot(y= ['TotalWastedHeal','TotalNonWatedHeal','TotalHeal'], kind='bar')
+ax = auxdf.plot(y= ['TotalWastedHeal','TotalNonWastedHeal','TotalHeal'], kind='bar')
 ax.set_ylim(0,1000) #Para ver el resultado como si fuera un porcentaje
 plt.title("Tasa de Curación malgastada")
 plt.savefig('./Metricas/Metrica10.png')
