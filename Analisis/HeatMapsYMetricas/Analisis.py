@@ -101,18 +101,18 @@ ar = [sum(singleDf['MuTut']), sum(singleDf['MuN1']), sum(singleDf['MuN2']), sum(
 #auxdf.loc[0] = ar
 #auxdf
 #max = auxdf.plot(y=['MuTut','MuN1','MuN2','MuN3'], kind='bar')
-if(np.count_nonzero(ar)!=0):
-      plt.pie(ar, labels = mlabels, startangle = 90)
-      plt.title("Distribución de Muertes por Nivel")
-      plt.savefig('./Metricas/Metrica1.png')
+
+plt.pie(ar, labels = mlabels, startangle = 90)
+plt.title("Distribución de Muertes por Nivel")
+plt.savefig('./Metricas/Metrica1.png')
 
 #Metrica 3
 mlabels = ['MuSpike', 'MuE1', 'MuE2', 'MuE3', 'MuFi', 'MuIc']
 ar = [sum(singleDf['MuSpike']), sum(singleDf['MuE1']), sum(singleDf['MuE2']), sum(singleDf['MuE3']), sum(singleDf['MuFi']), sum(singleDf['MuIc'])]
-if(np.count_nonzero(ar)!=0):
-      plt.pie(ar, labels = mlabels, startangle = 90)
-      plt.title("Distribución de Muertes por Causas")
-      plt.savefig('./Metricas/Metrica3.png')
+plt.clf()
+plt.pie(ar, labels = mlabels, startangle = 90)
+plt.title("Distribución de Muertes por Causas")
+plt.savefig('./Metricas/Metrica3.png')
 
 #Metrica 4
 mlabels = ['TimTut', 'TimN1', 'TimN2', 'TimN3']
@@ -122,17 +122,19 @@ ar2[ar2==0]=1
 ar=ar1/ar2
 auxdf = pd.DataFrame(columns = mlabels)
 auxdf.loc[0] = ar
+plt.clf()
 max = auxdf.plot(y=['TimTut', 'TimN1', 'TimN2', 'TimN3'], kind='bar')
 plt.title("Distribución de Tiempo tardado por Nivel")
 plt.savefig('./Metricas/Metrica4.png')
+
 #Metrica 5 y 6
 mlabels = ['AciertosDisparos', 'FallosDisparo', 'AciertosMelee', 'FallosMelee']
 ar = [sum(singleDf['DisAc']), sum(singleDf['Dis']) - sum(singleDf['DisAc']), 
       sum(singleDf['MelAc']), sum(singleDf['Mel']) - sum(singleDf['MelAc'])]
-if(np.count_nonzero(ar)!=0):
-      plt.pie(ar, labels = mlabels, startangle = 90)
-      plt.title("Tasa de Aciertos y fallos de los distintos ataques del jugador")
-      plt.savefig('./Metricas/Metrica5y6.png')
+plt.clf()
+plt.pie(ar, labels = mlabels, startangle = 90)
+plt.title("Tasa de Aciertos y fallos de los distintos ataques del jugador")
+plt.savefig('./Metricas/Metrica5y6.png')
 
 #Metrica 7
 mlabels = ['DamTut','DamN1','DamN2','DamN3']
@@ -171,7 +173,7 @@ auxdf = pd.DataFrame(columns = mlabels)
 
 ar=[sum(singleDf['OvHeal']),sum(singleDf['AmountHeal'])-sum(singleDf['OvHeal']),sum(singleDf['AmountHeal'])]
 auxdf.loc[0] = ar
-ax = auxdf.plot(y= ['TotalWastedHeal','TotalNonWatedHeal','TotalHeal'], kind='bar')
+ax = auxdf.plot(y= ['TotalWastedHeal','TotalNonWastedHeal','TotalHeal'], kind='bar')
 ax.set_ylim(0,1000) #Para ver el resultado como si fuera un porcentaje
 plt.title("Tasa de Curación malgastada")
 plt.savefig('./Metricas/Metrica10.png')

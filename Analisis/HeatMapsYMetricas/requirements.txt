@@ -1,4 +1,4 @@
-pandas==3.0.2
+pandas
 seaborn
 matplotlib==3.10.8
 scipy
