@@ -3,8 +3,6 @@ using System.Diagnostics;
 using System.Drawing;
 using UnityEngine;
 
-//Nevulus te la como
-//Muchas gracias por la clase
 public class CircularBuffer<T>
 {
     Queue<T> _queue;
