@@ -38,8 +38,6 @@ public class BulletCollisionComponent : MonoBehaviour
         {
             //Sistema de Telemetria
             EnemyBulletHit bulletHit = new EnemyBulletHit();
-            bulletHit.TimeStamp = Tracker.Instance.GetEventTime();
-            bulletHit.SessionID = Tracker.Instance.GetSesionID();
             //Envia datos al TRACKER del Sistema de Telemetria
             Tracker.Instance.AddEvent(bulletHit);
             //Sistema de Telemetria
@@ -234,8 +232,6 @@ public class BulletCollisionComponent : MonoBehaviour
         {
             //Sistema de Telemetria
             PlayerHit playerHit = new PlayerHit();
-            playerHit.TimeStamp = Tracker.Instance.GetEventTime();
-            playerHit.SessionID = Tracker.Instance.GetSesionID();
 
             playerHit.LevelID = SceneManager.GetActiveScene().buildIndex;
             playerHit.CordX = transform.position.x;
@@ -251,8 +247,6 @@ public class BulletCollisionComponent : MonoBehaviour
         {
             //Sistema de Telemetria
             PlayerDeath playerDeath = new PlayerDeath();
-            playerDeath.TimeStamp = Tracker.Instance.GetEventTime();
-            playerDeath.SessionID = Tracker.Instance.GetSesionID();
 
             playerDeath.LevelID = SceneManager.GetActiveScene().buildIndex;
             playerDeath.CordX = transform.position.x;

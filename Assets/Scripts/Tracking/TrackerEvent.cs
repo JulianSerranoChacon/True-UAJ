@@ -1,3 +1,5 @@
+using UnityEngine.Analytics;
+
 public class TrackerEvent 
 {
 
@@ -6,18 +8,10 @@ public class TrackerEvent
 
     #region Bean 
     //Constructor vacio, getters y setters publicos - Patron Bean/POYO
-    public TrackerEvent() { }
-
-    public long SessionID
+    public TrackerEvent()
     {
-        get { return sessionID; }
-        set { sessionID = value; }
-    }
-
-    public double TimeStamp
-    {
-        get { return timeStamp; }
-        set { timeStamp = value; }  
+        sessionID = AnalyticsSessionInfo.sessionId;
+        timeStamp = AnalyticsSessionInfo.sessionElapsedTime;
     }
     #endregion
 

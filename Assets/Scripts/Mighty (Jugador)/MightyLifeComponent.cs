@@ -170,8 +170,6 @@ public class MightyLifeComponent : MonoBehaviour
         if (cureAmount != _maxhealth ) //No cuenta revivir como curarse
         {
             PlayerHealing playerHealing = new PlayerHealing();
-            playerHealing.TimeStamp = Tracker.Instance.GetEventTime();
-            playerHealing.SessionID = Tracker.Instance.GetSesionID();
 
             playerHealing.PreviousHealth = initialHealth;
             playerHealing.HealingAmount = cureAmount;
@@ -186,8 +184,6 @@ public class MightyLifeComponent : MonoBehaviour
     private void CheckTelemetrySysSpikesDeath()
     {
         PlayerDeath playerDeath = new PlayerDeath();
-        playerDeath.TimeStamp = Tracker.Instance.GetEventTime();
-        playerDeath.SessionID = Tracker.Instance.GetSesionID();
 
         playerDeath.LevelID = SceneManager.GetActiveScene().buildIndex;
         playerDeath.CordX = transform.position.x;
@@ -205,8 +201,6 @@ public class MightyLifeComponent : MonoBehaviour
         if (_health > 0)
         {
             PlayerHit playerHit = new PlayerHit();
-            playerHit.TimeStamp = Tracker.Instance.GetEventTime();
-            playerHit.SessionID = Tracker.Instance.GetSesionID();
 
             playerHit.LevelID = SceneManager.GetActiveScene().buildIndex;
             playerHit.CordX = transform.position.x;
@@ -221,8 +215,6 @@ public class MightyLifeComponent : MonoBehaviour
         else
         {
             PlayerDeath playerDeath = new PlayerDeath();
-            playerDeath.TimeStamp = Tracker.Instance.GetEventTime();
-            playerDeath.SessionID = Tracker.Instance.GetSesionID();
 
             playerDeath.LevelID = SceneManager.GetActiveScene().buildIndex;
             playerDeath.CordX = transform.position.x;
@@ -243,8 +235,6 @@ public class MightyLifeComponent : MonoBehaviour
         {
             SpawnsManager.instance.TrackerCP_ID = col.gameObject.GetInstanceID();
             PlayerCheckPoint playerCP = new PlayerCheckPoint();
-            playerCP.TimeStamp = Tracker.Instance.GetEventTime();
-            playerCP.SessionID = Tracker.Instance.GetSesionID();
 
             playerCP.LevelID = SceneManager.GetActiveScene().buildIndex;
             playerCP.CheckpointID = col.gameObject.GetInstanceID();

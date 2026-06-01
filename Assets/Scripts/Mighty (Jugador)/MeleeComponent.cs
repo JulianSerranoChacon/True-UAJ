@@ -42,8 +42,6 @@ public class MeleeComponent : MonoBehaviour
     {
         //Sistema de Telemetria
         PlayerMelee playerMelee = new PlayerMelee();
-        playerMelee.TimeStamp = Tracker.Instance.GetEventTime();
-        playerMelee.SessionID = Tracker.Instance.GetSesionID();
         //Envia datos al TRACKER del Sistema de Telemetria
         Tracker.Instance.AddEvent(playerMelee);
         //Sistema de Telemetria
@@ -64,8 +62,6 @@ public class MeleeComponent : MonoBehaviour
             if (hitEnemies.Length > 0)
             {
                 EnemyMeleeHit meleeHit = new EnemyMeleeHit();
-                meleeHit.TimeStamp = Tracker.Instance.GetEventTime();
-                meleeHit.SessionID = Tracker.Instance.GetSesionID();
                 //Envia datos al TRACKER del Sistema de Telemetria
                 Tracker.Instance.AddEvent(meleeHit);
             }

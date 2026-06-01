@@ -49,8 +49,6 @@ public class Tracker
         _events = new CircularBuffer<TrackerEvent>(_eventTrackerSize);
       
         SesionStart start = new SesionStart();
-        start.TimeStamp = Tracker.Instance.GetEventTime();
-        start.SessionID = Tracker.Instance.GetSesionID();
         _events.Add(start);
         
     }
@@ -74,8 +72,6 @@ public class Tracker
     {
         //Antes debemos asegurarnos de que no queden elementos en la cola.. hacemos el volcado de los datos que falten
         SesionEnd end = new SesionEnd();
-        end.TimeStamp = Tracker.Instance.GetEventTime();
-        end.SessionID = Tracker.Instance.GetSesionID();
         _events.Add(end);
 
         Flush();
@@ -96,11 +92,6 @@ public class Tracker
     }
 
     //Metodo para obtener el tiempo y la ID
-    public double GetEventTime()
-    {
-        return AnalyticsSessionInfo.sessionElapsedTime;
-    }
-
     public long GetSesionID()
     {
         return AnalyticsSessionInfo.sessionId;

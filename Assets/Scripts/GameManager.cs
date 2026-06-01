@@ -72,8 +72,6 @@ public class GameManager : MonoBehaviour
     {
         SpawnsManager.instance.TrackerCP_ID = -1;
         PlayerEnd playerEnd = new PlayerEnd();
-        playerEnd.TimeStamp = Tracker.Instance.GetEventTime();
-        playerEnd.SessionID = Tracker.Instance.GetSesionID();
 
         playerEnd.LevelID = SceneManager.GetActiveScene().buildIndex;
         playerEnd.CurrentHealth = _mightyLifeComponent.GetHealth();

@@ -46,8 +46,6 @@ public class ShootingComponent : MonoBehaviour
     {
         //Sistema de Telemetria
         PlayerShoot playerShoot = new PlayerShoot();
-        playerShoot.TimeStamp = Tracker.Instance.GetEventTime();
-        playerShoot.SessionID = Tracker.Instance.GetSesionID();
         //Envia datos al TRACKER del Sistema de Telemetria
         Tracker.Instance.AddEvent(playerShoot);
         //Sistema de Telemetria
