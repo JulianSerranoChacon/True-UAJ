@@ -18,7 +18,7 @@ public class FilePersistance : IPersistance {
             string eventos = serializer.SerializeTrackingQueue(evq);
             sw.WriteLine(eventos);
 
-            AssetDatabase.Refresh();
+            //AssetDatabase.Refresh();
         }
 
     }
