@@ -8,6 +8,33 @@ import os
 import sys
 import json
 
+#Creacion de path a los jsons
+path_to_json_files = '../../Assets/Sessions/'  
+
+#metodo que coge todos los archivos json en un directorio
+json_file_names = [filename for filename in os.listdir(path_to_json_files) if filename.endswith('.json')]
+jsonList=[0]*len(json_file_names)
+
+sys.path.insert(0, "./filespy") 
+
+#Creacion de variables globales
+# Creacion de las columnas que vamos a usar
+col_names =  ['ID','MuTut', 'MuN1', 'MuN2', 'MuN3',  
+              'MuSpike', 'MuE1', 'MuE2', 'MuE3', 'MuFi', 'MuIc',
+              'Dis', 'DisAc', 'Mel', 'MelAc',
+              'DamTut', 'DamN1', 'DamN2', 'DamN3',
+              'DamSpike', 'DamE1', 'DamE2', 'DamE3', 'DamFi', 'DamIc',
+              'Heal', 'OvHeal', 
+              'ISesTime', 'TimTut', 'TimN1', 'TimN2', 'TimN3','SesTime','AmountHeal']
+
+event_names =["sesStart","sesEnd","playerDeath","playerCP","playerEnd",
+              "playerHeal","playerHit","enBulHit","enMelHit","playMel","playShot"]
+
+
+# create an empty dataframe
+# with columns
+singleDf  = pd.DataFrame(columns = col_names)
+
 
 def Metrica1():
     #Metrica 1
@@ -112,7 +139,27 @@ def Metrica10():
     plt.title("Tasa de Curación malgastada")
     plt.savefig('./Metricas/Metrica10.png')
 
-def TratamientoDatos(currEvent):
+def CallAllMetrics():
+    #Muertes por nivel
+    Metrica1()
+    #Causas de muertes
+    Metrica3()
+    #Tiempo tardado por nivel
+    Metrica4()
+    #Aciertos y fallos de disparos
+    Metrica5()
+    #Aciertos y fallos de ataques melee
+    Metrica6()
+    #Daño recibido por nivel
+    Metrica7()
+    #Causas de daño
+    Metrica8()
+    #Curaciones por minuto
+    Metrica9()
+    #Curación malgastada
+    Metrica10()
+
+def TratamientoDatos(i, jug):
     dataJug = ['name' + str(i), 0, 0, 0, 0,
                0, 0, 0, 0, 0, 0, 
                0, 0, 0, 0,
@@ -128,11 +175,11 @@ def TratamientoDatos(currEvent):
     for event in event_names:
         currEvent=jug[i][jug[i]["type"]==event]
         if(len(currEvent)>0):
-            TratamientoEventos(currEvent, event, dataJug)
+            TratamientoEventos(jug, currEvent, event, dataJug)
             
     return dataJug
 
-def TratamientoEventos(currEvent, event, dataJug):
+def TratamientoEventos(jug, currEvent, event, dataJug):
     match event:
                 case "playerDeath":
                     for j in range(4):
@@ -169,56 +216,17 @@ def TratamientoEventos(currEvent, event, dataJug):
                     dataJug[32]= currEvent["time"].values[0]
 
 
-path_to_json_files = '../../Assets/Sessions/'  
+def Main():
+    for i in range(len(json_file_names)):
+        jsonList[i]=pd.read_json(path_to_json_files+json_file_names[i])
 
-#metodo que coge todos los archivos json en un directorio
-json_file_names = [filename for filename in os.listdir(path_to_json_files) if filename.endswith('.json')]
-jsonList=[0]*len(json_file_names)
+    #En esta celda es donde haremos el for por cada jugador (sessionID) distinto.
+    #Si lo hacemos bien podemos usar las librerias para ahorrarnos el trabajo.
 
-for i in range(len(json_file_names)):
-    jsonList[i]=pd.read_json(path_to_json_files+json_file_names[i])
+    jug = jsonList
+    for i in range(len(jug)):
+        singleDf.loc[i] = TratamientoDatos(i, jug)
 
+    CallAllMetrics()
 
-# Creacion de las columnas que vamos a usar
-col_names =  ['ID','MuTut', 'MuN1', 'MuN2', 'MuN3',  
-              'MuSpike', 'MuE1', 'MuE2', 'MuE3', 'MuFi', 'MuIc',
-              'Dis', 'DisAc', 'Mel', 'MelAc',
-              'DamTut', 'DamN1', 'DamN2', 'DamN3',
-              'DamSpike', 'DamE1', 'DamE2', 'DamE3', 'DamFi', 'DamIc',
-              'Heal', 'OvHeal', 
-              'ISesTime', 'TimTut', 'TimN1', 'TimN2', 'TimN3','SesTime','AmountHeal']
-
-event_names =["sesStart","sesEnd","playerDeath","playerCP","playerEnd",
-              "playerHeal","playerHit","enBulHit","enMelHit","playMel","playShot"]
-
-# create an empty dataframe
-# with columns
-singleDf  = pd.DataFrame(columns = col_names)
-
-sys.path.insert(0, "./filespy") 
-
-#En esta celda es donde haremos el for por cada jugador (sessionID) distinto.
-#Si lo hacemos bien podemos usar las librerias para ahorrarnos el trabajo.
-
-jug = jsonList
-for i in range(len(jug)):
-    singleDf.loc[i] = TratamientoDatos(i)
-
-#Muertes por nivel
-Metrica1()
-#Causas de muertes
-Metrica3()
-#Tiempo tardado por nivel
-Metrica4()
-#Aciertos y fallos de disparos
-Metrica5()
-#Aciertos y fallos de ataques melee
-Metrica6()
-#Daño recibido por nivel
-Metrica7()
-#Causas de daño
-Metrica8()
-#Curaciones por minuto
-Metrica9()
-#Curación malgastada
-Metrica10()
+Main()
