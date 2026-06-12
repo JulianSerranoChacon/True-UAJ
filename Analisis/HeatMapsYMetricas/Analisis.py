@@ -112,39 +112,7 @@ def Metrica10():
     plt.title("Tasa de Curación malgastada")
     plt.savefig('./Metricas/Metrica10.png')
 
-path_to_json_files = '../../Assets/Sessions/'  
-
-#metodo que coge todos los archivos json en un directorio
-json_file_names = [filename for filename in os.listdir(path_to_json_files) if filename.endswith('.json')]
-jsonList=[0]*len(json_file_names)
-
-for i in range(len(json_file_names)):
-    jsonList[i]=pd.read_json(path_to_json_files+json_file_names[i])
-
-
-# Creacion de las columnas que vamos a usar
-col_names =  ['ID','MuTut', 'MuN1', 'MuN2', 'MuN3',  
-              'MuSpike', 'MuE1', 'MuE2', 'MuE3', 'MuFi', 'MuIc',
-              'Dis', 'DisAc', 'Mel', 'MelAc',
-              'DamTut', 'DamN1', 'DamN2', 'DamN3',
-              'DamSpike', 'DamE1', 'DamE2', 'DamE3', 'DamFi', 'DamIc',
-              'Heal', 'OvHeal', 
-              'ISesTime', 'TimTut', 'TimN1', 'TimN2', 'TimN3','SesTime','AmountHeal']
-
-event_names =["sesStart","sesEnd","playerDeath","playerCP","playerEnd",
-              "playerHeal","playerHit","enBulHit","enMelHit","playMel","playShot"]
-
-# create an empty dataframe
-# with columns
-singleDf  = pd.DataFrame(columns = col_names)
-
-sys.path.insert(0, "./filespy") 
-
-#En esta celda es donde haremos el for por cada jugador (sessionID) distinto.
-#Si lo hacemos bien podemos usar las librerias para ahorrarnos el trabajo.
-
-jug = jsonList
-for i in range(len(jug)):
+def TratamientoDatos(currEvent):
     dataJug = ['name' + str(i), 0, 0, 0, 0,
                0, 0, 0, 0, 0, 0, 
                0, 0, 0, 0,
@@ -160,7 +128,12 @@ for i in range(len(jug)):
     for event in event_names:
         currEvent=jug[i][jug[i]["type"]==event]
         if(len(currEvent)>0):
-            match event:
+            TratamientoEventos(currEvent, event, dataJug)
+            
+    return dataJug
+
+def TratamientoEventos(currEvent, event, dataJug):
+    match event:
                 case "playerDeath":
                     for j in range(4):
                         dataJug[1+j]=len(currEvent[currEvent["levelID"]==j+2])
@@ -194,9 +167,42 @@ for i in range(len(jug)):
                             dataJug[28+j]= currEvent[currEvent["levelID"]==2+j]["time"].values[0]-dataJug[27+j]
                 case "sesEnd":
                     dataJug[32]= currEvent["time"].values[0]
-               
-                
-    singleDf.loc[i] = dataJug
+
+
+path_to_json_files = '../../Assets/Sessions/'  
+
+#metodo que coge todos los archivos json en un directorio
+json_file_names = [filename for filename in os.listdir(path_to_json_files) if filename.endswith('.json')]
+jsonList=[0]*len(json_file_names)
+
+for i in range(len(json_file_names)):
+    jsonList[i]=pd.read_json(path_to_json_files+json_file_names[i])
+
+
+# Creacion de las columnas que vamos a usar
+col_names =  ['ID','MuTut', 'MuN1', 'MuN2', 'MuN3',  
+              'MuSpike', 'MuE1', 'MuE2', 'MuE3', 'MuFi', 'MuIc',
+              'Dis', 'DisAc', 'Mel', 'MelAc',
+              'DamTut', 'DamN1', 'DamN2', 'DamN3',
+              'DamSpike', 'DamE1', 'DamE2', 'DamE3', 'DamFi', 'DamIc',
+              'Heal', 'OvHeal', 
+              'ISesTime', 'TimTut', 'TimN1', 'TimN2', 'TimN3','SesTime','AmountHeal']
+
+event_names =["sesStart","sesEnd","playerDeath","playerCP","playerEnd",
+              "playerHeal","playerHit","enBulHit","enMelHit","playMel","playShot"]
+
+# create an empty dataframe
+# with columns
+singleDf  = pd.DataFrame(columns = col_names)
+
+sys.path.insert(0, "./filespy") 
+
+#En esta celda es donde haremos el for por cada jugador (sessionID) distinto.
+#Si lo hacemos bien podemos usar las librerias para ahorrarnos el trabajo.
+
+jug = jsonList
+for i in range(len(jug)):
+    singleDf.loc[i] = TratamientoDatos(i)
 
 #Muertes por nivel
 Metrica1()
