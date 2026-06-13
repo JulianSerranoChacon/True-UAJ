@@ -9,7 +9,7 @@ import sys
 import json
 
 #Creacion de path a los jsons
-path_to_json_files = '../../Assets/Sessions/'  
+path_to_json_files = '../../Assets/Sessions/'
 
 #metodo que coge todos los archivos json en un directorio
 json_file_names = [filename for filename in os.listdir(path_to_json_files) if filename.endswith('.json')]
@@ -39,9 +39,7 @@ singleDf  = pd.DataFrame(columns = col_names)
 def Metrica1():
     #Metrica 1
     mlabels = ['MuTut','MuN1','MuN2','MuN3']
-    
     ar = [sum(singleDf['MuTut']), sum(singleDf['MuN1']), sum(singleDf['MuN2']), sum(singleDf['MuN3'])]
-
     plt.pie(ar, labels = mlabels, startangle = 90)
     plt.title("Distribución de Muertes por Nivel")
     plt.savefig('./Metricas/Metrica1.png')
@@ -160,61 +158,55 @@ def CallAllMetrics():
     Metrica10()
 
 def TratamientoDatos(i, jug):
-    dataJug = ['name' + str(i), 0, 0, 0, 0,
-               0, 0, 0, 0, 0, 0, 
-               0, 0, 0, 0,
-               0, 0, 0, 0,
-               0, 0, 0, 0, 0, 0,
-               0, 0, 
-               0, 0, 0, 0, 0, 0,0]
-    
-    dataJug[27]=currEvent =jug[i][jug[i]["type"]=="sesStart"]["time"].values[0]
-    dataJug[28]=currEvent =jug[i][jug[i]["type"]=="sesEnd"]["time"].values[0]
-    
 
+    dataJug = {key: 0 for key in col_names}
+    dataJug['ID']='name' + str(i)
     for event in event_names:
         currEvent=jug[i][jug[i]["type"]==event]
         if(len(currEvent)>0):
             TratamientoEventos(jug, currEvent, event, dataJug)
-            
     return dataJug
 
 def TratamientoEventos(jug, currEvent, event, dataJug):
     match event:
                 case "playerDeath":
+                    #se hace un for para recorrer las labels del numero de muertes de cada nivel (MuTut, MuN1, etc)
                     for j in range(4):
-                        dataJug[1+j]=len(currEvent[currEvent["levelID"]==j+2])
+                        dataJug[col_names[1+j]]=len(currEvent[currEvent["levelID"]==j+2])
+                    #se hace un for para recorrer las labels de las causas de muerte (MuE1, MuE2,etc)
                     for j in range(6):
-                        dataJug[5+j]=len(currEvent[currEvent["deathCause"]==j])      
+                        dataJug[col_names[5+j]]=len(currEvent[currEvent["deathCause"]==j])      
                 case "playShot":
-                    dataJug[11]=len(currEvent)     
+                    dataJug['Dis']=len(currEvent)     
                 case "enBulHit": 
-                    dataJug[12]=len(currEvent)
+                    dataJug['DisAc']=len(currEvent)
                 case "playMel":
-                    dataJug[13]=len(currEvent) 
+                    dataJug['Mel']=len(currEvent) 
                 case "enMelHit":
-                    dataJug[14]=len(currEvent) 
+                    dataJug['MelAc']=len(currEvent) 
                 case "playerHit":
+                    #se hace un for para recorrer las labels de la cantidad de daño que se recibe por Nivel(DamTut, DamN1, etc)
                     for j in range(4):
-                         dataJug[15+j]=sum(currEvent[currEvent["levelID"]==j+2]["hitDamage"].values.tolist())
+                         dataJug[col_names[15+j]]=sum(currEvent[currEvent["levelID"]==j+2]["hitDamage"].values.tolist())
+                    #se hace un for para recorrer las labels de la cantidad de daño que se recibe por causa(DamE1,DamE2, etc)
                     for j in range(6):
-                        dataJug[19+j]=sum(currEvent[currEvent["hitCause"]==j]["hitDamage"].values.tolist())
+                        dataJug[col_names[19+j]]=sum(currEvent[currEvent["hitCause"]==j]["hitDamage"].values.tolist())
                 case "playerHeal":
-                    dataJug[25] =len(currEvent) 
+                    dataJug['Heal'] =len(currEvent) 
                     prevHealth=sum(currEvent["previousHealth"].values.tolist()) 
                     healAmount=sum(currEvent["healingAmount"].values.tolist()) 
                     finalHealth=sum(currEvent["finalHealth"].values.tolist())
-                    dataJug[26]=prevHealth+healAmount-finalHealth
-                    dataJug[33] = healAmount
+                    dataJug['OvHeal']=prevHealth+healAmount-finalHealth
+                    dataJug['AmountHeal'] = healAmount
                 case "sesStart":
-                    dataJug[27]= currEvent["time"].values[0]
+                    dataJug['ISesTime']= currEvent["time"].values[0]
+                case "sesEnd":
+                    dataJug['SesTime']= currEvent["time"].values[0]
                 case "playerEnd":
                     for j in range(4):
                         if(len (currEvent[currEvent["levelID"]==2+j]) > 0):
-                            dataJug[28+j]= currEvent[currEvent["levelID"]==2+j]["time"].values[0]-dataJug[27+j]
-                case "sesEnd":
-                    dataJug[32]= currEvent["time"].values[0]
-
+                            dataJug[col_names[28+j]]= currEvent[currEvent["levelID"]==2+j]["time"].values[0]-dataJug[col_names[27+j]]
+             
 
 def Main():
     for i in range(len(json_file_names)):
@@ -225,7 +217,8 @@ def Main():
 
     jug = jsonList
     for i in range(len(jug)):
-        singleDf.loc[i] = TratamientoDatos(i, jug)
+       singleDf.loc[i] = TratamientoDatos(i, jug)
+    
 
     CallAllMetrics()
 
