@@ -9,7 +9,7 @@ import sys
 import json
 
 #Creacion de path a los jsons
-path_to_json_files = '../../Assets/Sessions/'
+path_to_json_files = '../Datos/'
 
 #metodo que coge todos los archivos json en un directorio
 json_file_names = [filename for filename in os.listdir(path_to_json_files) if filename.endswith('.json')]

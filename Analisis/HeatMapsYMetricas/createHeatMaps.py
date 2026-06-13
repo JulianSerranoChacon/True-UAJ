@@ -44,7 +44,7 @@ def drawHexbinHeatmap(data_list, background_image, output_file, target_level, fi
     print(f"¡Éxito! Imagen guardada como: {output_file}")
 
 if __name__ == '__main__':
-    folder_path = '../.././Assets/Sessions'
+    folder_path = '../Datos/'
     all_hits = []
 
     if not os.path.exists(folder_path):

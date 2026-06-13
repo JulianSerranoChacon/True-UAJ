@@ -13,7 +13,7 @@ public abstract class IPersistance
         serializer = Is;
         try
         {
-            string dirPath = Path.Combine(Application.dataPath, "Sessions");
+            string dirPath = Path.Combine(Application.dataPath, "../Analisis/Datos");
 
             if (!Directory.Exists(dirPath)) 
                 Directory.CreateDirectory(dirPath);
