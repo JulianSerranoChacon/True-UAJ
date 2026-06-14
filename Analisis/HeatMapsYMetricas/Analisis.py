@@ -51,12 +51,7 @@ def Metrica3():
     ar = [sum(singleDf['MuSpike']), sum(singleDf['MuE1']), sum(singleDf['MuE2']), sum(singleDf['MuE3']), sum(singleDf['MuFi']), sum(singleDf['MuIc'])]
     
     plt.clf()
-    mNames= ['Pinchos', 'Enemigo 1', 'Enemigo 2', 'Enemigo 3', 'Enemigo Fuego', 'Enemigo Hielo'] #Nombres mas legibles
-    '''plt.pie(ar, labels = mNames, startangle = 90)
-    plt.xticks(rotation=45)
-    plt.title("Distribución de Causas de Muertes")
-    plt.savefig('./Metricas/Metrica3.png')'''
-
+    mNames= ['Pinchos','Terrestre', 'Distancia', 'Volador', 'Lanzallamas', 'Carámbanos'] #Nombres mas legibles
     plt.bar(mNames, ar, color=['#1565c0', '#ffb74d', "#19ea46","#e53935", "#d04cd7ff", "#000e6bff"]) #para que no se quede ese 0
     plt.xticks(rotation=45)
     plt.subplots_adjust(bottom=0.25)
@@ -134,7 +129,7 @@ def Metrica8():
     auxdf.loc[0] = ar
     
     plt.clf()
-    mNames= ['Enemigo 1', 'Enemigo 2', 'Enemigo 3', 'Enemigo Fuego', 'Enemigo Hielo'] #Nombres mas legibles
+    mNames= ['Terrestre', 'Distancia', 'Volador', 'Lanzallamas', 'Carámbanos'] #Nombres mas legibles
     plt.bar(mNames, ar, color=['#1565c0', '#ffb74d', "#19ea46",'#e53935', "#d04cd7ff"], align='center')
     plt.xticks(rotation=45)
     plt.subplots_adjust(bottom=0.25)
