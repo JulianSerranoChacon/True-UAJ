@@ -47,8 +47,6 @@ public class FilePersistance : IPersistance {
             //Codigo de experimento de persistencia
             string eventos = serializer.SerializeTrackingQueue(evq);
             sw.WriteLine(eventos);
-
-            //AssetDatabase.Refresh();
         }
 
     }
