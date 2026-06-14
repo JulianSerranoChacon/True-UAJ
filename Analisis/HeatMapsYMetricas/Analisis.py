@@ -40,7 +40,8 @@ def Metrica1():
     #Metrica 1
     mlabels = ['MuTut','MuN1','MuN2','MuN3']
     ar = [sum(singleDf['MuTut']), sum(singleDf['MuN1']), sum(singleDf['MuN2']), sum(singleDf['MuN3'])]
-    plt.pie(ar, labels = mlabels, startangle = 90)
+    mNames= ['Tutorial', 'Nivel 1', 'Nivel 2', 'Nivel 3'] #Nombres mas legibles
+    plt.pie(ar, labels = mNames, startangle = 90)
     plt.title("Distribución de Muertes por Nivel")
     plt.savefig('./Metricas/Metrica1.png')
 
@@ -50,8 +51,19 @@ def Metrica3():
     ar = [sum(singleDf['MuSpike']), sum(singleDf['MuE1']), sum(singleDf['MuE2']), sum(singleDf['MuE3']), sum(singleDf['MuFi']), sum(singleDf['MuIc'])]
     
     plt.clf()
-    plt.pie(ar, labels = mlabels, startangle = 90)
+    mNames= ['Pinchos', 'Enemigo 1', 'Enemigo 2', 'Enemigo 3', 'Enemigo Fuego', 'Enemigo Hielo'] #Nombres mas legibles
+    '''plt.pie(ar, labels = mNames, startangle = 90)
+    plt.xticks(rotation=45)
     plt.title("Distribución de Causas de Muertes")
+    plt.savefig('./Metricas/Metrica3.png')'''
+
+    plt.bar(mNames, ar, color=['#1565c0', '#ffb74d', "#19ea46","#e53935", "#d04cd7ff", "#000e6bff"]) #para que no se quede ese 0
+    plt.xticks(rotation=45)
+    plt.subplots_adjust(bottom=0.25)
+    #max = auxdf.plot(y=['TimTut', 'TimN1', 'TimN2', 'TimN3'], kind='bar')
+    plt.title("Distribución de Causas de Muertes")
+    plt.xlabel("Tipo obstáculo enemigo")
+    plt.ylabel("Cantidad de muertes")
     plt.savefig('./Metricas/Metrica3.png')
 
 def Metrica4():
@@ -60,13 +72,19 @@ def Metrica4():
     ar1=np.array([sum(singleDf['TimTut']),sum(singleDf['TimN1']),sum(singleDf['TimN2']),sum(singleDf['TimN3'])])    
     ar2 = np.array([len(singleDf[singleDf['TimTut'] != 0]),len(singleDf[singleDf['TimN1'] != 0]),len(singleDf[singleDf['TimN2'] != 0]),len(singleDf[singleDf['TimN3'] != 0])])
     ar2[ar2==0]=1
-    ar=ar1/ar2
+    ar= (ar1/ar2) / 60000 # pasamos a minutos para que sea mas legible
     
     auxdf = pd.DataFrame(columns = mlabels)
     auxdf.loc[0] = ar
     plt.clf()
-    max = auxdf.plot(y=['TimTut', 'TimN1', 'TimN2', 'TimN3'], kind='bar')
+
+    mNames= ['Tutorial', 'Nivel 1', 'Nivel 2', 'Nivel 3'] #Nombres mas legibles
+    plt.bar(mNames, ar, color=['#1565c0', '#ffb74d', "#19ea46",'#e53935']) #para que no se quede ese 0
+
+    #max = auxdf.plot(y=['TimTut', 'TimN1', 'TimN2', 'TimN3'], kind='bar')
     plt.title("Distribución de Tiempo tardado por Nivel")
+    plt.xlabel("Niveles")
+    plt.ylabel("Tiempo Medio (Minutos)")
     plt.savefig('./Metricas/Metrica4.png')
 
 def Metrica5():
@@ -96,8 +114,15 @@ def Metrica7():
     ar = [sum(singleDf['DamTut']), sum(singleDf['DamN1']), sum(singleDf['DamN2']), sum(singleDf['DamN3'])]
     
     auxdf.loc[0] = ar
-    max = auxdf.plot(y=['DamTut','DamN1','DamN2','DamN3'], kind='bar')
+
+    plt.clf()
+    mNames= ['Tutorial', 'Nivel 1', 'Nivel 2', 'Nivel 3'] #Nombres mas legibles
+    plt.bar(mNames, ar, color=['#1565c0', '#ffb74d', "#19ea46",'#e53935'])
+    #max = auxdf.plot(y=['DamTut','DamN1','DamN2','DamN3'], kind='bar')
+
     plt.title("Distribución de Daño recibido por el jugador en cada nivel")
+    plt.xlabel("Niveles")
+    plt.ylabel("Cantidad de puntos de vida")
     plt.savefig('./Metricas/Metrica7.png')
 
 def Metrica8():
@@ -107,8 +132,17 @@ def Metrica8():
     auxdf = pd.DataFrame(columns = mlabels)
     
     auxdf.loc[0] = ar
-    max = auxdf.plot(y=['DamE1', 'DamE2', 'DamE3', 'DamFi', 'DamIc'], kind='bar')
+    
+    plt.clf()
+    mNames= ['Enemigo 1', 'Enemigo 2', 'Enemigo 3', 'Enemigo Fuego', 'Enemigo Hielo'] #Nombres mas legibles
+    plt.bar(mNames, ar, color=['#1565c0', '#ffb74d', "#19ea46",'#e53935', "#d04cd7ff"], align='center')
+    plt.xticks(rotation=45)
+    plt.subplots_adjust(bottom=0.25)
+
+    #max = auxdf.plot(y=['DamE1', 'DamE2', 'DamE3', 'DamFi', 'DamIc'], kind='bar')
     plt.title("Distribución de daño recibido por el jugador por causa")
+    plt.xlabel("Tipos enemigos")
+    plt.ylabel("Cantidad de puntos de vida")
     plt.savefig('./Metricas/Metrica8.png')
 
 def Metrica9():
@@ -132,9 +166,16 @@ def Metrica10():
 
     ar=[sum(singleDf['OvHeal']),sum(singleDf['AmountHeal'])-sum(singleDf['OvHeal']),sum(singleDf['AmountHeal'])]
     auxdf.loc[0] = ar
-    ax = auxdf.plot(y= ['TotalWastedHeal','TotalNonWastedHeal','TotalHeal'], kind='bar')
-    ax.set_ylim(0,1000) #Para ver el resultado como si fuera un porcentaje
-    plt.title("Tasa de Curación malgastada")
+
+    plt.clf()
+    mNames= ['Curación malgastada', 'Curación útil', 'Curacion total'] #Nombres mas legibles
+    plt.bar(mNames, ar, color=['#1565c0', '#ffb74d', "#19ea46"])
+    plt.ylim(0,1000)
+    #ax = auxdf.plot(y= ['TotalWastedHeal','TotalNonWastedHeal','TotalHeal'], kind='bar')
+    #ax.set_ylim(0,1000) #Para ver el resultado como si fuera un porcentaje
+    plt.title("Tasas de curación")
+    plt.xlabel("Tipos de curación")
+    plt.ylabel("Cantidad de puntos de vida")
     plt.savefig('./Metricas/Metrica10.png')
 
 def CallAllMetrics():
