@@ -237,7 +237,6 @@ public class MightyLifeComponent : MonoBehaviour
             PlayerCheckPoint playerCP = new PlayerCheckPoint();
 
             playerCP.LevelID = SceneManager.GetActiveScene().buildIndex;
-            playerCP.CheckpointID = col.gameObject.GetInstanceID();
 
             //Envia datos al TRACKER del Sistema de Telemetria
             Tracker.Instance.AddEvent(playerCP);
