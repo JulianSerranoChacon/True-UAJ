@@ -20,7 +20,7 @@ sus respectivas carpeta (Metricas y HeatMaps)
 
 ## Advertencia
 
-Si se hace una build del juego, la carpeta que contenga sus archivos debe de alojarse en un directorio que no requiera de permisos especiales para modificar archivos, o puede que hayan errores al crear los archivos .json para las métricas o que ni si quiera se hagan. Una vez que se termine la sesión de juego o cuando se guarden los datos, los .json estarán alojados en una carpeta que se creará en el mismo directorio de la carpeta de la build del juego.
+Si se hace una build del juego, la carpeta que contenga sus archivos debe de alojarse en un directorio que no requiera de permisos especiales para modificar archivos, o puede que hayan errores al crear los archivos .json para las métricas o que ni siquiera se hagan. Una vez que se termine la sesión de juego o cuando se guarden los datos, los .json estarán alojados en una carpeta que se creará en el mismo directorio de la carpeta de la build del juego.
 
 ## Contexto
 La práctica se ha realizado sobre el juego creado para proyectos 1 [El custodio de Babel](https://github.com/Proyectos1-FDI-UCM/c2223-Grupo01), es un juego de plataformas que recuerda a los Mega Man originales.
