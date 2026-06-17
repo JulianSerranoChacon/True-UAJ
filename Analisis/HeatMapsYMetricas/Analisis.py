@@ -95,11 +95,11 @@ def Metrica4():
         plt.savefig('./Metricas/Metrica4.png')
 
 def Metrica5():
-    #Metrica 6
+    #Metrica 5
     mlabels = ['AciertosMelee', 'FallosMelee']
     ar = [sum(singleDf['MelAc']), sum(singleDf['Mel']) - sum(singleDf['MelAc'])]
     
-    if(sum(singleDf['Dis']) > 0):   #Comprobar que al menos se ha atacado con melee una vez para evitar fallos con el pie chart
+    if(sum(singleDf['Mel']) > 0):   #Comprobar que al menos se ha atacado con melee una vez para evitar fallos con el pie chart
         plt.clf()
         plt.pie(ar, labels = mlabels, startangle = 90)
         plt.title("Tasa de Aciertos y fallos de ataques a melee del jugador")
@@ -180,21 +180,21 @@ def CallAllMetrics():
     #Muertes por nivel
     Metrica1()
     #Causas de muertes
-    Metrica3()
+    Metrica2()
     #Tiempo tardado por nivel
-    Metrica4()
+    Metrica3()
     #Aciertos y fallos de disparos
-    Metrica5()
+    Metrica4()
     #Aciertos y fallos de ataques melee
-    Metrica6()
+    Metrica5()
     #Daño recibido por nivel
-    Metrica7()
+    Metrica6()
     #Causas de daño
-    Metrica8()
+    Metrica7()
     #Curaciones por minuto
-    Metrica9()
+    Metrica8()
     #Curación malgastada
-    Metrica10()
+    Metrica9()
 
 def TratamientoDatos(i, jug):
 
