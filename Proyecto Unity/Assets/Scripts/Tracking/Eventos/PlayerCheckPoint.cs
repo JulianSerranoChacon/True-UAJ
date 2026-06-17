@@ -1,16 +1,9 @@
 public class PlayerCheckPoint : TrackerEvent
 {
     private int levelID;
-    private int checkpointID;
 
     #region Bean
     public PlayerCheckPoint() { }
-
-    public int LevelID
-    {
-        get { return levelID; }
-        set { levelID = value; }
-    }
     
     public int CheckpointID
     {
@@ -21,6 +14,6 @@ public class PlayerCheckPoint : TrackerEvent
 
     public override string ToJson()
     {        
-        return "{\n\"type\": \"playerCP\"\n" + this.parentToJson() + ",\n\"levelID\": " + levelID + ",\n\"checkpointID\": "+ checkpointID + "\n}\n,";
+        return "{\n\"type\": \"playerCP\"\n" + this.parentToJson() + ",\n\"levelID\": " + levelID + ",\n}\n,";
     }
 }
