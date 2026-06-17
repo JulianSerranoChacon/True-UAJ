@@ -40,23 +40,19 @@ def Metrica1():
     #Metrica 1
     mlabels = ['MuTut','MuN1','MuN2','MuN3']
     ar = [sum(singleDf['MuTut']), sum(singleDf['MuN1']), sum(singleDf['MuN2']), sum(singleDf['MuN3'])]
-    mNames= ['Tutorial', 'Nivel 1', 'Nivel 2', 'Nivel 3'] #Nombres mas legibles
-    plt.pie(ar, labels = mNames, startangle = 90)
-    plt.title("Distribución de Muertes por Nivel")
-    plt.savefig('./Metricas/Metrica1.png')
+    if(sum(singleDf['MuTut']) + sum(singleDf['MuN1']) + sum(singleDf['MuN2']) + sum(singleDf['MuN3']) > 0): #Comprobar que al menos hay un valor en una de las categorias para evitar fallos con el pie chart
+        mNames= ['Tutorial', 'Nivel 1', 'Nivel 2', 'Nivel 3'] #Nombres mas legibles
+        plt.pie(ar, labels = mNames, startangle = 90)
+        plt.title("Distribución de Muertes por Nivel")
+        plt.savefig('./Metricas/Metrica1.png')
 
-def Metrica3():
-    #Metrica 3
+def Metrica2():
+    #Metrica 2
     mlabels = ['MuSpike', 'MuE1', 'MuE2', 'MuE3', 'MuFi', 'MuIc']
     ar = [sum(singleDf['MuSpike']), sum(singleDf['MuE1']), sum(singleDf['MuE2']), sum(singleDf['MuE3']), sum(singleDf['MuFi']), sum(singleDf['MuIc'])]
     
     plt.clf()
-    mNames= ['Pinchos', 'Enemigo 1', 'Enemigo 2', 'Enemigo 3', 'Enemigo Fuego', 'Enemigo Hielo'] #Nombres mas legibles
-    '''plt.pie(ar, labels = mNames, startangle = 90)
-    plt.xticks(rotation=45)
-    plt.title("Distribución de Causas de Muertes")
-    plt.savefig('./Metricas/Metrica3.png')'''
-
+    mNames= ['Pinchos','Terrestre', 'Distancia', 'Volador', 'Lanzallamas', 'Carámbanos'] #Nombres mas legibles
     plt.bar(mNames, ar, color=['#1565c0', '#ffb74d', "#19ea46","#e53935", "#d04cd7ff", "#000e6bff"]) #para que no se quede ese 0
     plt.xticks(rotation=45)
     plt.subplots_adjust(bottom=0.25)
@@ -64,10 +60,10 @@ def Metrica3():
     plt.title("Distribución de Causas de Muertes")
     plt.xlabel("Tipo obstáculo enemigo")
     plt.ylabel("Cantidad de muertes")
-    plt.savefig('./Metricas/Metrica3.png')
+    plt.savefig('./Metricas/Metrica2.png')
 
-def Metrica4():
-    #Metrica 4
+def Metrica3():
+    #Metrica 3
     mlabels = ['TimTut', 'TimN1', 'TimN2', 'TimN3']
     ar1=np.array([sum(singleDf['TimTut']),sum(singleDf['TimN1']),sum(singleDf['TimN2']),sum(singleDf['TimN3'])])    
     ar2 = np.array([len(singleDf[singleDf['TimTut'] != 0]),len(singleDf[singleDf['TimN1'] != 0]),len(singleDf[singleDf['TimN2'] != 0]),len(singleDf[singleDf['TimN3'] != 0])])
@@ -85,30 +81,32 @@ def Metrica4():
     plt.title("Distribución de Tiempo tardado por Nivel")
     plt.xlabel("Niveles")
     plt.ylabel("Tiempo Medio (Minutos)")
-    plt.savefig('./Metricas/Metrica4.png')
+    plt.savefig('./Metricas/Metrica3.png')
 
-def Metrica5():
-    #Metrica 5
+def Metrica4():
+    #Metrica 4
     mlabels = ['AciertosDisparos', 'FallosDisparo']
     ar = [sum(singleDf['DisAc']), sum(singleDf['Dis']) - sum(singleDf['DisAc'])]
     
-    plt.clf()
-    plt.pie(ar, labels = mlabels, startangle = 90)
-    plt.title("Tasa de Aciertos y fallos de los disparos del jugador")
-    plt.savefig('./Metricas/Metrica5.png')
+    if(sum(singleDf['Dis']) > 0):   #Comprobar que al menos se ha disparado una vez para evitar fallos con el pie chart
+        plt.clf()
+        plt.pie(ar, labels = mlabels, startangle = 90)
+        plt.title("Tasa de Aciertos y fallos de los disparos del jugador")
+        plt.savefig('./Metricas/Metrica4.png')
 
-def Metrica6():
+def Metrica5():
     #Metrica 6
     mlabels = ['AciertosMelee', 'FallosMelee']
     ar = [sum(singleDf['MelAc']), sum(singleDf['Mel']) - sum(singleDf['MelAc'])]
     
-    plt.clf()
-    plt.pie(ar, labels = mlabels, startangle = 90)
-    plt.title("Tasa de Aciertos y fallos de ataques a melee del jugador")
-    plt.savefig('./Metricas/Metrica6.png')
+    if(sum(singleDf['Dis']) > 0):   #Comprobar que al menos se ha atacado con melee una vez para evitar fallos con el pie chart
+        plt.clf()
+        plt.pie(ar, labels = mlabels, startangle = 90)
+        plt.title("Tasa de Aciertos y fallos de ataques a melee del jugador")
+        plt.savefig('./Metricas/Metrica5.png')
 
-def Metrica7():
-    #Metrica 7
+def Metrica6():
+    #Metrica 6
     mlabels = ['DamTut','DamN1','DamN2','DamN3']
     auxdf = pd.DataFrame(columns = mlabels)
     ar = [sum(singleDf['DamTut']), sum(singleDf['DamN1']), sum(singleDf['DamN2']), sum(singleDf['DamN3'])]
@@ -123,10 +121,10 @@ def Metrica7():
     plt.title("Distribución de Daño recibido por el jugador en cada nivel")
     plt.xlabel("Niveles")
     plt.ylabel("Cantidad de puntos de vida")
-    plt.savefig('./Metricas/Metrica7.png')
+    plt.savefig('./Metricas/Metrica6.png')
 
-def Metrica8():
-    #Metrica 8
+def Metrica7():
+    #Metrica 7
     mlabels = ['DamE1', 'DamE2', 'DamE3', 'DamFi', 'DamIc']
     ar = [sum(singleDf['DamE1']), sum(singleDf['DamE2']), sum(singleDf['DamE3']), sum(singleDf['DamFi']), sum(singleDf['DamIc'])]
     auxdf = pd.DataFrame(columns = mlabels)
@@ -134,7 +132,7 @@ def Metrica8():
     auxdf.loc[0] = ar
     
     plt.clf()
-    mNames= ['Enemigo 1', 'Enemigo 2', 'Enemigo 3', 'Enemigo Fuego', 'Enemigo Hielo'] #Nombres mas legibles
+    mNames= ['Terrestre', 'Distancia', 'Volador', 'Lanzallamas', 'Carámbanos'] #Nombres mas legibles
     plt.bar(mNames, ar, color=['#1565c0', '#ffb74d', "#19ea46",'#e53935', "#d04cd7ff"], align='center')
     plt.xticks(rotation=45)
     plt.subplots_adjust(bottom=0.25)
@@ -143,10 +141,10 @@ def Metrica8():
     plt.title("Distribución de daño recibido por el jugador por causa")
     plt.xlabel("Tipos enemigos")
     plt.ylabel("Cantidad de puntos de vida")
-    plt.savefig('./Metricas/Metrica8.png')
+    plt.savefig('./Metricas/Metrica7.png')
 
-def Metrica9():
-    #Metrica 9
+def Metrica8():
+    #Metrica 8
     mlabels = ['FreqHeal']
     freq_heal_indv = singleDf['Heal'] / (singleDf['SesTime'] / 60000) #Curas por minuto (paso los milisegundos a minutos)
 
@@ -157,10 +155,10 @@ def Metrica9():
     auxdf.loc[0] = media
     max = auxdf.plot(y=['FreqHeal'], kind='bar')
     plt.title("Media de cuanto se cura cada jugador por minuto")
-    plt.savefig('./Metricas/Metrica9.png')
+    plt.savefig('./Metricas/Metrica8.png')
 
-def Metrica10():
-    # Métrica 10: Proporción de curación malgastada
+def Metrica9():
+    # Métrica 9: Proporción de curación malgastada
     mlabels = ['TotalWastedHeal','TotalNonWastedHeal','TotalHeal']
     auxdf = pd.DataFrame(columns = mlabels)
 
@@ -176,7 +174,7 @@ def Metrica10():
     plt.title("Tasas de curación")
     plt.xlabel("Tipos de curación")
     plt.ylabel("Cantidad de puntos de vida")
-    plt.savefig('./Metricas/Metrica10.png')
+    plt.savefig('./Metricas/Metrica9.png')
 
 def CallAllMetrics():
     #Muertes por nivel
