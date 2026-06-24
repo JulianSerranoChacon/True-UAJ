@@ -15,7 +15,7 @@ public class FilePersistance : IPersistance {
         serializer = Is;
         try
         {
-            string dirPath = Path.Combine(Application.dataPath, "../../Datos Telemetria");
+            string dirPath = Path.Combine(Application.persistentDataPath, "Datos_Telemetria");
 
             if (!Directory.Exists(dirPath))
                 Directory.CreateDirectory(dirPath);
